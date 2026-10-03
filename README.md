@@ -23,3 +23,7 @@ O comando `npm run build` mantém a compilação normal da aplicação. Gerar a 
 Home, nove páginas do negócio, contato adaptativo e índice editorial implementados. Modelo de artigo preparado; nenhum artigo fictício publicado. Política e termos aguardam conteúdo aprovado. Formulário permite conferir preenchimento, mas só enviará após configuração real e política aprovada. WhatsApp e loja dependem de URLs oficiais. Analytics preparado, sem coleta ativa ou GA4/GTM conectado.
 
 Pacote em `locaweb/`, com `public/` e `private/` separados. Nunca colocar configuração privada na pasta pública. Staging noindex por padrão; domínio, indexação e dados reais exigem configuração. Sem publicação nesta rodada. Hero ilustrativo gerado por IA; identidade e fotografias oficiais continuam pendentes.
+
+## Vercel
+
+Usar o preset Next.js, raiz do repositório (`./`), build `npm run build:vercel` e saída `.next`. `vercel.json` registra essas opções; o build executa Next.js nativo, enquanto os comandos Vinext e Locaweb continuam disponíveis. Consulte `docs/VERCEL.md`.

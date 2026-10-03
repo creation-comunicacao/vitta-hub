@@ -16,7 +16,9 @@
     "build:locaweb": "node scripts/build-locaweb.mjs",
     "preview:php": "node scripts/preview-locaweb.mjs",
     "dev:frontend": "node scripts/run-framework.mjs dev",
-    "check:preview": "node scripts/check-preview.mjs"
+    "check:preview": "node scripts/check-preview.mjs",
+    "build:vercel": "next build",
+    "start:vercel": "next start"
   },
   "dependencies": {
     "@base-ui/react": "^1.7.0",

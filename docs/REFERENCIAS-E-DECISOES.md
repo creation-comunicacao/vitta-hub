@@ -56,3 +56,9 @@ Instruções e confirmações do usuário na conversa prevalecem. Para a evoluç
 - Servidores reiniciados no caminho atual. Desenvolvimento voltou ao frontend React/Vite na porta 5173 com proxy restrito aos endpoints PHP na porta 8789.
 - Exportação estática limitada ao comando build:locaweb; build normal preservado. A exportação não substitui as fontes React por PHP.
 - Adicionado check:preview para validar HTTP e MIME dos assets, páginas e API, além da existência dos arquivos em disco.
+
+## Vercel — 03/10/2026
+- O usuário relatou ausência de `.next/routes-manifest.json` no deploy Vercel. A causa é o build Vinext/Vite combinado com o preset Next.js.
+- Adicionados `build:vercel` (`next build`), `start:vercel` e `vercel.json`; builds locais Vinext e pacote Locaweb preservados.
+- Frontend React/TypeScript/Tailwind mantido. A configuração Vercel cobre o frontend; PHP continua como serviço separado. A conexão depende da URL real e configuração de proxy/sessão.
+- Procedimento em `docs/VERCEL.md`; política e envio real permanecem pendentes.
