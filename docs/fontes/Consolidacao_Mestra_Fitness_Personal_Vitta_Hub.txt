@@ -1,0 +1,300 @@
+CONSOLIDAÇÃO MESTRA
+FITNESS PERSONAL • VITTA HUB • ASSESSORIA ESPORTIVA
+Documento-base do projeto de negócio, marca, benchmarking, arquitetura digital e preparação para UX/UI e desenvolvimento.
+Status: consolidado até a arquitetura do site. Pendências mantidas explicitamente: T.A.P. / T.A.R., preços das ofertas e volumes de palavras-chave.
+1. Visão geral
+FITNESS PERSONAL é a marca principal. VITTA HUB • ASSESSORIA ESPORTIVA é o ecossistema operacional: um Centro Integrador de Saúde, Esporte e Bem-Estar. O território central é GESTÃO ESPORTIVA INTEGRADA, com atuação principal em B2B Condomínios e expansão por Consultoria Online e E-Hub Nutrition.
+Sequência definida: Mapa Mestre → DNA → Benchmarking → Arquitetura → Conteúdo → SEO → UX/UI → Material para Desenvolvimento.
+2. Mapa Mestre do negócio
+Camada
+Definição
+FITNESS PERSONAL
+Marca principal / guarda-chuva.
+VITTA HUB • ASSESSORIA ESPORTIVA
+Estrutura operacional e ecossistema integrado.
+Território central
+GESTÃO ESPORTIVA INTEGRADA.
+B2B Condomínios
+Principal operação comercial; Hubs Fitness, Aquático e Esportivo.
+Consultoria Online
+Treinamento digital/híbrido.
+E-Hub Nutrition
+Atendimento nutricional + suplementação/e-commerce.
+2.1 Hubs
+Hub Fitness — musculação, funcional, força, resistência, HIIT de volume controlado, outdoor, longevidade ativa e supervisão técnica.
+Hub Aquático — natação, hidroginástica, condicionamento, técnica, força/capacidade física e bem-estar.
+Hub Esportivo — futebol infantil, FutCross, fundamentos, desenvolvimento cognitivo, circuitos, desafios, jogos dirigidos e eventos.
+Os Hubs são divisões operacionais do B2B Condomínios, não unidades de negócio independentes.
+3. M.I.V.A. — metodologia transversal
+M.I.V.A. = Movimento Inteligente para uma Vida Ativa. É metodologia/visão transversal e não um produto. Deve atravessar B2B, Consultoria Online e E-Hub Nutrition.
+Pilar
+Conceito
+❤️ Saúde
+Saúde e cuidado corporal
+🧠 Mente
+Consciência e relação com o processo
+🍽️ Nutrição
+Alimentação e suporte nutricional
+😊 Felicidade
+Motivação, prazer e bem-estar
+Jornada conceitual: Consciência corporal → Mobilidade/CORE → Força → Hipertrofia → Resistência → Potência → Velocidade → Performance. Não é uma sequência obrigatória para todas as pessoas.
+3.1 Protocolos
+T.A.L. — Treinamento para Autonomia e Longevidade: consciência corporal, prevenção de dores, CORE, autonomia, básico bem feito e longevidade.
+T.A.P. / T.A.R. — segundo protocolo ainda pendente de nomenclatura. Não escolher uma forma definitiva sem validação.
+4. Missão, visão, valores e proposta
+Missão: “Proporcionar mudanças profundas e readequação para o bem-estar físico e corporal através do conhecimento e da conscientização física, despertando o autoconhecimento e estimulando uma vida em movimento que eleve a autoestima e o prazer pela prática esportiva.”
+Visão: “Ser a assessoria esportiva condominial de referência na Grande São Paulo, reconhecida pela eficiência prática de sua metodologia integrada (corpo, mente, nutrição e felicidade) e pela excelência em gestão operacional.”
+Valorização do Ser Humano.
+Ética e Honestidade.
+Respeito e Segurança.
+Conexão em Comunidade.
+Proposição central: “Centralizamos a gestão esportiva do condomínio e integramos treinamento, esporte, saúde, tecnologia e bem-estar em uma única estrutura.”
+5. DNA 01–08 — validados
+DNA 01 — IDENTIDADE
+Centro Integrador de Saúde, Esporte e Bem-Estar. Pilares: GESTÃO • MOVIMENTO • INTEGRAÇÃO • PESSOAS • EVOLUÇÃO. Verbos: INTEGRAR • GERIR • TRANSFORMAR. Não é apenas personal trainer, academia de condomínio, plataforma, loja ou modalidade isolada.
+DNA 02 — PROPÓSITO
+Humano: “Colocar mais movimento na vida das pessoas.” Negócio: “Transformar espaços e estruturas existentes em experiências integradas de saúde, esporte e bem-estar.”
+DNA 03 — POSICIONAMENTO
+Assessoria esportiva integrada especializada na gestão de atividades físicas, esportivas e de bem-estar, conectando profissionais, modalidades, metodologia, tecnologia e acompanhamento. Território: GESTÃO ESPORTIVA INTEGRADA.
+DNA 04 — PERSONALIDADE
+Estratégica, humana, ativa, profissional e contemporânea; transversalmente acolhedora. “Estratégica na gestão. Humana no relacionamento. Ativa na atitude. Profissional no conhecimento. Contemporânea na experiência.”
+DNA 05 — PROMESSA
+“Entregar uma experiência esportiva integrada, organizada e humana, que transforme o movimento em parte da vida das pessoas.”
+DNA 06 — DIFERENCIAIS
+1 Gestão Integrada; 2 Hubs Especializados; 3 M.I.V.A.; 4 Jornada de Evolução; 5 Físico + Digital; 6 Experiência Humana; 7 Ecossistema Integrado.
+DNA 07 — ARQUÉTIPO
+Primário: Cuidador. Secundário: Explorador. Terceiro: Governante. Aplicação varia conforme institucional, alunos, performance/esporte e M.I.V.A.
+DNA 08 — MANIFESTO
+Acredita no movimento, nas pessoas, em espaços que ganham vida, na integração e na evolução. Gestão também é cuidado. Essência: “Criamos estruturas que conectam pessoas ao movimento e transformam espaços em experiências de saúde, esporte e bem-estar.”
+6. Benchmarking — síntese
+Referência
+Aprendizado
+RunFun
+Método, comunidade/performance, páginas de planos, app e conteúdo estruturado.
+4Any1
+Especialização em corrida/treino e planos individualizados.
+BMQ Sports
+Forte território de assessoria para condomínios, modalidades e conteúdo de gestão/convivência.
+MovaVida
+Gestão de estrutura esportiva condominial e atividades personalizadas.
+Prime Assessoria
+Gestão esportiva para condomínios em diferentes ambientes.
+Body Care
+Ecossistema de saúde/bem-estar, gestão, experiência e áreas de lazer.
+CORE
+Gestão de academias/áreas esportivas, acompanhamento e integração.
+Kinesis
+Solução ampla para condomínios, gestão, recreação, eventos e modalidades.
+Conclusão: “gestão esportiva” isoladamente não diferencia. A diferenciação proposta está na integração de governança, Hubs, M.I.V.A., tecnologia, acompanhamento, experiência, consultoria e nutrição. Não afirmar exclusividade de “ecossistema”.
+SEO: BMQ e Body Care mostraram força em conteúdo/landing pages para condomínios; RunFun mostrou valor de páginas detalhadas de produtos. Volumes exatos de busca ainda não foram verificados.
+7. Consultoria Online
+Oferta
+Escopo
+M.I.V.A. • Essencial (Treino)
+Anamnese, prescrição individualizada, app, vídeos/orientações e suporte/acompanhamento.
+M.I.V.A. • Performance & Nutri
+Treino + consulta/planejamento nutricional individualizado com Douglas Silva.
+M.I.V.A. • Híbrido Start
+Treino/app + 1–2 sessões presenciais na primeira semana, conforme disponibilidade.
+M.I.V.A. • Executive VIP
+Avaliação física, bioimpedância, treino/app, primeiro contato presencial, nutrição e suporte prioritário.
+Preços discutidos anteriormente não estão validados para publicação.
+8. E-Hub Nutrition
+O E-Hub Nutrition conecta atendimento nutricional, orientação e suplementação. Não é apenas loja.
+Douglas Silva — Nutricionista.
+Consultas online.
+Presencial mediante agendamento/composição da operação.
+Avaliação, orientação e acompanhamento nutricional.
+Integração com treinamento e consultoria.
+Suplementação/e-commerce: curadoria, Probiótica, whey, creatina, ômega 3, kits etc.
+Regra visual: atendimento nutricional primeiro; loja como complemento.
+9. Equipe e governança
+Profissional
+Responsabilidade
+Prof. Wilton Faias — Direção Geral & Fundador
+Direção, B2B, prospecção/negociação, direção técnica, marca e expansão.
+André Oliver — Head de Customer Success & Atendimento VIP
+Onboarding, acolhimento, relacionamento, retenção, suporte e atendimento VIP.
+Ricardo — Head do Hub Fitness & Prescrição de Treinos
+Prescrição, auditoria, app, musculação/funcional e supervisão técnica.
+Paola — Head do Hub Aquático
+Natação, hidroginástica, operação e experiência aquática.
+Douglas Silva — Head de Nutrição Esportiva & Suporte Visual
+Nutrição esportiva, consultas, planos, acompanhamento e suporte ligado à suplementação/serviços.
+A liderança não representa necessariamente toda a equipe operacional; profissionais podem ser compostos conforme cada condomínio/projeto.
+10. Arquitetura final do site
+Nível
+URL
+Função
+0
+/
+Home e roteamento.
+1
+/vitta-hub/
+Institucional.
+1
+/gestao-esportiva-condominios/
+Landing B2B principal.
+2
+/hub-fitness/
+Hub operacional B2B.
+2
+/hub-aquatico/
+Hub operacional B2B.
+2
+/hub-esportivo/
+Hub operacional B2B.
+1
+/miva/
+Metodologia transversal.
+1
+/consultoria-online/
+Oferta B2C.
+1
+/e-hub-nutrition/
+Nutrição + suplementação.
+1
+/equipe/
+Equipe/autoridade.
+1
+/conteudos/
+Conteúdo/SEO.
+1
+/contato/
+Conversão.
+11. Home — blocos consolidados
+Header.
+Hero: “Gestão Esportiva Integrada para uma Vida em Movimento”.
+O que é Vitta Hub + pilares.
+B2B: “Seu condomínio já possui os espaços. Nós estruturamos o ecossistema esportivo.”
+Três Hubs.
+M.I.V.A. — Saúde, Mente, Nutrição, Felicidade.
+Jornada de evolução.
+Consultoria Online.
+E-Hub Nutrition com nutrição antes da loja.
+Experiência Vitta Hub.
+Equipe.
+Conteúdos.
+CTA B2B final.
+Footer e barra mobile Menu | WhatsApp | Apresentação.
+12. Páginas B2B
+Gestão Esportiva para Condomínios
+Hero: “Mais do que oferecer atividades. Estruturamos e conectamos todo o ecossistema esportivo do seu condomínio.” Problema → solução → gestão → Hubs → benefícios → M.I.V.A. → implementação → transformação → FAQ → CTA.
+Hub Fitness
+“Treinamento e Movimento para o seu Condomínio”. Estrutura de musculação/funcional, força, resistência, longevidade, perfis, M.I.V.A., protocolos, gestão, benefícios, experiência e FAQ.
+Hub Aquático
+“Natação, Movimento e Bem-Estar no seu Condomínio”. Natação, hidro, condicionamento, técnica, força, bem-estar, evolução, M.I.V.A., gestão, benefícios e FAQ.
+Hub Esportivo
+“Esporte que movimenta. Desenvolve. Conecta.” Futebol infantil, FutCross, fundamentos, cognição, circuitos, jogos e eventos; desenvolvimento, comunidade, M.I.V.A., gestão e FAQ.
+13. M.I.V.A. — página
+Explicar caráter transversal.
+Apresentar quatro pilares.
+Explicar diferentes pontos de partida.
+Jornada/pirâmide.
+T.A.L. + T.A.P./T.A.R. pendente.
+Aplicação em Hubs, Consultoria e E-Hub.
+O que M.I.V.A. não é.
+CTA e FAQ.
+14. Consultoria Online — página
+Hero: “Seu treino. Sua rotina. Seu acompanhamento.”
+Problema: “Você não precisa de mais uma planilha.”
+Anamnese → objetivos → planejamento → treino → execução → acompanhamento → ajustes → evolução.
+Quatro ofertas + comparação.
+Tecnologia como meio, papel do profissional, integração, jornada, CTA e FAQ.
+15. E-Hub Nutrition — página
+Hero: “Nutrição que acompanha o seu movimento.” / “Não começamos pelo pote. Começamos pela pessoa.”
+Douglas e atendimento.
+Nutrição + treinamento.
+Suplementação como complemento.
+Curadoria/Probiótica.
+Integração com Consultoria e M.I.V.A.
+CTAs separados para nutrição e loja.
+FAQ.
+16. Equipe — página
+Hero: “Por trás de cada experiência, existe uma equipe.”
+Lideranças e responsabilidades.
+Conexão entre direção, Customer Success, Hubs e Nutrição.
+Estrutura operacional variável.
+Pessoas como centro da experiência.
+CTA e FAQ.
+17. Conteúdos — página e estratégia
+Conceito: “Conteúdos para colocar conhecimento em movimento”. Não é um blog genérico de academia.
+Categorias: Gestão Esportiva; Condomínios; Treinamento; Esporte; Saúde & Bem-Estar; Nutrição.
+Busca, destaque, recentes, relacionados, autor, data e CTA contextual.
+Cada artigo: palavra-chave, intenção, H1, meta title/description, URL, headings, links internos, CTA, imagem/alt, autor, data e atualização.
+CTAs: B2B → apresentação; treino → consultoria; nutrição → nutricionista.
+Conteúdo técnico de nutrição com participação/revisão do Douglas quando apropriado.
+Primeiros 12 temas: gestão esportiva para condomínios; gestão x contratação isolada; organização das atividades; uso das áreas; atividades para condomínio; prescrição além da planilha; funcional em condomínio; futebol infantil; FutCross; longevidade ativa; movimento no dia a dia; creatina.
+18. Contato — central de conversão
+Entrada
+Destino
+Síndico/administradora
+Gestão esportiva / formulário B2B.
+Consultoria
+Consultoria Online.
+Nutrição
+Douglas / E-Hub Nutrition.
+Suplementos
+Loja.
+WhatsApp é canal complementar, com mensagens contextuais conforme a origem do lead.
+19. Menu principal
+VITTA HUB | CONDOMÍNIOS ▾ | M.I.V.A. | CONSULTORIA ONLINE | E-HUB NUTRITION | CONTEÚDOS | EQUIPE | [SOLICITAR APRESENTAÇÃO]
+Dropdown Condomínios: Gestão Esportiva para Condomínios | Hub Fitness | Hub Aquático | Hub Esportivo.
+20. O que não entra no lançamento
+Uma página para cada modalidade.
+Páginas separadas para natação, hidro ou futebol.
+Quatro páginas independentes para os planos.
+Página individual para cada suplemento.
+Dezenas de páginas institucionais.
+Uma página individual para cada membro da equipe.
+21. Fluxos de conversão
+Intenção
+Fluxo
+Condomínio
+Gestão Esportiva → Hubs → Solicitar apresentação.
+Treino
+Consultoria → oferta → conversão.
+Nutrição
+E-Hub → Douglas → atendimento.
+Suplementação
+E-Hub → loja → compra.
+Conhecimento
+Conteúdo → autoridade → solução relacionada.
+22. Checklist de status
+Tema
+Status
+Mapa Mestre
+VALIDADO
+DNA 01–08
+VALIDADO
+Benchmarking
+CONSOLIDADO
+Arquitetura
+CONSOLIDADA
+M.I.V.A. transversal
+VALIDADO
+T.A.L.
+VALIDADO
+T.A.P. x T.A.R.
+PENDENTE
+Preços
+PENDENTES
+Volumes SEO
+PENDENTES
+UX/UI
+PRÓXIMA FASE
+Material para desenvolvimento
+DEPOIS DO UX/UI
+23. Princípios inegociáveis
+VITTA HUB não é apenas uma empresa de personal trainers.
+Gestão Esportiva Integrada é o território central.
+Hubs são divisões operacionais do B2B Condomínios.
+M.I.V.A. é transversal, não produto.
+E-Hub Nutrition = atendimento nutricional + suplementação.
+O condomínio já possui espaços; VITTA HUB estrutura, integra e gere o ecossistema.
+Tecnologia é meio; pessoas, gestão, acompanhamento e experiência permanecem centrais.
+Comunicação: estratégica, humana, ativa, profissional, contemporânea e acolhedora.
+Não inventar dados, preços, volumes ou afirmações de mercado.
+Manter decisões pendentes explicitamente sinalizadas.
+PRÓXIMA FASE: UX/UI
+Com a arquitetura consolidada, o próximo passo é construir o wireframe mestre do site: Header → Home → jornada B2B → páginas internas → CTAs → formulários → experiência mobile → sistema de componentes para desenvolvimento.

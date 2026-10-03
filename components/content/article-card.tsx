@@ -1,0 +1,3 @@
+import type {Article} from '@/content/articles';
+import {formatDate} from '@/lib/articles';
+export function ArticleCard({article}:{article:Article}){return <article className="article-card"><a href={`/conteudos/${article.slug}/`}><img src={article.image.src} alt={article.image.alt} width={article.image.width} height={article.image.height} loading="lazy"/><span className="eyebrow">{article.category}</span><h3>{article.title}</h3><p>{article.excerpt}</p><div className="article-meta">{article.author.name} · <time dateTime={article.publishedAt}>{formatDate(article.publishedAt)}</time></div><span className="text-link">Ler conteúdo</span></a></article>}

@@ -1,0 +1,5 @@
+import {ContactForm} from '@/components/forms/contact-form';
+import {legalDocuments,isLegalPublished} from '@/content/legal';
+import {metadataFor} from '@/lib/seo';
+export const metadata=metadataFor('Contato | FITNESS PERSONAL • VITTA HUB','Converse sobre gestão esportiva para condomínios, consultoria, nutrição ou suplementação. Encontre a conexão certa na VITTA HUB.','/contato/');
+export default function ContactPage(){return <main id="principal"><section className="page-hero contact-hero"><div className="container"><nav className="breadcrumb" aria-label="Caminho da página"><ol><li><a href="/">Início</a></li><li aria-current="page">Contato</li></ol></nav><span className="eyebrow">VITTA HUB / Central de atendimento</span><h1>Vamos conversar?</h1><p className="page-lead">Conte-nos o que você procura. Nós direcionamos você para a estrutura mais adequada da VITTA HUB.</p></div></section><section className="section container"><ContactForm privacyPublished={isLegalPublished(legalDocuments.privacidade)}/></section></main>}

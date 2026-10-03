@@ -1,0 +1,1 @@
+export default function NotFound(){return <main id="principal" className="container pending-page"><span className="eyebrow">404</span><h1>Página não encontrada.</h1><p>Continue explorando o ecossistema VITTA HUB.</p><div className="actions"><a className="button" href="/">Voltar ao início</a></div></main>}

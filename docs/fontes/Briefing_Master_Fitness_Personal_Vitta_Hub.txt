@@ -1,0 +1,606 @@
+FITNESS PERSONAL• VITTA HUB • ASSESSORIA ESPORTIVA
+BRIEFING MASTEREstratégia • Marca • Arquitetura • Conteúdo • SEO • UX/UI • Tecnologia
+Documento consolidado para direção estratégica e desenvolvimento do novo site.Setembro de 2026
+1. VISÃO EXECUTIVA
+A FITNESS PERSONAL • VITTA HUB ASSESSORIA ESPORTIVA é um Centro Integrador de Saúde, Esporte e Bem-Estar, criado para estruturar, gerir e dinamizar experiências de atividade física, esporte e lazer.
+A principal atuação é a gestão esportiva para condomínios residenciais de médio e alto padrão, conectando profissionais, modalidades, metodologia, acompanhamento, tecnologia e experiência do aluno em uma única estrutura.
+O ecossistema se amplia por meio da Consultoria Online e do E-Hub Nutrition, permitindo acompanhar o indivíduo para além do espaço físico do condomínio.
+Proposição central
+“Centralizamos a gestão esportiva do condomínio e integramos treinamento, esporte, saúde, tecnologia e bem-estar em uma única estrutura.”
+Território estratégico
+GESTÃO ESPORTIVA INTEGRADA
+Princípio do projeto
+NÃO CONSTRUIR UM SITE DE PERSONAL TRAINER. Construir uma plataforma institucional/comercial de uma assessoria esportiva integrada, cuja principal atuação é a gestão esportiva para condomínios, apoiada por Hubs operacionais, metodologia M.I.V.A., consultoria online e E-Hub Nutrition.
+2. MAPA MESTRE DO NEGÓCIO
+Camada
+Estrutura
+Função
+Marca principal
+FITNESS PERSONAL
+Marca/identidade principal.
+Estrutura corporativa
+VITTA HUB • ASSESSORIA ESPORTIVA
+Centro Integrador de Saúde, Esporte e Bem-Estar.
+Território
+Gestão Esportiva Integrada
+Campo estratégico principal.
+Mercado prioritário
+B2B Condomínios
+Gestão esportiva para condomínios residenciais.
+Operações B2B
+Hub Fitness / Hub Aquático / Hub Esportivo
+Divisões operacionais dentro da gestão condominial.
+Metodologia transversal
+M.I.V.A.
+Movimento Inteligente para uma Vida Ativa.
+Oferta digital
+Consultoria Online
+Treinamento personalizado e acompanhamento.
+Nutrição
+E-Hub Nutrition
+Atendimento nutricional + suplementação/e-commerce.
+Arquitetura
+• B2B CONDOMÍNIOS — gestão esportiva para condomínios.
+• Hub Fitness — musculação, funcional, força, resistência, condicionamento, mobilidade e longevidade ativa.
+• Hub Aquático — natação, hidroginástica, condicionamento, técnica, treinamento e bem-estar.
+• Hub Esportivo — futebol infantil, FutCross, fundamentos, circuitos, jogos dirigidos, desenvolvimento e eventos.
+• CONSULTORIA ONLINE — ecossistema digital/híbrido de treinamento.
+• E-HUB NUTRITION — atendimento nutricional, orientação e suplementação.
+Regra: os Hubs são divisões operacionais do B2B, não unidades de negócio independentes.
+3. DNA DA MARCA — DNA 01 A 08
+DNA 01 — IDENTIDADE
+A FITNESS PERSONAL • VITTA HUB ASSESSORIA ESPORTIVA é um Centro Integrador de Saúde, Esporte e Bem-Estar, criado para estruturar, gerir e dinamizar experiências de atividade física, esporte e lazer.
+Nossa atuação nasce da união entre gestão esportiva, ciência da Educação Física, tecnologia e cuidado com as pessoas, oferecendo uma estrutura integrada para que diferentes públicos tenham acesso a uma vida mais ativa, saudável e significativa.
+Nosso principal campo de atuação é a gestão esportiva para condomínios residenciais de médio e alto padrão, onde assumimos a organização e a governança das atividades esportivas, conectando profissionais, modalidades, metodologia, acompanhamento e experiência do aluno.
+Ao mesmo tempo, o ecossistema se amplia por meio da Consultoria Online e do E-Hub Nutrition, criando uma estrutura que acompanha o indivíduo para além do espaço físico do condomínio.
+Uma frase
+“Somos uma assessoria esportiva integrada que conecta gestão, movimento, saúde, esporte, tecnologia e bem-estar para transformar espaços e oportunidades em experiências de uma vida mais ativa.”
+Pilares
+• GESTÃO
+• MOVIMENTO
+• INTEGRAÇÃO
+• PESSOAS
+• EVOLUÇÃO
+O que não somos
+• Apenas fornecedores de professores.
+• Uma academia dentro do condomínio.
+• Uma empresa de personal trainers.
+• Uma plataforma de treinos.
+• Uma loja de suplementos.
+• Um conjunto de modalidades isoladas.
+Somos uma estrutura de gestão esportiva integrada.
+DNA 02 — PROPÓSITO
+Propósito humano: “Colocar mais movimento na vida das pessoas.”
+Propósito de negócio: “Transformar espaços e estruturas existentes em experiências integradas de saúde, esporte e bem-estar.”
+DNA 03 — POSICIONAMENTO
+“A FITNESS PERSONAL • VITTA HUB é uma assessoria esportiva integrada especializada na gestão de atividades físicas, esportivas e de bem-estar, que conecta profissionais, modalidades, metodologia, tecnologia e acompanhamento em uma única estrutura.”
+Para condomínios: “A Vitta Hub atua como uma estrutura de gestão esportiva integrada, organizando e conectando os diferentes serviços, profissionais e experiências esportivas do empreendimento.”
+Ideia central: “O condomínio não precisa administrar uma coleção de profissionais e modalidades isolados. A Vitta Hub estrutura, conecta, acompanha e gere esse ecossistema esportivo.”
+DNA 04 — PERSONALIDADE
+• Estratégica
+• Humana
+• Ativa
+• Profissional
+• Contemporânea
+• Acolhedora
+“Estratégica na gestão. Humana no relacionamento. Ativa na atitude. Profissional no conhecimento. Contemporânea na experiência.”
+“Uma marca que entende de pessoas tanto quanto entende de movimento.”
+Evitar: agressividade, exagero motivacional, linguagem gimmick, tecnicismo excessivo, elitismo, informalidade excessiva e foco exclusivo em estética.
+DNA 05 — PROMESSA
+“Entregar uma experiência esportiva integrada, organizada e humana, que transforme o movimento em parte da vida das pessoas.”
+B2B: “Oferecer ao condomínio uma gestão esportiva integrada, conectando profissionais, modalidades, metodologia e experiência em uma única estrutura.”
+Aluno: “Criar uma jornada de movimento alinhada às necessidades, objetivos e momento de cada pessoa.”
+Conceito: “Mais do que atividades. Uma experiência integrada de movimento, saúde, esporte e bem-estar.”
+DNA 06 — DIFERENCIAIS COMPETITIVOS
+1. Gestão Esportiva Integrada
+2. Hubs Especializados
+3. M.I.V.A.
+4. Jornada de Evolução
+5. Físico + Digital
+6. Experiência Humana
+7. Ecossistema Integrado
+“Nosso diferencial não é oferecer mais modalidades. É integrar melhor tudo aquilo que já faz parte da vida esportiva das pessoas.”
+DNA 07 — ARQUÉTIPO
+Primário: Cuidador. Secundário: Explorador. Terceiro: Governante.
+Aplicação
+Combinação
+Institucional
+Governante + Cuidador
+Alunos
+Cuidador + Explorador
+Performance/Esporte
+Explorador + Governante
+M.I.V.A.
+Cuidador + Explorador
+“Uma marca que cuida das pessoas, estimula sua evolução e possui estrutura para liderar todo o ecossistema esportivo.”
+DNA 08 — MANIFESTO
+Movimento é mais do que exercício. É cuidado com o corpo, despertar da mente, autonomia, relacionamento, possibilidades, saúde, energia e bem-estar.
+Cada pessoa tem uma história, um objetivo, um ritmo e necessidades diferentes. Não existem soluções prontas que sirvam para todos.
+Espaços também podem ganhar vida. A área esportiva do condomínio pode ser ponto de encontro, aprendizagem, comunidade, saúde, esporte e experiências.
+Saúde, movimento, mente, treinamento, nutrição, performance e bem-estar estão conectados.
+A evolução pode começar no primeiro movimento e seguir até a autonomia, os objetivos pessoais ou o alto rendimento, respeitando diferentes momentos.
+Gerenciar também é cuidar: conectar pessoas, coordenar profissionais, estruturar processos, acompanhar experiências, criar organização e buscar qualidade.
+Essência: “Criamos estruturas que conectam pessoas ao movimento e transformam espaços em experiências de saúde, esporte e bem-estar.”
+4. M.I.V.A. — METODOLOGIA TRANSVERSAL
+M.I.V.A. = Movimento Inteligente para uma Vida Ativa.
+M.I.V.A. é uma visão integrada e transversal do ecossistema. Não é uma modalidade, não é apenas uma planilha, não é um aplicativo, não é uma dieta e não é um produto de suplementação.
+Conceito
+Pilar
+❤️ Coração
+Saúde
+🧠 Cabeça
+Mente
+🍽️ Prato
+Nutrição
+😊 Sorriso
+Felicidade / Motivação
+Pirâmide de evolução
+Nível
+Conteúdo
+Base
+CORE, mobilidade e padrões fundamentais de movimento — Push/Pull.
+Intermediário
+Força, hipertrofia, recomposição corporal e resistência.
+Topo
+Potência, velocidade e alto rendimento.
+T.A.L.
+T.A.L. — Treinamento para Autonomia e Longevidade. Foco: consciência corporal, prevenção de dores, CORE, autonomia, básico bem feito e longevidade. Perfis: idosos, sedentários, pessoas em retorno/recuperação e quem busca autonomia.
+T.A.R.
+T.A.R. — Treinamento de Alto Rendimento. Foco: força, potência, velocidade, condicionamento, desempenho, preparação física e evolução do rendimento. Perfis: pessoas ativas, esportistas e praticantes orientados à performance.
+A metodologia atravessa os Hubs, a Consultoria Online e a jornada de evolução. Pode integrar nomes de planos comerciais, como M.I.V.A. • Essencial, mas não deve ser associada a produtos de suplementação.
+5. GOVERNANÇA E EQUIPE
+Profissional
+Função
+Responsabilidades
+Prof. Wilton Faias
+Direção Geral & Fundador
+B2B, prospecção/negociação com síndicos e administradoras, direção técnica, governança da marca e expansão.
+André Oliver
+Head de Customer Success & Atendimento VIP
+Onboarding, acolhimento, retenção, suporte diário, conscientização corporal e autonomia.
+Ricardo
+Head do Hub Fitness & Prescrição de Treinos
+Cadastro/auditoria/montagem de planilhas no app; supervisão de musculação e funcional.
+Paola
+Head do Hub Aquático
+Gestão operacional de natação e hidroginástica em condomínios.
+Douglas Silva
+Head de Nutrição Esportiva & Suporte Visual
+Nutricionista; consultas online e presenciais mediante agendamento/composição da operação; planos alimentares e curadoria nutricional.
+Essa é a estrutura de liderança/referência. A operação pode incluir outros profissionais conforme cada projeto.
+6. ARQUITETURA FINAL DO SITE
+Página
+URL
+Home
+/
+VITTA HUB
+/vitta-hub/
+Gestão Esportiva para Condomínios
+/gestao-esportiva-condominios/
+Hub Fitness
+/hub-fitness/
+Hub Aquático
+/hub-aquatico/
+Hub Esportivo
+/hub-esportivo/
+M.I.V.A.
+/miva/
+Consultoria Online
+/consultoria-online/
+E-Hub Nutrition
+/e-hub-nutrition/
+Equipe
+/equipe/
+Conteúdos
+/conteudos/
+Contato
+/contato/
+Menu desktop
+LOGO | VITTA HUB | CONDOMÍNIOS ▾ | M.I.V.A. | CONSULTORIA | E-HUB | CONTEÚDOS | EQUIPE | [SOLICITAR APRESENTAÇÃO]
+Dropdown Condomínios
+• Gestão Esportiva para Condomínios
+• Hub Fitness
+• Hub Aquático
+• Hub Esportivo
+• QUERO APRESENTAR A VITTA HUB AO MEU CONDOMÍNIO
+Mobile
+Barra fixa inferior: Menu | WhatsApp | Apresentação.
+7. HOME — WIREFRAME
+Hero
+H1: “Gestão Esportiva Integrada para uma Vida em Movimento”
+“Estruturamos, conectamos e gerimos experiências de saúde, esporte e bem-estar para condomínios e pessoas.”
+CTAs: “CONHECER A VITTA HUB” / “SOLICITAR APRESENTAÇÃO”
+Blocos
+1. Header
+2. Hero
+3. VITTA HUB — “Um ecossistema esportivo. Uma gestão integrada.”
+4. B2B — “Seu condomínio já possui os espaços. Nós estruturamos o ecossistema esportivo.”
+5. Três Hubs
+6. M.I.V.A. com quatro pilares
+7. Jornada de evolução
+8. Consultoria Online com quatro cards
+9. E-Hub Nutrition — nutrição primeiro, suplementação depois
+10. Experiência
+11. Equipe
+12. Conteúdos
+13. CTA B2B final
+14. Footer
+15. Mobile bottom bar
+8. PÁGINAS — ESTRUTURA E CONTEÚDO
+Página
+H1
+Objetivo/Blocos
+CTA
+Gestão Esportiva
+Gestão Esportiva para Condomínios
+Problema → solução → Hubs → M.I.V.A. → benefícios → implantação → FAQ.
+Solicitar apresentação
+Hub Fitness
+Treinamento e Movimento para o seu Condomínio
+Musculação, funcional, força, condicionamento, longevidade, M.I.V.A., gestão e experiência.
+Conhecer gestão
+Hub Aquático
+Natação, Movimento e Bem-Estar no seu Condomínio
+Natação, hidro, condicionamento, técnica, fases da vida, gestão e conexão.
+Conhecer gestão
+Hub Esportivo
+Esporte que movimenta. Desenvolve. Conecta.
+Futebol, infantil, FutCross, fundamentos, desenvolvimento, convivência e eventos.
+Conhecer gestão
+M.I.V.A.
+M.I.V.A. — Movimento Inteligente para uma Vida Ativa
+Quatro pilares, pirâmide, T.A.L., T.A.R., transversalidade e jornada.
+Conhecer consultoria
+Consultoria
+Seu treino. Sua rotina. Seu acompanhamento.
+Jornada, quatro planos, tecnologia como meio, acompanhamento profissional.
+Conhecer a consultoria
+E-Hub
+Nutrição que acompanha o seu movimento.
+Douglas, consultas, integração treino/nutrição, suplementação e loja.
+Falar com nutricionista / loja
+Equipe
+Por trás de cada experiência, existe uma equipe.
+Lideranças e funcionamento da equipe.
+Conhecer estrutura
+Conteúdos
+Conteúdo para colocar conhecimento em movimento.
+Categorias, artigos, autoridade e CTAs.
+Ler conteúdos
+Contato
+Vamos conversar?
+Roteamento por interesse e formulário.
+Enviar contato
+Detalhamento da Gestão
+1. Hero.
+2. Problema: condomínio já possui espaços; quem integra?
+3. Solução: uma gestão com ecossistema integrado.
+4. O que é VITTA HUB.
+5. Três Hubs.
+6. M.I.V.A.
+7. Públicos.
+8. Benefícios para condomínio.
+9. Benefícios para moradores.
+10. Implantação: diagnóstico, planejamento, implementação, operação, acompanhamento e evolução.
+11. Diferencial.
+12. Antes/depois conceitual.
+13. Síndicos e administradoras.
+14. FAQ.
+15. CTA final.
+Hub Fitness
+1. Hero.
+2. Não é apenas academia.
+3. Modalidades e objetivos.
+4. M.I.V.A.
+5. T.A.L. e T.A.R.
+6. Gestão por trás do treinamento.
+7. Experiência do morador.
+8. Conexão entre Hubs.
+9. Benefícios.
+10. Galeria real.
+11. FAQ.
+12. CTA.
+Hub Aquático
+1. Hero.
+2. Não é apenas piscina com aulas.
+3. Natação.
+4. Hidroginástica.
+5. Diferentes fases da vida.
+6. M.I.V.A. + aquático.
+7. Gestão operacional.
+8. Experiência.
+9. Conexão.
+10. Galeria.
+11. FAQ.
+12. CTA.
+Hub Esportivo
+1. Conceito.
+2. Futebol, infantil, FutCross, fundamentos, circuitos, jogos, atividades cognitivas e eventos.
+3. FutCross: Futebol + Movimento + Cognição; sem alegações científicas não sustentadas.
+4. Desenvolvimento.
+5. Comunidade.
+6. M.I.V.A.
+7. Eventos.
+8. Família.
+9. Conexão.
+10. Galeria, FAQ e CTA.
+9. CONSULTORIA ONLINE — OFERTAS
+Todos os valores: SOB CONSULTA.
+Plano
+Proposta
+Escopo
+M.I.V.A. • Essencial
+Treino personalizado
+Anamnese, prescrição individualizada, aplicativo, vídeos/orientações, suporte e acompanhamento.
+M.I.V.A. • Performance & Nutri
+Treino + nutrição
+Essencial + consulta nutricional e plano alimentar individualizado com Douglas.
+M.I.V.A. • Híbrido Start
+Início acompanhado
+Treino/app + 1–2 sessões presenciais na primeira semana no condomínio, conforme disponibilidade.
+M.I.V.A. • Executive VIP
+Ecossistema completo
+Avaliação física, bioimpedância, treino/app, atendimento presencial inicial, nutrição presencial e suporte prioritário.
+Jornada: anamnese → objetivos → planejamento → prescrição → execução → acompanhamento → ajustes → evolução.
+“Você não precisa de mais uma planilha.”
+“Tecnologia organiza. Pessoas acompanham.”
+Escopos comerciais devem permanecer configuráveis e ser validados antes da publicação.
+10. E-HUB NUTRITION
+H1: “Nutrição que acompanha o seu movimento.”
+“Atendimento nutricional, orientação e suplementação integrados ao ecossistema VITTA HUB.”
+“Não começamos pelo pote. Começamos pela pessoa.”
+Douglas Silva — Nutricionista
+• Consultas online.
+• Presencial mediante agendamento/composição da operação.
+• Avaliação e acompanhamento.
+• Orientação alimentar individualizada.
+• Integração com treinamento.
+• Suporte a praticantes, esportistas e clientes da consultoria.
+Suplementação
+• Curadoria
+• Probiótica
+• Whey
+• Creatina
+• Ômega 3
+• Kits
+• Loja virtual atual
+Fluxo: pessoa → necessidade → orientação → treino/nutrição → suplementação quando pertinente.
+O site aponta para a loja atual; não reconstruir o e-commerce neste projeto.
+Ordem visual: nutrição primeiro; loja em segundo.
+11. JORNADAS E CTAs
+Entrada
+Jornada
+Conversão
+Condomínio
+Gestão → Hubs → apresentação
+Solicitar apresentação
+Treino
+Consultoria → oferta → contato
+Conhecer a consultoria
+Nutrição
+E-Hub → Douglas → agendamento
+Falar com o nutricionista
+Suplementação
+E-Hub → loja atual
+Acessar loja virtual
+Conteúdo
+Artigo → autoridade → solução relacionada
+CTA contextual
+Regra: nenhuma página termina sem próximo passo claro, mas nem todo CTA precisa vender.
+12. SEO ESTRATÉGICO
+Volumes exatos, dificuldade e intenção devem ser validados por Keyword Planner, Search Console ou ferramenta SEO. Abaixo está o mapa estratégico.
+Página
+Keyword principal
+Secundárias
+Home
+assessoria esportiva
+assessoria esportiva para condomínios; gestão esportiva; atividades esportivas em condomínios; treinamento personalizado; saúde e bem-estar
+VITTA HUB
+assessoria esportiva integrada
+gestão esportiva; saúde; esporte; bem-estar
+Gestão
+gestão esportiva para condomínios
+assessoria esportiva para condomínios; gestão esportiva em condomínios; atividades esportivas para condomínios; gestão de áreas esportivas
+Hub Fitness
+treinamento em condomínio
+academia em condomínio; funcional em condomínio; musculação em condomínio; treinamento de força; longevidade ativa
+Hub Aquático
+natação em condomínio
+natação para condomínios; hidroginástica em condomínio; atividades aquáticas; treinamento aquático
+Hub Esportivo
+atividades esportivas em condomínios
+futebol infantil em condomínio; esporte infantil; atividades para crianças; desenvolvimento motor infantil; FutCross
+M.I.V.A.
+M.I.V.A. — Movimento Inteligente para uma Vida Ativa
+treinamento personalizado; treinamento inteligente; movimento e saúde; longevidade ativa; T.A.L.; T.A.R.
+Consultoria
+consultoria de treino online
+consultoria esportiva online; personal trainer online; treino personalizado online; acompanhamento de treino
+E-Hub
+nutrição esportiva
+nutricionista esportivo; consulta nutricional; plano alimentar; suplementos esportivos; whey; creatina; ômega 3
+Clusters
+• Gestão Esportiva
+• Condomínios
+• Treinamento
+• Longevidade
+• Esporte
+• Nutrição
+Artigos
+H1 → autor → data → atualização → imagem → conteúdo → H2/H3 → links internos → CTA → relacionados → FAQ quando útil.
+13. BENCHMARKING
+Referência
+Leitura estratégica
+RunFun
+Método, comunidade, performance, planos, feedback, app, depoimentos e páginas detalhadas.
+4Any1
+Corrida/treino, individualização, musculação e trekking.
+BMQ Sports
+Gestão esportiva para condomínios, modalidades, metodologia, operação e conteúdo editorial.
+MovaVida
+Gestão de estrutura esportiva em condomínios e atividades personalizadas.
+Prime
+Gestão esportiva para condomínios, empresas, escolas e eventos.
+Body Care
+Ecossistema de saúde e bem-estar, gestão de lazer, condomínios, empresas e escolas.
+CORE
+Gestão de academia, esporte/lazer, horários, acompanhamento e integração.
+Kinesis
+Solução para condomínios, gestão esportiva, eventos, recreação e modalidades.
+Conclusão: gestão esportiva isoladamente não basta como diferenciação. A proposta VITTA HUB está na integração entre governança, Hubs, M.I.V.A., tecnologia, acompanhamento, experiência, consultoria e nutrição.
+Não afirmar exclusividade de “ecossistema” nem ausência de concorrentes.
+14. UX/UI E DIREÇÃO VISUAL
+Direção: estrutura + movimento + pessoas + integração. Visual moderno, premium, esportivo, humano e profissional.
+Evitar
+• Pessoa musculosa genérica como centro do site.
+• Academia vazia.
+• Atleta isolado.
+• Pote de suplemento no hero.
+• Visual agressivo, gimmick, elitista ou exclusivamente estético.
+Header
+LOGO | VITTA HUB | CONDOMÍNIOS ▾ | M.I.V.A. | CONSULTORIA | E-HUB | CONTEÚDOS | EQUIPE | SOLICITAR APRESENTAÇÃO
+Transparente sobre hero e sólido no scroll.
+Tipografia e cor
+Sans-serif moderna; referências: Manrope, Inter, Plus Jakarta Sans ou Montserrat. Usar identidade visual existente e poucas cores.
+Mobile
+Experiência específica e barra fixa: Menu | WhatsApp | Apresentação.
+Acessibilidade
+Contraste, alt text, teclado, foco, labels e hierarquia semântica.
+Diretriz crítica
+O site comunica gestão e estrutura antes de comunicar estética ou treino individual.
+15. ESPECIFICAÇÃO TÉCNICA PARA DEV
+Componentes reutilizáveis
+• Header Desktop
+• Header Mobile
+• Dropdown Menu
+• Mobile Menu
+• Hero
+• CTA Primary / Secondary
+• Section Header
+• Cards
+• Hub Card
+• Plan Card
+• Team Card
+• Testimonial
+• FAQ Accordion
+• Article Card
+• Breadcrumb
+• Contact Form
+• WhatsApp Button
+• Footer
+• Mobile Bottom Bar
+CMS
+Título, slug, categoria, autor, publicação, atualização, imagem, resumo, conteúdo, CTA, FAQ, relacionados, SEO title, meta description e canonical.
+Formulário B2B
+Nome, Condomínio/Empresa, Cargo, Cidade, WhatsApp, E-mail, Interesse, Mensagem.
+Interesses: Gestão Esportiva, Hub Fitness, Hub Aquático, Hub Esportivo, Consultoria, Nutrição, Suplementação, Outro.
+Tracking
+Registrar origem, página, interesse e contexto do CTA.
+Eventos: form_submit, whatsapp_click, presentation_request, consultoria_interest, nutrition_contact, store_click, cta_click.
+Parâmetros: page_location, page_title, cta_name, cta_position, interest_type.
+WhatsApp
+Número centralizado e mensagens contextuais configuráveis.
+16. SEO TÉCNICO
+• Titles e meta descriptions.
+• URLs amigáveis.
+• H1/H2/H3.
+• Canonical.
+• Sitemap XML.
+• Robots.txt.
+• Open Graph.
+• Breadcrumbs.
+• Links internos.
+• Alt text.
+• Schema quando houver suporte: Organization, Person, Article, BreadcrumbList, FAQPage quando apropriado, WebSite.
+• Staging com noindex.
+• 301 das URLs antigas.
+LGPD e segurança
+• Tratamento adequado de dados nos formulários.
+• Política de privacidade e consentimento quando aplicável.
+• Proteção contra spam.
+• HTTPS.
+• Gestão segura de acessos.
+17. PERFORMANCE, ACESSIBILIDADE E QUALIDADE
+• WebP/AVIF quando compatível.
+• Lazy loading.
+• Imagens responsivas.
+• JavaScript mínimo.
+• Responsividade.
+• Contraste adequado.
+• Alt text.
+• Teclado.
+• Foco.
+• Labels.
+• Headings semânticos.
+• Atenção a Core Web Vitals.
+18. FOOTER
+FITNESS PERSONAL • VITTA HUB • ASSESSORIA ESPORTIVA
+Gestão Esportiva Integrada | Condomínios | M.I.V.A. | Consultoria Online | E-Hub Nutrition | Conteúdos | Equipe | Contato
+Links institucionais, privacidade, termos e canais oficiais; CTA de apresentação; WhatsApp; copyright e dados legais oficiais.
+19. MIGRAÇÃO E LANÇAMENTO
+1. Mapear URLs atuais.
+2. Definir URL antiga → nova.
+3. Configurar 301.
+4. Validar sitemap.
+5. Validar robots.
+6. Validar canonical.
+7. Revisar títulos/meta/H1.
+8. Testar formulários.
+9. Testar WhatsApp e CTAs.
+10. Validar GTM/GA4/Google Ads.
+11. Revisar mobile.
+12. Revisar acessibilidade.
+13. Revisar performance.
+14. Testar segurança.
+15. Publicar.
+16. Monitorar Search Console e analytics.
+Após o lançamento, acompanhar indexação, erros, conversões, cliques em CTAs e desempenho orgânico.
+20. CHECKLIST FINAL PARA O DEV
+Área
+Validação
+Marca
+FITNESS PERSONAL principal; VITTA HUB como estrutura integrada.
+Posicionamento
+Gestão Esportiva Integrada.
+B2B
+Condomínios como mercado prioritário.
+Hubs
+Fitness, Aquático e Esportivo como divisões operacionais.
+M.I.V.A.
+Transversal; não é produto nem modalidade.
+T.A.L.
+Autonomia e Longevidade.
+T.A.R.
+Alto Rendimento.
+Consultoria
+Quatro ofertas; valores sob consulta.
+Nutrição
+Douglas como nutricionista; online e presencial conforme operação.
+E-commerce
+Linkar loja atual.
+CTAs
+B2B apresentação; B2C consultoria; nutrição; loja.
+SEO
+Mapa estratégico validado por ferramenta.
+UX/UI
+Premium, humano, esportivo e estruturado.
+Mobile
+Menu | WhatsApp | Apresentação.
+Analytics
+GTM/GA4/Google Ads + eventos.
+SEO técnico
+Titles, metas, canonical, sitemap, robots, schema e redirects.
+Performance
+WebP/AVIF, lazy load, responsividade, JS mínimo.
+Acessibilidade
+Contraste, alt, teclado, foco, labels, headings.
+LGPD
+Formulários, privacidade e segurança.
+Migração
+301 e validação de URLs.
+21. PRINCÍPIO FINAL DO PROJETO
+“NÃO CONSTRUIR UM SITE DE PERSONAL TRAINER.”
+Construir a presença digital de uma assessoria esportiva integrada que possui gestão esportiva para condomínios como território central, Hubs como estrutura operacional, M.I.V.A. como metodologia transversal, Consultoria Online como extensão digital e E-Hub Nutrition como integração entre atendimento nutricional e suplementação.
+O site precisa fazer o visitante compreender, em poucos segundos, o que a VITTA HUB é, qual problema resolve e qual é o próximo passo adequado para seu perfil.
+A tecnologia organiza. A gestão integra. Os profissionais acompanham. A metodologia orienta. As pessoas estão no centro.
+FITNESS PERSONAL • VITTA HUB • ASSESSORIA ESPORTIVA

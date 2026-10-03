@@ -1,0 +1,6 @@
+import {ContentBrowser} from '@/components/content/content-browser';
+import {ArticleCard} from '@/components/content/article-card';
+import {publishedArticles} from '@/lib/articles';
+import {metadataFor} from '@/lib/seo';
+export const metadata=metadataFor('Conteúdos sobre Gestão Esportiva, Treinamento e Saúde | VITTA HUB','Conhecimento sobre gestão esportiva, condomínios, treinamento, esporte, bem-estar e nutrição, conectado ao ecossistema VITTA HUB.','/conteudos/');
+export default function ContentsPage(){const articles=publishedArticles();const featured=articles.find(a=>a.featured);return <main id="principal"><section className="page-hero"><div className="container"><nav className="breadcrumb" aria-label="Caminho da página"><ol><li><a href="/">Início</a></li><li aria-current="page">Conteúdos</li></ol></nav><span className="eyebrow">Conhecimento / Gestão / Movimento</span><h1>Conteúdos para colocar conhecimento em movimento.</h1><p className="page-lead">Um olhar integrado para a vida esportiva, dentro e fora do condomínio.</p></div></section><section className="section container">{featured&&<div className="featured-article"><span className="eyebrow">Em destaque</span><ArticleCard article={featured}/></div>}<ContentBrowser articles={articles}/></section></main>}
