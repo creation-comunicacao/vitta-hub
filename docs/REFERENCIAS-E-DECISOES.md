@@ -78,3 +78,10 @@ Instruções e confirmações do usuário na conversa prevalecem. Para a evoluç
 - Pedido atual: elevar experiência visual/interação dos três HUBs sem alterar qualquer texto. Confirmação por comparação literal do DOM antes/depois nas três rotas.
 - Conteúdo e painéis existentes preservados. Direção individual por esporte, com tipografia, composição e navegação comuns; integração B2B mantida.
 - Três imagens ilustrativas geradas por IA e otimizadas em WebP. Não representam clientes/equipe. Prompts, origem, comportamento e verificações em `HUBS-VISUAL-E-VERIFICACAO.md`.
+
+## Home cinematográfica — 05/10/2026
+- Pedido do usuário: evolução visual/interativa completa sem trocar textos, rotas ou cores dos Hubs. Auditoria e plano apresentados antes da implementação.
+- Conteúdo integral preservado: comparação DOM com 7.262 caracteres e 33 links idênticos. Mantidas as 12 seções, incluindo B2B, metodologia, consultoria, nutrição, equipe e conteúdos.
+- Hero contextual ampla, cenas sequenciais Fitness/Aquático/Esportivo, efeitos de scroll e cursor, convergência no CTA. Cores referenciam tokens existentes #ad117d / #2694bc / #e7ae00.
+- Imagens existentes como fallback. Vídeos ainda não fornecidos; slots opcionais sem requisições a arquivos ausentes. Especificações e verificações em `HOME-EXPERIENCIA.md`.
+- Sem nova biblioteca, sem alterações no backend PHP. Mobile simplificado e redução de movimento previstos. Publicação não realizada nesta etapa.
