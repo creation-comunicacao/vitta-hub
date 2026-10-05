@@ -1,3 +1,4 @@
+import { InteractiveHubHero, HubScene } from '@/components/sections/interactive-hub-hero';
 import { HubVisual } from '@/components/sections/ecosystem-visuals';
 import { hubDetails, type HubSlug } from '@/content/pages';
 import { PageHero, ContentSection, FeatureList, PageCTA, FAQSection } from './shared';
@@ -5,7 +6,7 @@ import { CTA } from '@/components/sections/ui';
 import { hubs } from '@/config/site';
 export function HubPage({slug}:{slug:HubSlug}) {
   const hub=hubDetails[slug];
-  return <><PageHero slug={slug} eyebrow={hub.eyebrow} lead={hub.lead} cta="Conhecer a Gestão" href="/gestao-esportiva-condominios/" visual={<HubVisual slug={slug}/>}><p>{hub.description}</p></PageHero>
+  return <div className={`hub-experience ${slug}`}><InteractiveHubHero slug={slug}><PageHero slug={slug} eyebrow={hub.eyebrow} lead={hub.lead} cta="Conhecer a Gestão" href="/gestao-esportiva-condominios/" visual={<><HubScene slug={slug}/><HubVisual slug={slug}/></>}><p>{hub.description}</p></PageHero></InteractiveHubHero>
   <ContentSection label="Atividades e possibilidades" title={hub.introTitle}><div className="editorial-split"><p className="large-copy">{hub.intro}</p><FeatureList items={hub.activities}/></div><p className="fine-print">A composição das atividades e da programação depende do projeto do condomínio.</p></ContentSection>
   <ContentSection label={slug==='hub-esportivo'?'FutCross':'Metodologia e acompanhamento'} title={hub.featureTitle} tone="soft-section"><div className="editorial-split"><p className="large-copy">{hub.feature}</p><div>{slug==='hub-fitness'?<><h3>Autonomia e desempenho, conforme o objetivo.</h3><p><strong>T.A.L.</strong> — Treinamento para Autonomia e Longevidade: consciência corporal, CORE, mobilidade e o básico bem executado.</p><p><strong>T.A.R.</strong> — Treinamento de Alto Rendimento: força, potência, velocidade, condicionamento e preparação física.</p></>:slug==='hub-esportivo'?<div className="futcross-system"><span>Futebol</span><b>+</b><span>Movimento</span><b>+</b><span>Cognição</span></div>:<FeatureList items={['Profissionais e horários conectados','Programação conforme os níveis','Comunicação e acompanhamento','Experiência integrada à gestão']}/>}<CTA secondary href="/miva/">Conhecer a M.I.V.A.</CTA></div></div></ContentSection>
   <ContentSection label="Diferentes perfis" title="O planejamento começa pelas pessoas."><div className="editorial-split"><div><p className="large-copy">Necessidades, objetivos e momentos de vida orientam a proposta de atividades.</p><p>O Hub faz parte da estrutura B2B da FITNESS PERSONAL • VITTA HUB. Profissionais, programação, comunicação e acompanhamento se conectam à gestão do condomínio.</p></div><FeatureList items={hub.groups}/></div></ContentSection>
@@ -17,5 +18,5 @@ export function HubPage({slug}:{slug:HubSlug}) {
     {question:'Como conhecer a proposta para meu condomínio?',answer:'A página de Gestão Esportiva apresenta a estrutura e a jornada de implantação. A solicitação de apresentação é o próximo passo comercial.'},
   ]}/>
   <PageCTA title="O próximo passo é conhecer a gestão." text="Entenda como este Hub pode integrar o ecossistema esportivo do seu condomínio." label="Conhecer a Gestão" href="/gestao-esportiva-condominios/" secondary={{label:'Solicitar apresentação',href:'/contato/?interesse=gestao-esportiva'}}/>
-  </>;
+  </div>;
 }

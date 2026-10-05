@@ -73,3 +73,8 @@ Instruções e confirmações do usuário na conversa prevalecem. Para a evoluç
 - M.I.V.A. conecta visualmente quatro pilares a Hubs, consultoria e nutrição. Consultoria mostra Pessoa → Profissional → App → Acompanhamento → Evolução. E-Hub destaca avaliação/orientação/acompanhamento antes da suplementação.
 - Fotos reais de operação/equipe/condomínios não foram fornecidas. O hero anterior, gerado por IA, permanece temporariamente com indicação visível de imagem ilustrativa. Não representa um cliente atendido. Não declarar atendido o critério de imagens reais.
 - Revisão local, sem publicação automática desta mudança de direção visual.
+
+## Evolução das Heroes dos HUBs — 05/10/2026
+- Pedido atual: elevar experiência visual/interação dos três HUBs sem alterar qualquer texto. Confirmação por comparação literal do DOM antes/depois nas três rotas.
+- Conteúdo e painéis existentes preservados. Direção individual por esporte, com tipografia, composição e navegação comuns; integração B2B mantida.
+- Três imagens ilustrativas geradas por IA e otimizadas em WebP. Não representam clientes/equipe. Prompts, origem, comportamento e verificações em `HUBS-VISUAL-E-VERIFICACAO.md`.

@@ -3,6 +3,7 @@ import { StructuredData } from '@/components/sections/structured-data';
 import type { Metadata } from 'next';
 import './globals.css';
 import './institutional.css';
+import './hub-experience.css';
 import { Header } from '@/components/layout/navigation';
 import { Footer } from '@/components/layout/footer';
 import { siteConfig } from '@/config/site';
