@@ -22,7 +22,7 @@ O comando `npm run build` mantém a compilação normal da aplicação. Gerar a 
 
 Home, nove páginas do negócio, contato adaptativo e índice editorial implementados. Modelo de artigo preparado; nenhum artigo fictício publicado. Política e termos aguardam conteúdo aprovado. Formulário permite conferir preenchimento, mas só enviará após configuração real e política aprovada. WhatsApp e loja dependem de URLs oficiais. Analytics preparado, sem coleta ativa ou GA4/GTM conectado.
 
-Pacote em `locaweb/`, com `public/` e `private/` separados. Nunca colocar configuração privada na pasta pública. Staging noindex por padrão; domínio, indexação e dados reais exigem configuração. Sem publicação nesta rodada. Hero ilustrativo gerado por IA; identidade e fotografias oficiais continuam pendentes.
+Pacote em `locaweb/`, com `public/` e `private/` separados. Nunca colocar configuração privada na pasta pública. Staging noindex por padrão; domínio, indexação e dados reais exigem configuração. Sem publicação nesta rodada. Logo oficial recebido e aplicado; Hero ilustrativo gerado por IA, com indicação visível. Fotografias reais autorizadas e manual de identidade continuam pendentes. Revisão de direção institucional em `docs/REVISAO-VISUAL.md`.
 
 ## Vercel
 

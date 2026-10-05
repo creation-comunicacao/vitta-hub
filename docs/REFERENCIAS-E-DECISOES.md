@@ -25,7 +25,7 @@ Instruções e confirmações do usuário na conversa prevalecem. Para a evoluç
 - Executive VIP: **primeira semana presencial + nutrição presencial**, confirmado expressamente pelo usuário nesta conversa. Demais itens: avaliação, bioimpedância, treino/app e suporte prioritário. Todos os valores sob consulta.
 
 ## Dependências ainda abertas
-- Logo, códigos de cor, tipografia e fotografias oficiais.
+- Logo recebido em 05/10/2026. Manual com códigos de cor, tipografia e fotografias oficiais ainda pendentes.
 - Galerias reais dos Hubs e retratos das lideranças: não substituir por fotos fictícias de equipe/clientes. Blocos de galeria não são exibidos enquanto não houver imagens autorizadas.
 - WhatsApp comercial, e-mail, domínio, URL da loja, destino de leads/CRM.
 - Textos legais aprovados, dados cadastrais reais, configurações de analytics.
@@ -62,3 +62,14 @@ Instruções e confirmações do usuário na conversa prevalecem. Para a evoluç
 - Adicionados `build:vercel` (`next build`), `start:vercel` e `vercel.json`; builds locais Vinext e pacote Locaweb preservados.
 - Frontend React/TypeScript/Tailwind mantido. A configuração Vercel cobre o frontend; PHP continua como serviço separado. A conexão depende da URL real e configuração de proxy/sessão.
 - Procedimento em `docs/VERCEL.md`; política e envio real permanecem pendentes.
+
+## Revisão de direção visual — 05/10/2026
+- O usuário reiterou o Pacote Master §1 e §§22–23: plataforma institucional/comercial com prioridade para gestão esportiva de condomínios. A implementação deve comunicar gestão, movimento, pessoas e integração visualmente.
+- PDF `logo_fitness_personal_uniforme_vitahub.pdf`, 2 páginas: marca completa e símbolo. Arte exportada sem redesenho para `public/brand/`; as proporções e cores do original foram preservadas. Os acentos da interface são uma interpretação cromática do arquivo, sem alegar equivalência a códigos oficiais de um manual.
+- Confirmação expressa do usuário: preservar “VITA HUB” na arte original e manter “VITTA HUB” nos textos por enquanto.
+- Paleta provisória verde substituída por base institucional clara/grafite e acentos de magenta, azul e amarelo derivados da marca.
+- Home e Gestão mostram mapa integrado de Hubs, profissionais, programação, comunicação, acompanhamento e experiência do morador. Nenhum dashboard, estatística ou resultado fictício foi criado.
+- Hubs usam o mesmo componente, com identidade por cor e atividade; todos vinculados à mesma gestão.
+- M.I.V.A. conecta visualmente quatro pilares a Hubs, consultoria e nutrição. Consultoria mostra Pessoa → Profissional → App → Acompanhamento → Evolução. E-Hub destaca avaliação/orientação/acompanhamento antes da suplementação.
+- Fotos reais de operação/equipe/condomínios não foram fornecidas. O hero anterior, gerado por IA, permanece temporariamente com indicação visível de imagem ilustrativa. Não representa um cliente atendido. Não declarar atendido o critério de imagens reais.
+- Revisão local, sem publicação automática desta mudança de direção visual.
