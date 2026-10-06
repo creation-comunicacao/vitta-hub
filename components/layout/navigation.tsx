@@ -5,7 +5,7 @@ import { Menu, MessageCircle, CalendarDays, ChevronDown, X } from 'lucide-react'
 import { Sheet, SheetTrigger, SheetContent, SheetTitle, SheetDescription, SheetClose } from '@/components/ui/sheet';
 import { DropdownMenu, DropdownMenuTrigger, DropdownMenuContent, DropdownMenuItem } from '@/components/ui/dropdown-menu';
 import { navigation, hubs, presentationHref } from '@/config/site';
-export function Brand() { return <a href="/" className="brand" aria-label="Fitness Personal • Vitta Hub — início"><img src="/brand/fitness-personal.png" width="1680" height="630" alt="Fitness Personal — VITA HUB · Assessoria Esportiva"/></a>; }
+export function Brand() { return <a href="/" className="brand" aria-label="Fitness Personal • Vitta Hub — início"><img src="/brand/fitness-personal-transparent.svg" width="1680" height="630" alt="Fitness Personal — VITA HUB · Assessoria Esportiva"/></a>; }
 export function Header() {
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);

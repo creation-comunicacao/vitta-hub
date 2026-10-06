@@ -46,3 +46,14 @@ Carregamento: preload=none, src atribuído apenas quando visível e em desktop s
 - Build Next/Vercel, TypeScript e lint aprovados. Comparação literal de textos/links aprovada.
 - LCP, CLS, INP, FPS, memória e CPU/GPU em dispositivos reais e Lighthouse de produção ainda precisam de medição após a inclusão dos vídeos. Não declarar notas ou metas atingidas sem medição.
 - Navegador: 320, 375, 430, 768, 1024 e 1440px sem overflow horizontal; um H1, três cenas, nenhum vídeo solicitado e nenhuma imagem concluída com erro. Inspeção visual de Hero desktop/mobile e cenas Fitness/Aquático.
+
+## Intro da Hero — 06/10/2026
+- Abertura inspirada no comportamento de Gemini Car, adaptada à imagem contextual existente. Nenhum novo asset, vídeo, biblioteca ou cópia de layout.
+- Mesma imagem /hero-1200.webp com srcSet original, uma única instância no DOM. Removido o slot de vídeo da Hero principal; os slots dos HUBs permanecem.
+- Máscara central expande em 1.45s; camada de câmera vai de scale(1.23) para 1 em 1.8s. Título começa em 0.8s, descrição em 1.1s, CTAs/secundários em 1.4s. Final em aproximadamente 2.05s.
+- Mobile: escala inicial 1.12, máscara mais ampla e expansão em 1.15s. Valores definidos após inspeção da composição existente.
+- Intro em CSS, inicializada no HTML para evitar flash de conteúdo seguido de ocultação. Sem JS, as animações terminam normalmente. prefers-reduced-motion não executa a intro.
+- Camada hero-camera pertence à intro; imagem interna pertence ao scroll/parallax. Cursor e progresso da abertura não são atualizados durante a intro. Após o término, a camada externa retorna a transform:none e a máscara a none.
+- Wheel, touchmove, navegação por teclado, foco e scroll real encerram a intro sem preventDefault. Restauração de scroll/hash inicia no estado final. Listeners/timer removidos no cleanup.
+- Verificado no navegador: estado inicial com máscara e scale, estado final sem máscara/transform, uma imagem, texto integral idêntico, interrupção por wheel (scrollY=200 e progresso 0.4325) e Tab. Inspeção visual desktop/mobile. Build Next, TypeScript, lint e diff-check aprovados.
+- O contrato anterior de vídeo vitta-hero é supersedido: a primeira experiência utiliza somente a imagem existente, conforme nova orientação.

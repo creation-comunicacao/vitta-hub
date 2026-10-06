@@ -105,3 +105,38 @@
 @media(max-width:600px){.home-experience .hero-note strong{display:block;line-height:1.7}.home-experience .institutional-hero .hero-visual:after{background:linear-gradient(180deg,#101722bf 5%,#101722bf 55%,#10172255 75%,var(--ink) 100%)}}
 .home-hubs .hub-1:hover>.text-link{background:var(--ink);color:white;border-color:var(--brand-sky)}
 .media-sports img{object-position:68% top}
+/* Intro and scroll own separate layers: camera wrapper versus inner image. */
+.home-experience .hero-camera{position:absolute;inset:0;overflow:hidden;transform-origin:65% 45%}
+@keyframes vitta-intro-mask{0%{clip-path:inset(24% 34% 24% 34% round 5px)}25%{clip-path:inset(20% 29% 20% 29% round 5px)}100%{clip-path:inset(0% 0% 0% 0% round 0px)}}
+@keyframes vitta-intro-camera{from{transform:scale(1.23) translate3d(-1.5%,1%,0)}to{transform:scale(1) translate3d(0,0,0)}}
+@keyframes vitta-intro-title{from{opacity:0;clip-path:inset(0 0 100% 0);transform:translate3d(0,32px,0)}to{opacity:1;clip-path:inset(0 0 0% 0);transform:translate3d(0,0,0)}}
+@keyframes vitta-intro-copy{from{opacity:0;transform:translate3d(0,14px,0)}to{opacity:1;transform:translate3d(0,0,0)}}
+@keyframes vitta-intro-secondary{from{opacity:0;transform:translate3d(0,8px,0)}to{opacity:1;transform:translate3d(0,0,0)}}
+@media(prefers-reduced-motion:no-preference){
+.home-opening[data-intro=playing] .hero-visual{animation:vitta-intro-mask 1450ms cubic-bezier(.22,.75,.18,1) both}
+.home-opening[data-intro=playing] .hero-camera{animation:vitta-intro-camera 1800ms cubic-bezier(.2,.65,.2,1) both;will-change:transform}
+.home-opening[data-intro=playing] .hero-copy h1{animation:vitta-intro-title 800ms cubic-bezier(.2,.8,.2,1) 800ms backwards}
+.home-opening[data-intro=playing] .hero-copy>.eyebrow{animation:vitta-intro-copy 600ms ease 850ms backwards}
+.home-opening[data-intro=playing] .hero-copy>p{animation:vitta-intro-copy 650ms ease 1100ms backwards}
+.home-opening[data-intro=playing] .hero-copy .actions,.home-opening[data-intro=playing] .hero-note,.home-opening[data-intro=playing] .hero-operation,.home-opening[data-intro=playing] .image-caption,.home-opening[data-intro=playing] .image-tag,.home-opening[data-intro=playing] .image-disclosure{animation:vitta-intro-copy 600ms ease 1400ms backwards}
+.home-opening[data-intro=playing] .hero-bottom{animation:vitta-intro-secondary 600ms ease 1450ms backwards}
+}
+@media(max-width:600px) and (prefers-reduced-motion:no-preference){
+@keyframes vitta-intro-mask{from{clip-path:inset(16% 16% 38% 16% round 4px)}to{clip-path:inset(0% 0% 0% 0% round 0px)}}
+@keyframes vitta-intro-camera{from{transform:scale(1.12) translate3d(0,1%,0)}to{transform:scale(1) translate3d(0,0,0)}}
+.home-opening[data-intro=playing] .hero-visual{animation-duration:1150ms}
+.home-opening[data-intro=playing] .hero-camera{animation-duration:1450ms}
+}
+/* Full-bleed opening experiment: image starts at the top, behind navigation. */
+body:has(.home-experience) .site-header{position:fixed;inset:0 0 auto;background:linear-gradient(180deg,#101722a6,transparent);color:white;box-shadow:none}
+body:has(.home-experience) .site-header.scrolled{background:white;color:var(--ink);box-shadow:var(--shadow)}
+body:has(.home-experience) .site-header:not(.scrolled) .nav-trigger{color:white}
+body:has(.home-experience) .site-header:not(.scrolled) .header-cta{background:white;color:var(--ink);border-color:white}
+body:has(.home-experience) .site-header .brand{padding:8px 12px;border-radius:3px}
+.home-experience .institutional-hero{min-height:100svh;justify-content:flex-start}
+.home-experience .institutional-hero .hero-grid{min-height:100svh;padding-top:155px;padding-bottom:205px}
+.home-experience .institutional-hero .image-tag{top:125px}
+.home-experience .institutional-hero h1{font-size:clamp(52px,5.7vw,88px)}
+@media(min-width:901px) and (max-height:850px){.home-experience .institutional-hero .hero-grid{padding-top:135px}.home-experience .institutional-hero h1{font-size:clamp(48px,5vw,70px)}}
+@media(max-width:900px){.home-experience .institutional-hero .hero-grid{padding-top:155px;padding-bottom:280px}.home-experience .institutional-hero .image-tag{top:112px}.home-experience .institutional-hero h1{font-size:clamp(43px,7.5vw,68px)}}
+@media(max-width:600px){.home-experience .institutional-hero .hero-grid{padding-top:155px;padding-bottom:310px;min-height:100svh}.home-experience .institutional-hero .image-tag{top:108px}.home-experience .institutional-hero h1{font-size:clamp(40px,11.2vw,62px)}}

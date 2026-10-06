@@ -11,13 +11,34 @@ export function HomeExperience({ children }: { children: ReactNode }) {
     const reduced = matchMedia('(prefers-reduced-motion: reduce)');
     const desktop = matchMedia('(min-width: 901px) and (pointer: fine)');
     const sections = [...host.querySelectorAll<HTMLElement>('[data-home-scene], .home-chapter, .final-cta')];
+    const opening = host.querySelector<HTMLElement>('.home-opening');
+    let introTimer: ReturnType<typeof setTimeout>;
+    const finishIntro = () => {
+      if (opening) opening.dataset.intro = 'done';
+      clearTimeout(introTimer);
+    };
+    const introEnd = (event: AnimationEvent) => {
+      if (event.animationName === 'vitta-intro-secondary') finishIntro();
+    };
+    const introKey = (event: KeyboardEvent) => {
+      if (['Tab', 'ArrowDown', 'ArrowUp', 'PageDown', 'PageUp', 'Home', 'End', ' '].includes(event.key)) finishIntro();
+    };
+    if (reduced.matches || window.scrollY > 8 || location.hash) finishIntro();
+    else introTimer = setTimeout(finishIntro, 2300);
+    opening?.addEventListener('animationend', introEnd);
+    opening?.addEventListener('focusin', finishIntro);
+    window.addEventListener('wheel', finishIntro, { passive: true });
+    window.addEventListener('touchmove', finishIntro, { passive: true });
+    window.addEventListener('keydown', introKey);
     const active = new Set<HTMLElement>();
     let frame = 0;
     let x = 0, y = 0;
     const update = () => {
       frame = 0;
       if (reduced.matches) return;
+      if (window.scrollY > 8) finishIntro();
       for (const section of active) {
+        if (section === opening && opening.dataset.intro === 'playing') continue;
         const rect = section.getBoundingClientRect();
         const p = Math.max(0, Math.min(1, (innerHeight * .25 - rect.top) / Math.max(1, rect.height - innerHeight * .5)));
         section.style.setProperty('--scene-progress', p.toFixed(4));
@@ -43,6 +64,7 @@ export function HomeExperience({ children }: { children: ReactNode }) {
     };
     const reset = () => { x = 0; y = 0; schedule(); };
     const preference = () => {
+      finishIntro();
       for (const section of sections) {
         section.style.removeProperty('--scene-progress');
         section.style.removeProperty('--mouse-x');
@@ -58,6 +80,12 @@ export function HomeExperience({ children }: { children: ReactNode }) {
     desktop.addEventListener('change', preference);
     return () => {
       observer.disconnect(); cancelAnimationFrame(frame);
+      finishIntro();
+      opening?.removeEventListener('animationend', introEnd);
+      opening?.removeEventListener('focusin', finishIntro);
+      window.removeEventListener('wheel', finishIntro);
+      window.removeEventListener('touchmove', finishIntro);
+      window.removeEventListener('keydown', introKey);
       window.removeEventListener('scroll', schedule); window.removeEventListener('resize', schedule);
       host.removeEventListener('pointermove', move); host.removeEventListener('pointerleave', reset);
       reduced.removeEventListener('change', preference); desktop.removeEventListener('change', preference);

@@ -85,3 +85,17 @@ Instruções e confirmações do usuário na conversa prevalecem. Para a evoluç
 - Hero contextual ampla, cenas sequenciais Fitness/Aquático/Esportivo, efeitos de scroll e cursor, convergência no CTA. Cores referenciam tokens existentes #ad117d / #2694bc / #e7ae00.
 - Imagens existentes como fallback. Vídeos ainda não fornecidos; slots opcionais sem requisições a arquivos ausentes. Especificações e verificações em `HOME-EXPERIENCIA.md`.
 - Sem nova biblioteca, sem alterações no backend PHP. Mobile simplificado e redução de movimento previstos. Publicação não realizada nesta etapa.
+
+## Intro inicial — 06/10/2026
+- Pedido específico: manter a imagem atual da Hero e criar abertura por máscara/escala, sem vídeo. Implementada sequência ~2s, com tipografia e CTAs escalonados.
+- Scroll nativo livre; interação antecipada encerra intro. Intro e scroll controlam camadas distintas. Mobile simplificado e prefers-reduced-motion respeitado.
+- Textos, imagem e destinos preservados. Verificações e decisões em `HOME-EXPERIENCIA.md`.
+
+## Teste da Hero até o topo — 06/10/2026
+- Imagem existente passa a começar no topo da janela e ocupar toda a largura, atrás da navegação. Header transparente no início e branco após scroll, somente na Home.
+- Mantidos imagem, textos, intro e destinos. Espaço superior protege o conteúdo do menu; em telas pequenas a altura cresce conforme a leitura, sem cortar conteúdo.
+- Variação local para revisão visual do usuário.
+
+## Logo sem fundo — 06/10/2026
+- Arte vetorial extraída do PDF original para `public/brand/fitness-personal-transparent.svg`, com transparência e letras convertidas em paths pelo exportador. Sem redesenho ou troca de cores.
+- Brand passa a utilizar o SVG; removido fundo branco do CSS. PNG anterior preservado.
