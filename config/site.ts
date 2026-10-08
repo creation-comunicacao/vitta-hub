@@ -3,7 +3,7 @@ if (officialUrl && (!/^https:\/\/[^/]+$/.test(officialUrl) || new URL(officialUr
 export const siteConfig = {
   name: 'FITNESS PERSONAL • VITTA HUB • ASSESSORIA ESPORTIVA',
   url: officialUrl,
-  whatsapp: process.env.NEXT_PUBLIC_WHATSAPP || '', email: process.env.NEXT_PUBLIC_CONTACT_EMAIL || '', instagram: process.env.NEXT_PUBLIC_INSTAGRAM || '', storeUrl: process.env.NEXT_PUBLIC_STORE_URL || '',
+  whatsapp: process.env.NEXT_PUBLIC_WHATSAPP || '551141465843', email: process.env.NEXT_PUBLIC_CONTACT_EMAIL || 'vitahub@fitnesspersonal.com.br', instagram: process.env.NEXT_PUBLIC_INSTAGRAM || '', storeUrl: process.env.NEXT_PUBLIC_STORE_URL || '',
   indexable: process.env.SITE_INDEXABLE === 'true' && !!officialUrl,
 };
 export const navigation = [

@@ -24,7 +24,7 @@ export function HomeExperience({ children }: { children: ReactNode }) {
       if (['Tab', 'ArrowDown', 'ArrowUp', 'PageDown', 'PageUp', 'Home', 'End', ' '].includes(event.key)) finishIntro();
     };
     if (reduced.matches || window.scrollY > 8 || location.hash) finishIntro();
-    else introTimer = setTimeout(finishIntro, 2300);
+    else introTimer = setTimeout(finishIntro, 2700);
     opening?.addEventListener('animationend', introEnd);
     opening?.addEventListener('focusin', finishIntro);
     window.addEventListener('wheel', finishIntro, { passive: true });
@@ -40,10 +40,12 @@ export function HomeExperience({ children }: { children: ReactNode }) {
       for (const section of active) {
         if (section === opening && opening.dataset.intro === 'playing') continue;
         const rect = section.getBoundingClientRect();
-        const p = Math.max(0, Math.min(1, (innerHeight * .25 - rect.top) / Math.max(1, rect.height - innerHeight * .5)));
+        // The opening starts exactly at zero: no scale jump on the first pointer event.
+        const start = section === opening ? 0 : innerHeight * .25;
+        const p = Math.max(0, Math.min(1, (start - rect.top) / Math.max(1, rect.height - innerHeight * .5)));
         section.style.setProperty('--scene-progress', p.toFixed(4));
-        section.style.setProperty('--mouse-x', `${desktop.matches ? x : 0}px`);
-        section.style.setProperty('--mouse-y', `${desktop.matches ? y : 0}px`);
+        section.style.setProperty('--mouse-x', `${desktop.matches ? x * (section === opening ? .55 : 1) : 0}px`);
+        section.style.setProperty('--mouse-y', `${desktop.matches ? y * (section === opening ? .55 : 1) : 0}px`);
       }
       host.style.setProperty('--reading-progress', `${scrollY / Math.max(1, document.documentElement.scrollHeight - innerHeight)}`);
     };
@@ -57,7 +59,7 @@ export function HomeExperience({ children }: { children: ReactNode }) {
     }, { rootMargin: '120px' });
     sections.forEach(section => observer.observe(section));
     const move = (event: PointerEvent) => {
-      if (!desktop.matches) return;
+      if (!desktop.matches || opening?.dataset.intro === 'playing') return;
       x = (event.clientX / innerWidth - .5) * 14;
       y = (event.clientY / innerHeight - .5) * 10;
       schedule();

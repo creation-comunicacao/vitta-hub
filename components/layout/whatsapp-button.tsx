@@ -1,10 +1,13 @@
 'use client';
-import {useEffect,useState,type ReactNode} from 'react';
+import {Suspense,type ReactNode} from 'react';
+import {usePathname,useSearchParams} from 'next/navigation';
 import {whatsappHref} from '@/config/site';
-export function WhatsAppButton({children}:{children?:ReactNode}){
- const [kind,setKind]=useState<'gestao'|'consultoria'|'nutricao'>('gestao');
- // URL só existe após a hidratação do HTML estático; sincronização inicial intencional.
- // eslint-disable-next-line react-hooks/set-state-in-effect
- useEffect(()=>{const path=location.pathname;const interest=new URLSearchParams(location.search).get('interesse');setKind(path.includes('consultoria')||interest==='consultoria'?'consultoria':path.includes('nutrition')||interest==='nutricao'||interest==='suplementacao'?'nutricao':'gestao');},[]);
+function ContextualWhatsApp({children}:{children?:ReactNode}) {
+ const path=usePathname() || '';
+ const interest=useSearchParams().get('interesse');
+ const kind=path.includes('consultoria')||interest==='consultoria'?'consultoria':path.includes('nutrition')||interest==='nutricao'||interest==='suplementacao'?'nutricao':'gestao';
  return <a href={whatsappHref(kind)} data-channel="whatsapp">{children||'WhatsApp'}</a>;
+}
+export function WhatsAppButton({children}:{children?:ReactNode}){
+ return <Suspense fallback={<a href={whatsappHref()} data-channel="whatsapp">{children||'WhatsApp'}</a>}><ContextualWhatsApp>{children}</ContextualWhatsApp></Suspense>;
 }

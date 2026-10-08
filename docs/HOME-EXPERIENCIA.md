@@ -57,3 +57,11 @@ Carregamento: preload=none, src atribuído apenas quando visível e em desktop s
 - Wheel, touchmove, navegação por teclado, foco e scroll real encerram a intro sem preventDefault. Restauração de scroll/hash inicia no estado final. Listeners/timer removidos no cleanup.
 - Verificado no navegador: estado inicial com máscara e scale, estado final sem máscara/transform, uma imagem, texto integral idêntico, interrupção por wheel (scrollY=200 e progresso 0.4325) e Tab. Inspeção visual desktop/mobile. Build Next, TypeScript, lint e diff-check aprovados.
 - O contrato anterior de vídeo vitta-hero é supersedido: a primeira experiência utiliza somente a imagem existente, conforme nova orientação.
+
+## Refinamento da intro existente — 06/10/2026
+- Evoluída a mesma implementação CSS/React; sem nova dependência, wrapper, timeline ou listener. Navbar, logo, textos, botões, imagem e páginas dos Hubs não foram alterados.
+- Moldura inicial mais ampla para incluir a profissional à direita e a moradora central. Pausa inicial curta (15% da expansão); expansão 1.8s, câmera 1.16→1 em 2.15s; título 1.1s, descrição 1.4s, CTAs 1.7s, secundários 1.9s; final ~2.45s.
+- Mobile: câmera 1.07→1, expansão 1.35s e sequência final ~1.95s. Sem tracking de mouse. Reduced-motion mantém estado estático sem expansão/parallax.
+- Corrigido progresso inicial da Hero: zero no topo, em vez do avanço de 25% da viewport usado nas cenas seguintes. Isso elimina mudança de escala no primeiro evento após intro. Câmera retorna a identidade; imagem interna mantém seu transform de base.
+- Mouse ignorado durante intro e limitado na Hero a aproximadamente ±3.85px horizontal / ±2.75px vertical após conclusão; comportamento das outras cenas mantido.
+- Verificações: build Next/TypeScript e lint aprovados; inspeção desktop 1440×1000 e mobile 375×812; uma imagem no DOM, conteúdo literal preservado, conclusão sem máscara/transform externo; scroll antecipado encerra intro e continua naturalmente (162.5px observados), sem overflow mobile.

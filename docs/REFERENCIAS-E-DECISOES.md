@@ -99,3 +99,18 @@ Instruções e confirmações do usuário na conversa prevalecem. Para a evoluç
 ## Logo sem fundo — 06/10/2026
 - Arte vetorial extraída do PDF original para `public/brand/fitness-personal-transparent.svg`, com transparência e letras convertidas em paths pelo exportador. Sem redesenho ou troca de cores.
 - Brand passa a utilizar o SVG; removido fundo branco do CSS. PNG anterior preservado.
+
+## Refinamento de abertura — 06/10/2026
+- Novo briefing aplicado à intro existente: enquadramento inicial ampliado, câmera mais sutil, conteúdo escalonado e duração 2.45s desktop / 1.95s mobile.
+- Correção de continuidade: progresso inicial da Hero igual a zero; cursor não acumula movimento durante intro. Sem alteração de imagem, copy, navbar/logo, CTAs, rotas ou Hubs.
+
+## Canais oficiais fornecidos — 08/10/2026
+- WhatsApp informado: (11) 4146-5843; link internacional centralizado: 551141465843 (Brasil +55, sem adicionar nono dígito).
+- E-mail: vitahub@fitnesspersonal.com.br. Disponível no contato e no rodapé via mailto.
+- Valores públicos definidos como padrão em config/site.ts, com override pelas variáveis existentes. .env.example atualizado; configuração funciona também no deploy sem variáveis adicionais.
+- Conforme Briefing Master §15 e Consolidação: WhatsApp complementar com mensagens contextuais de gestão, consultoria e nutrição. Barra mobile e rodapé acompanham rota/parâmetros; suplementação direciona à orientação nutricional.
+- Nenhuma mensagem enviada. E-mail público não configura automaticamente o transporte ou habilita o formulário PHP; permanecem pendentes servidor/remetente e políticas oficiais.
+
+### Continuidade cromática dos HUBs — 08/10/2026
+
+A pedido do usuário, o header de cada HUB acompanha exatamente o fundo da sua Hero: ameixa no Fitness, azul petróleo no Aquático e oliva no Esportivo. As seções seguintes usam variações claras da mesma paleta, incluindo os cards de conexão, FAQ e CTA. A barra mobile acompanha a tonalidade. Regras restritas às três páginas, preservando textos, imagens, logo original e interações.

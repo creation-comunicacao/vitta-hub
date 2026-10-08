@@ -105,27 +105,36 @@
 @media(max-width:600px){.home-experience .hero-note strong{display:block;line-height:1.7}.home-experience .institutional-hero .hero-visual:after{background:linear-gradient(180deg,#101722bf 5%,#101722bf 55%,#10172255 75%,var(--ink) 100%)}}
 .home-hubs .hub-1:hover>.text-link{background:var(--ink);color:white;border-color:var(--brand-sky)}
 .media-sports img{object-position:68% top}
-/* Intro and scroll own separate layers: camera wrapper versus inner image. */
-.home-experience .hero-camera{position:absolute;inset:0;overflow:hidden;transform-origin:65% 45%}
-@keyframes vitta-intro-mask{0%{clip-path:inset(24% 34% 24% 34% round 5px)}25%{clip-path:inset(20% 29% 20% 29% round 5px)}100%{clip-path:inset(0% 0% 0% 0% round 0px)}}
-@keyframes vitta-intro-camera{from{transform:scale(1.23) translate3d(-1.5%,1%,0)}to{transform:scale(1) translate3d(0,0,0)}}
-@keyframes vitta-intro-title{from{opacity:0;clip-path:inset(0 0 100% 0);transform:translate3d(0,32px,0)}to{opacity:1;clip-path:inset(0 0 0% 0);transform:translate3d(0,0,0)}}
-@keyframes vitta-intro-copy{from{opacity:0;transform:translate3d(0,14px,0)}to{opacity:1;transform:translate3d(0,0,0)}}
-@keyframes vitta-intro-secondary{from{opacity:0;transform:translate3d(0,8px,0)}to{opacity:1;transform:translate3d(0,0,0)}}
+/* One intro, independent camera and scroll layers; final camera state is identity. */
+.home-experience .hero-camera{position:absolute;inset:0;overflow:hidden;transform-origin:65% 35%}
+@keyframes vitta-intro-mask{0%,15%{clip-path:inset(8% 4% 30% 4% round 14px)}100%{clip-path:inset(0% 0% 0% 0% round 0px)}}
+@keyframes vitta-intro-camera{from{transform:scale(1.16) translate3d(-.7%,.4%,0)}to{transform:scale(1) translate3d(0,0,0)}}
+@keyframes vitta-intro-title{from{opacity:0;clip-path:inset(0 0 100% 0);transform:translate3d(0,24px,0)}to{opacity:1;clip-path:inset(0 0 0% 0);transform:translate3d(0,0,0)}}
+@keyframes vitta-intro-copy{from{opacity:0;transform:translate3d(0,10px,0)}to{opacity:1;transform:translate3d(0,0,0)}}
+@keyframes vitta-intro-secondary{from{opacity:0;transform:translate3d(0,6px,0)}to{opacity:1;transform:translate3d(0,0,0)}}
+@keyframes vitta-intro-light{from{opacity:0}to{opacity:.32}}
 @media(prefers-reduced-motion:no-preference){
-.home-opening[data-intro=playing] .hero-visual{animation:vitta-intro-mask 1450ms cubic-bezier(.22,.75,.18,1) both}
-.home-opening[data-intro=playing] .hero-camera{animation:vitta-intro-camera 1800ms cubic-bezier(.2,.65,.2,1) both;will-change:transform}
-.home-opening[data-intro=playing] .hero-copy h1{animation:vitta-intro-title 800ms cubic-bezier(.2,.8,.2,1) 800ms backwards}
-.home-opening[data-intro=playing] .hero-copy>.eyebrow{animation:vitta-intro-copy 600ms ease 850ms backwards}
-.home-opening[data-intro=playing] .hero-copy>p{animation:vitta-intro-copy 650ms ease 1100ms backwards}
-.home-opening[data-intro=playing] .hero-copy .actions,.home-opening[data-intro=playing] .hero-note,.home-opening[data-intro=playing] .hero-operation,.home-opening[data-intro=playing] .image-caption,.home-opening[data-intro=playing] .image-tag,.home-opening[data-intro=playing] .image-disclosure{animation:vitta-intro-copy 600ms ease 1400ms backwards}
-.home-opening[data-intro=playing] .hero-bottom{animation:vitta-intro-secondary 600ms ease 1450ms backwards}
+.home-opening[data-intro=playing] .hero-visual{animation:vitta-intro-mask 1800ms cubic-bezier(.45,0,.15,1) both}
+.home-opening[data-intro=playing] .hero-camera{animation:vitta-intro-camera 2150ms cubic-bezier(.22,.65,.2,1) both;will-change:transform}
+.home-opening[data-intro=playing] .home-hero-light{animation:vitta-intro-light 1500ms ease 450ms backwards}
+.home-opening[data-intro=playing] .hero-copy h1{animation:vitta-intro-title 750ms cubic-bezier(.2,.8,.2,1) 1100ms backwards}
+.home-opening[data-intro=playing] .hero-copy>.eyebrow{animation:vitta-intro-copy 550ms ease 1150ms backwards}
+.home-opening[data-intro=playing] .hero-copy>p{animation:vitta-intro-copy 600ms ease 1400ms backwards}
+.home-opening[data-intro=playing] .hero-copy .actions{animation:vitta-intro-copy 550ms ease 1700ms backwards}
+.home-opening[data-intro=playing] .hero-note,.home-opening[data-intro=playing] .hero-operation,.home-opening[data-intro=playing] .image-caption,.home-opening[data-intro=playing] .image-tag,.home-opening[data-intro=playing] .image-disclosure{animation:vitta-intro-copy 500ms ease 1900ms backwards}
+.home-opening[data-intro=playing] .hero-bottom{animation:vitta-intro-secondary 500ms ease 1950ms backwards}
 }
 @media(max-width:600px) and (prefers-reduced-motion:no-preference){
-@keyframes vitta-intro-mask{from{clip-path:inset(16% 16% 38% 16% round 4px)}to{clip-path:inset(0% 0% 0% 0% round 0px)}}
-@keyframes vitta-intro-camera{from{transform:scale(1.12) translate3d(0,1%,0)}to{transform:scale(1) translate3d(0,0,0)}}
-.home-opening[data-intro=playing] .hero-visual{animation-duration:1150ms}
-.home-opening[data-intro=playing] .hero-camera{animation-duration:1450ms}
+@keyframes vitta-intro-mask{0%,10%{clip-path:inset(11% 8% 38% 8% round 8px)}100%{clip-path:inset(0% 0% 0% 0% round 0px)}}
+@keyframes vitta-intro-camera{from{transform:scale(1.07) translate3d(0,.4%,0)}to{transform:scale(1) translate3d(0,0,0)}}
+.home-opening[data-intro=playing] .hero-visual{animation-duration:1350ms}
+.home-opening[data-intro=playing] .hero-camera{animation-duration:1600ms}
+.home-opening[data-intro=playing] .hero-copy h1{animation-delay:800ms;animation-duration:600ms}
+.home-opening[data-intro=playing] .hero-copy>.eyebrow{animation-delay:850ms}
+.home-opening[data-intro=playing] .hero-copy>p{animation-delay:1050ms}
+.home-opening[data-intro=playing] .hero-copy .actions{animation-delay:1250ms}
+.home-opening[data-intro=playing] .hero-note,.home-opening[data-intro=playing] .hero-operation,.home-opening[data-intro=playing] .image-caption,.home-opening[data-intro=playing] .image-tag,.home-opening[data-intro=playing] .image-disclosure{animation-delay:1400ms}
+.home-opening[data-intro=playing] .hero-bottom{animation-delay:1450ms}
 }
 /* Full-bleed opening experiment: image starts at the top, behind navigation. */
 body:has(.home-experience) .site-header{position:fixed;inset:0 0 auto;background:linear-gradient(180deg,#101722a6,transparent);color:white;box-shadow:none}
