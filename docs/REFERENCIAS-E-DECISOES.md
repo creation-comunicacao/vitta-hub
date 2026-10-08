@@ -114,3 +114,7 @@ Instruções e confirmações do usuário na conversa prevalecem. Para a evoluç
 ### Continuidade cromática dos HUBs — 08/10/2026
 
 A pedido do usuário, o header de cada HUB acompanha exatamente o fundo da sua Hero: ameixa no Fitness, azul petróleo no Aquático e oliva no Esportivo. As seções seguintes usam variações claras da mesma paleta, incluindo os cards de conexão, FAQ e CTA. A barra mobile acompanha a tonalidade. Regras restritas às três páginas, preservando textos, imagens, logo original e interações.
+
+### Experiência M.I.V.A. da Home — 08/10/2026
+
+Solicitação anexada `4994b534-349e-4936-a8d0-dba1ac0031cf`: transformar a seção 04 em narrativa de scroll mantendo exatamente a copy, identidade, cores e CTA. Implementada construção progressiva da pessoa, metodologia, quatro pilares e aplicação transversal. Detalhes técnicos e verificação em `docs/HOME-EXPERIENCIA.md`. Sem alteração da página institucional M.I.V.A. ou do formulário PHP.

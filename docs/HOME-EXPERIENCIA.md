@@ -65,3 +65,13 @@ Carregamento: preload=none, src atribuído apenas quando visível e em desktop s
 - Corrigido progresso inicial da Hero: zero no topo, em vez do avanço de 25% da viewport usado nas cenas seguintes. Isso elimina mudança de escala no primeiro evento após intro. Câmera retorna a identidade; imagem interna mantém seu transform de base.
 - Mouse ignorado durante intro e limitado na Hero a aproximadamente ±3.85px horizontal / ±2.75px vertical após conclusão; comportamento das outras cenas mantido.
 - Verificações: build Next/TypeScript e lint aprovados; inspeção desktop 1440×1000 e mobile 375×812; uma imagem no DOM, conteúdo literal preservado, conclusão sem máscara/transform externo; scroll antecipado encerra intro e continua naturalmente (162.5px observados), sem overflow mobile.
+
+## M.I.V.A. construída pelo scroll — 08/10/2026
+
+A seção 04 usa `components/home/miva-experience.tsx`: no desktop, 280svh de percurso e composição sticky de 100svh. O scroll nativo revela título, pessoa, M.I.V.A., Saúde, Mente, Nutrição, Felicidade / Motivação, órbita, conexões operacionais e CTA. O movimento é reversível; SVGs desenham as conexões e os ícones. Após a construção, os ícones respiram suavemente e o hover realça o pilar e sua conexão.
+
+Sem GSAP pré-instalado, o controle usa requestAnimationFrame agendado por eventos e IntersectionObserver; nenhuma dependência, vídeo, canvas ou WebGL foi adicionada. Mobile e telas baixas usam uma sequência vertical em fluxo normal, revelada pela posição de cada elemento, evitando uma composição fixa maior que a tela. `prefers-reduced-motion` e ausência de JavaScript mostram o conteúdo completo; foco por teclado também revela a composição. Textos permanecem no HTML, com os mesmos quatro destinos de links.
+
+Cores dos ícones mantidas: magenta #ad117d, roxo #7654a8, azul #187c9f e dourado #9b7300; os três últimos valores existentes foram promovidos a variáveis compartilhadas. O MethodSystem utilizado em outras páginas mantém a apresentação anterior.
+
+Verificação: desktop 1440×1000 confirmou sticky, revelação sequencial (Saúde visível antes de Mente/Nutrição/Motivação) e reversão; mobile 375×812 confirmou sequência vertical, textos e links, sem overflow horizontal. Lint e build de produção incluem verificação TypeScript.
