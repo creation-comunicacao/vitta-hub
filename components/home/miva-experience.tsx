@@ -35,7 +35,8 @@ export function MivaExperience() {
         const start = Number(node.dataset.mivaStep);
         const target = node.dataset.mivaTarget ? host.querySelector<HTMLElement>(node.dataset.mivaTarget) : node;
         const top = target?.getBoundingClientRect().top ?? 0;
-        const raw = reduced.matches || keyboard ? 1 : compact.matches
+        const raw = reduced.matches || keyboard ? 1 : node.classList.contains('miva-copy')
+          ? clamp((innerHeight * .85 - rect.top) / (innerHeight * .3)) : compact.matches
           ? clamp((innerHeight * .88 - top) / (innerHeight * .28))
           : clamp((progress - start) / .09);
         const value = raw * raw * (3 - 2 * raw);

@@ -1,0 +1,175 @@
+PÁGINA 1
+DEVOLUTIVA TÉCNICA 02
+FITNESS PERSONAL | VITTA HUB • ASSESSORIA ESPORTIVA
+Revisão de pré-lançamento do site • Orientações para o desenvolvedor • 26/10/2026
+Objetivo: corrigir bloqueadores de publicação, consolidar a hierarquia de marca e validar
+conversão, navegação e requisitos técnicos. Este documento complementa o Plano
+Consolidado de Lançamento; em caso de divergência operacional, prevalecem as decisões
+mais recentes registradas no plano consolidado.
+PRIORIDADE P0 — OBRIGATÓRIO PARA PUBLICAR
+1. Contato funcional — O formulário da página Contato não pode permanecer
+demonstrativo. Implementar envio real e mensagem de sucesso somente após confirmação;
+em caso de erro, disponibilizar WhatsApp. Canais oficiais: WhatsApp +551141465843 e
+e-mail vittahub@fitnesspersonal.com.br.
+2. Método M.I.V.A. — Padronizar M.I.V.A. como Movimento Inteligente para uma Vida Ativa,
+filosofia transversal. Protocolos oficiais: T.A.L. — Treinamento para Autonomia e
+Longevidade; T.A.R. — Treinamento de Alto Rendimento. Não utilizar T.A.P.
+3. Arquitetura de negócio — FITNESS PERSONAL é a marca principal; VITTA HUB é a
+identidade corporativa integradora. Três unidades: B2B Condomínios, Consultoria Online e
+E-Hub Nutrition. Hub Fitness, Hub Aquático e Hub Esportivo pertencem à operação B2B,
+não são unidades independentes.
+4. Planos de Consultoria Online — Conferir M.I.V.A. Digital, M.I.V.A. Total, M.I.V.A. Híbrido
+Start e Executive VIP. Validar preços, entregas, condições comerciais e disponibilidade
+antes da publicação.
+5. E-Hub Nutrition — Distinguir atendimento nutricional da proposta de curadoria e
+comércio de suplementos. Não anunciar e-commerce, produtos ou parcerias como
+operacionais sem validação.
+6. CTAs e navegação — Testar menus, links internos e botões em todas as páginas;
+diferenciar caminhos de contato B2B e B2C, incluindo mensagens de WhatsApp conforme
+interesse.
+7. Responsividade — Revisar desktop e celular: menu, textos, imagens, formulários,
+botões e espaçamentos; investigar o grande espaço escuro identificado na Home.
+8. SEO básico — Conferir title, meta description, H1, canonical, robots.txt, sitemap.xml e
+links internos, com domínio definitivo fitnesspersonal.com.br.
+9. Mensuração — Configurar GA4 e eventos click_whatsapp, click_email e generate_lead;
+disparar generate_lead apenas após confirmação do envio. Não transmitir dados pessoais.
+10. Privacidade e segurança — Verificar política de privacidade, aviso de tratamento de
+dados, HTTPS, validação do formulário e antispam.
+
+PÁGINA 2
+PRIORIDADE P1 — MELHORIAS APÓS A LIBERAÇÃO P0
+Ajustar refinamentos visuais e espaçamentos não críticos.
+Inserir fotos profissionais da equipe quando disponíveis.
+Ampliar SEO local e conteúdo de autoridade.
+Publicar cases/depoimentos com autorização.
+Evoluir integrações com loja, aplicativo e automações sem bloquear a primeira publicação.
+SEQUÊNCIA DE EXECUÇÃO SUGERIDA
+Dias 1–2: contato, WhatsApp, arquitetura e conteúdo crítico. Dias 3–4: navegação,
+responsividade, SEO e Analytics. Dias 5–6: testes e correções. Dia 7: janela de publicação,
+somente se os critérios de aceite forem cumpridos. Cronograma indicativo, sujeito ao
+retorno do desenvolvedor e à migração da loja WBuy.
+ACEITE E RETORNO DO DESENVOLVEDOR
+☐ Apresentar evidência do formulário entregando mensagem real no e-mail oficial.
+☐ Demonstrar CTAs e menus funcionando em desktop e celular.
+☐ Confirmar a padronização de marca, M.I.V.A., T.A.L. e T.A.R.
+☐ Confirmar SEO e eventos de conversão configurados.
+☐ Reportar pendências, responsáveis, prazo e riscos de publicação.
+Observação: a migração da loja existente para subdomínio WBuy, preservação do e-mail e
+troca do domínio principal para Vercel estão detalhadas no Plano Consolidado de
+Lançamento e devem ser tratadas como dependências da publicação.
+PLANO CONSOLIDADO DE
+LANÇAMENTO
+FITNESS PERSONAL | VITTA HUB • ASSESSORIA ESPORTIVA
+Briefing técnico para desenvolvimento, migração e publicação • Versão consolidada •
+26/10/2026
+OBJETIVO: publicar o novo site institucional no domínio principal, preservando a operação
+da loja WBuy e do e-mail corporativo, com captação funcional e validação técnica antes do
+lançamento.
+1. Decisões aprovadas
+Domínio principal https://fitnesspersonal.com.br
+
+PÁGINA 3
+Administração do domínio / DNS Locaweb
+Novo site institucional Vercel (projeto em desenvolvimento)
+Loja atual WBuy; será deslocada do domínio
+principal para um subdomínio
+Subdomínio da loja Proposta: loja.fitnesspersonal.com.br —
+confirmar nome definitivo
+WhatsApp oficial +55 11 4146-5843 | formato URL:
+551141465843
+E-mail de captação vittahub@fitnesspersonal.com.br
+2. Arquitetura de marca e navegação
+FITNESS PERSONAL é a marca principal. VITTA HUB • ASSESSORIA ESPORTIVA é a
+identidade corporativa integradora. Há três unidades de negócio no mesmo site: Gestão
+Esportiva para Condomínios (B2B), Consultoria Online e E-Hub Nutrition.
+Dentro do B2B, Hub Fitness, Hub Aquático e Hub Esportivo são frentes operacionais, não
+unidades de negócio independentes. M.I.V.A. — Movimento Inteligente para uma Vida Ativa
+— é a metodologia transversal, não uma quarta unidade.
+Protocolos oficiais: T.A.L. — Treinamento para Autonomia e Longevidade; T.A.R. —
+Treinamento de Alto Rendimento. Não utilizar T.A.P.
+Rotas sugeridas (preservar as já implementadas quando equivalentes)
+Home /
+Vitta Hub /vitta-hub/
+Gestão para Condomínios /gestao-esportiva-condominios/
+Hub Fitness / Aquático / Esportivo /hub-fitness/ • /hub-aquatico/ •
+/hub-esportivo/
+M.I.V.A. /miva/
+Consultoria Online /consultoria-online/
+E-Hub Nutrition /e-hub-nutrition/
+Equipe / Contato /equipe/ • /contato/
+3. Captação: WhatsApp e formulário
+WhatsApp
+URL-base: https://wa.me/551141465843 . Acrescentar o parâmetro ?text= com mensagem
+codificada por URL. Exibir CTA contextual nas páginas e em mobile.
+B2B: “Olá! Gostaria de conhecer a proposta de gestão esportiva da FITNESS PERSONAL • VITTA HUB
+para o meu condomínio.”
+Consultoria Online: “Olá! Gostaria de receber informações sobre os programas de Consultoria Online e a
+metodologia M.I.V.A.”
+E-Hub Nutrition: “Olá! Gostaria de saber mais sobre os serviços de nutrição e suplementação da VITTA
+HUB.”
+Geral: “Olá! Gostaria de conhecer melhor os serviços da FITNESS PERSONAL • VITTA HUB.”
+Formulário de contato
+Enviar efetivamente para vittahub@fitnesspersonal.com.br, via backend ou serviço transacional autenticado;
+não expor chaves no frontend.
+
+PÁGINA 4
+Capturar nome, contato, assunto/interesse, mensagem e origem da página; coletar somente o necessário.
+Validar campos, proteger contra spam e abuso, informar tratamento de dados e disponibilizar Política de
+Privacidade.
+Exibir sucesso somente após confirmação do serviço; em erro, oferecer alternativa por WhatsApp.
+Usar remetente técnico autenticado e reply-to do visitante quando aplicável.
+Remover o aviso atual de “envio não disponível” somente após teste real de recebimento.
+4. Migração da loja WBuy — sequência obrigatória
+Inventariar o site/loja atual: URLs de produtos, categorias, páginas, campanhas, integrações e eventuais
+serviços vinculados ao domínio.
+Confirmar o subdomínio definitivo; cadastrar domínio personalizado na WBuy e obter os registros DNS
+exigidos no painel WBuy.
+Configurar apenas os registros necessários na zona DNS efetivamente autoritativa; testar SSL, produtos,
+carrinho, checkout, pagamentos, frete, login e e-mails transacionais.
+Mapear URLs antigas para URLs correspondentes no subdomínio e preparar redirecionamentos 301
+individualizados, sem conflitar com as novas rotas institucionais.
+Verificar com o fornecedor onde os 301 serão implementados após a troca do domínio principal (Vercel,
+middleware ou camada equivalente).
+Somente após loja validada e redirects preparados, publicar o institucional no domínio principal;
+acompanhar pedidos e erros após a virada.
+ATENÇÃO: não trocar nameservers nem apagar registros MX/SPF/DKIM/DMARC. Antes de
+alterar DNS, identificar a zona autoritativa, registrar os valores atuais e preparar rollback.
+5. Publicação Vercel e SEO
+Adicionar fitnesspersonal.com.br e www.fitnesspersonal.com.br na Vercel; usar os valores DNS exibidos no
+projeto, não valores presumidos.
+Definir HTTPS no domínio principal e redirecionar www para o endereço canônico escolhido.
+Revisar title, description, H1, canonical, Open Graph, links internos, 404, sitemap.xml e robots.txt.
+Evitar indexação duplicada da prévia Vercel; validar Search Console e enviar sitemap do institucional e da
+loja conforme suas propriedades.
+Verificar performance e responsividade, menus, imagens, botões, formulários e acessibilidade básica.
+GA4: eventos click_whatsapp, click_email e generate_lead (este último somente após envio confirmado).
+Não enviar dados pessoais aos eventos.
+6. Conteúdo e validações comerciais
+Consultoria Online: apresentar os quatro programas M.I.V.A. Digital, M.I.V.A. Total, M.I.V.A. Híbrido Start e
+Executive VIP; validar preços, condições e disponibilidade antes da publicação.
+E-Hub Nutrition: distinguir serviços nutricionais de curadoria/venda de suplementos; só anunciar loja,
+produtos ou parcerias efetivamente operacionais e autorizadas.
+Equipe: manter funções e responsáveis corretos; fotos profissionais são melhoria posterior se não
+bloquearem lançamento.
+Conferir textos, botões, política de privacidade e eventual espaço visual vazio observado na Home.
+7. Critérios de aceite — checklist P0
+
+PÁGINA 5
+☐ Loja WBuy operante no subdomínio aprovado, incluindo checkout de teste.
+☐ Redirecionamentos antigos testados e sem conflito com novas páginas.
+☐ Site institucional acessível em HTTPS no domínio principal e no celular.
+☐ WhatsApp correto, com mensagem específica por origem.
+☐ Formulário entrega mensagem real ao e-mail oficial; sucesso e erro testados.
+☐ Serviço de e-mail corporativo permanece funcional (envio e recebimento).
+☐ GA4, Search Console, sitemap, canonical e indexação verificados.
+☐ DNS anterior documentado e plano de reversão disponível.
+8. Pendências para retorno do desenvolvedor
+Confirmar se o subdomínio será loja.fitnesspersonal.com.br ou outro já acordado.
+Confirmar quem controla a zona DNS ativa na Locaweb e apresentar proposta de alterações antes da
+virada.
+Informar mecanismo de redirecionamento 301 e entregar mapeamento das URLs atuais.
+Informar provedor/serviço do formulário, configuração de envio e evidência de recebimento.
+Informar data de janela de publicação, responsáveis, testes realizados e procedimento de rollback.
+Prioridade: preservar vendas e e-mail, validar a loja primeiro, preparar os redirecionamentos
+e somente então ativar o novo institucional no domínio principal.
+FITNESS PERSONAL • VITTA HUB | Documento de execução para o desenvolvedor

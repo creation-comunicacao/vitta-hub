@@ -9,7 +9,7 @@ export const interests = [
   { value: 'outro', label: 'Outro' },
 ] as const;
 export type Interest = typeof interests[number]['value'];
-export const planNames = ['Essencial', 'Performance & Nutri', 'Híbrido Start', 'Executive VIP'] as const;
+export const planNames = ['Digital', 'Total', 'Híbrido Start', 'Executive VIP'] as const;
 export function isInterest(value: unknown): value is Interest { return interests.some(i => i.value === value); }
 export function isB2B(value: string) { return value === 'gestao-esportiva' || value.startsWith('hub-'); }
 export const interestContext: Record<Interest, { title: string; text: string; href: string }> = {
@@ -19,6 +19,13 @@ export const interestContext: Record<Interest, { title: string; text: string; hr
   'hub-esportivo': { title: 'Esporte que conecta os moradores.', text: 'Converse sobre atividades esportivas e experiências para o condomínio.', href: '/hub-esportivo/' },
   consultoria: { title: 'Seu treino começa pela sua rotina.', text: 'Conte o que procura na consultoria. Evite incluir dados de saúde neste primeiro contato.', href: '/consultoria-online/' },
   nutricao: { title: 'Nutrição começa pela pessoa.', text: 'Solicite informações sobre atendimento e disponibilidade. Deixe informações de saúde para a consulta.', href: '/e-hub-nutrition/' },
-  suplementacao: { title: 'Orientação antes da escolha.', text: 'Conheça o E-Hub e o acesso à loja. O formulário também pode direcionar sua dúvida.', href: '/e-hub-nutrition/' },
+  suplementacao: { title: 'Orientação antes da escolha.', text: 'Converse sobre orientação nutricional e consulte a disponibilidade de suplementação.', href: '/e-hub-nutrition/' },
   outro: { title: 'Encontre a conexão certa.', text: 'Conte brevemente como podemos ajudar.', href: '/vitta-hub/' },
 };
+
+// Preserve bookmarked links from the previous naming without showing old offers.
+export function normalizePlan(value: string | null): string {
+ const aliases: Record<string,string> = {'Essencial':'Digital','Performance & Nutri':'Total'};
+ const name=value ? aliases[value] || value.replace(/^M\.I\.V\.A\.\s+/, '') : '';
+ return (planNames as readonly string[]).includes(name) ? name : '';
+}

@@ -19,7 +19,7 @@ Instruções e confirmações do usuário na conversa prevalecem. Para a evoluç
 
 ## Resolvido em 02/10/2026
 - T.A.R. = Treinamento de Alto Rendimento: confirmado no Briefing Master, no Pacote DEV e no pedido inicial. T.A.P. permanece somente como histórico nos documentos mais antigos.
-- Ofertas: Essencial, Performance & Nutri, Híbrido Start e Executive VIP. Não usar nomes antigos Digital/Total do Mapa Mestre.
+- Histórico de 02/10: Essencial, Performance & Nutri, Híbrido Start e Executive VIP. Substituído em 04/11 pela Devolutiva Técnica 02: Digital, Total, Híbrido Start e Executive VIP.
 - E-Hub: atendimento nutricional primeiro, suplementação/loja depois; não usar a descrição antiga centrada apenas em e-commerce.
 - Cargo de Douglas: **Head de Nutrição Esportiva & Suporte Visual**, confirmado expressamente pelo usuário nesta conversa.
 - Executive VIP: **primeira semana presencial + nutrição presencial**, confirmado expressamente pelo usuário nesta conversa. Demais itens: avaliação, bioimpedância, treino/app e suporte prioritário. Todos os valores sob consulta.
@@ -118,3 +118,17 @@ A pedido do usuário, o header de cada HUB acompanha exatamente o fundo da sua H
 ### Experiência M.I.V.A. da Home — 08/10/2026
 
 Solicitação anexada `4994b534-349e-4936-a8d0-dba1ac0031cf`: transformar a seção 04 em narrativa de scroll mantendo exatamente a copy, identidade, cores e CTA. Implementada construção progressiva da pessoa, metodologia, quatro pilares e aplicação transversal. Detalhes técnicos e verificação em `docs/HOME-EXPERIENCIA.md`. Sem alteração da página institucional M.I.V.A. ou do formulário PHP.
+
+## Devolutiva Técnica 02 + Plano Consolidado — 04/11/2026
+
+Documento do cliente de 26/10/2026, fornecido pelo usuário para implementação. Fonte integral em `docs/fontes/Devolutiva_Tecnica_02_2026-10-26.txt`. O plano consolidado incluso prevalece em divergências operacionais.
+
+- Domínio definitivo: https://fitnesspersonal.com.br, com www redirecionando por 301. Preview continua noindex, mesmo se SITE_INDEXABLE=true na Vercel Preview.
+- E-mail atualizado para **vittahub@fitnesspersonal.com.br** (dois t); substitui a informação anterior com um t. WhatsApp permanece 551141465843; quatro mensagens exatas B2B/consultoria/nutrição/geral.
+- Programas: **M.I.V.A. Digital, M.I.V.A. Total, M.I.V.A. Híbrido Start e Executive VIP**. Entregas anteriores mantidas sob consulta, aguardando confirmação comercial. URLs antigas com Essencial/Performance & Nutri continuam selecionando o plano correspondente.
+- Sem referências a marcas/produtos não validados no E-Hub; URL de loja continua ausente. Fotos, depoimentos, produtos, preços e parcerias não foram inventados.
+- Backend PHP preservado; origem HTTPS configurável para integração same-site com Vercel e transporte autenticado Resend opcional, além de mail da Locaweb. Nenhum serviço foi contratado ou ativado.
+- GA4 preparado por ID real, consentimento opt-in e política publicada. Eventos click_whatsapp, click_email e generate_lead, este exclusivamente após confirmação do backend. Sem conteúdo de formulário, query/hash ou referrer nos payloads.
+- M.I.V.A. Home: título aparece antes da construção, percurso reduzido de 280 para 220svh. Sem remoção da narrativa ou vídeo.
+- Implementação dos 301 exatos preparada; mapa vazio até inventário WBuy. Não houve alteração de DNS, MX, loja ou publicação.
+- Checklist, dependências e evidências em `docs/lancamento/DEVOLUTIVA-02.md`. P0 não declarado concluído: faltam validações externas.

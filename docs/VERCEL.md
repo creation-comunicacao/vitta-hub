@@ -32,3 +32,7 @@ Para abrir o envio quando o frontend estiver na Vercel, ainda será necessário 
 ## Validação
 
 `npm run build:vercel` concluído com geração das páginas e do manifesto `.next/routes-manifest.json`. Verificação adicional da aplicação compilada feita localmente; conclusão local não equivale à confirmação do deploy no painel Vercel.
+
+## Atualização da Devolutiva Técnica 02 — 04/11/2026
+
+A integração PHP também suporta chamada direta com CORS restrito e cookies para host HTTPS same-site, configurado por `NEXT_PUBLIC_CONTACT_API_ORIGIN`. Essa opção dispensa o proxy descrito acima quando frontend e PHP usam o mesmo domínio registrável. Detalhes de produção, GA4, redirects 301 e dependências em `docs/lancamento/DEVOLUTIVA-02.md`. Os arquivos PHP nunca são executados como frontend ou funções Next.js.

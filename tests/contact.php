@@ -24,3 +24,7 @@ $fast=['token'=>$input['token'],'issued_at'=>microtime(true)];[$status]=vitta_pr
 check(vitta_rate($config,'192.0.2.1')&&!vitta_rate($config,'192.0.2.1'),'Limite por IP com lock de arquivo');
 foreach(glob($config['state_dir'].'/*')?:[]as$file)unlink($file);rmdir($config['state_dir']);
 echo "Nenhum e-mail real foi enviado.\n";
+check(vitta_transport_accepted(200,'{"id":"synthetic-id"}'),'Transporte autenticado exige confirmação com ID');
+check(!vitta_transport_accepted(200,'{}')&&!vitta_transport_accepted(401,'{"id":"synthetic-id"}')&&!vitta_transport_accepted(200,'not-json'),'Respostas inválidas e falhas de autenticação não viram sucesso');
+check(!vitta_ready(array_replace($config,['transport'=>'resend','resend_api_key'=>''])),'API sem credenciais não libera envio');
+foreach(['Digital','Total','Híbrido Start','Executive VIP'] as $plan){[$data,$errors]=vitta_validate(array_replace($input,['interest'=>'consultoria','plan'=>$plan]));check(!$errors,'Valida programa '.$plan);}

@@ -1,6 +1,6 @@
 export const plans = [
- {name:'Essencial',tag:'Treinamento individualizado',items:['Anamnese','Prescrição individualizada','Aplicativo e vídeos/orientações','Suporte e acompanhamento']},
- {name:'Performance & Nutri',tag:'Treino e nutrição conectados',items:['Tudo do Essencial','Consulta nutricional','Planejamento alimentar individualizado']},
+ {name:'Digital',tag:'Treinamento individualizado',items:['Anamnese','Prescrição individualizada','Aplicativo e vídeos/orientações','Suporte e acompanhamento']},
+ {name:'Total',tag:'Treino e nutrição conectados',items:['Tudo do Digital','Consulta nutricional','Planejamento alimentar individualizado']},
  {name:'Híbrido Start',tag:'Um início mais próximo',items:['Treino individualizado e aplicativo','1–2 sessões presenciais na primeira semana','Conforme disponibilidade']},
  {name:'Executive VIP',tag:'Acompanhamento ampliado',items:['Avaliação e bioimpedância','Treino e aplicativo','Primeira semana presencial', 'Nutrição presencial','Suporte prioritário']},
 ];

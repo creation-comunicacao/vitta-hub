@@ -75,3 +75,7 @@ Sem GSAP pré-instalado, o controle usa requestAnimationFrame agendado por event
 Cores dos ícones mantidas: magenta #ad117d, roxo #7654a8, azul #187c9f e dourado #9b7300; os três últimos valores existentes foram promovidos a variáveis compartilhadas. O MethodSystem utilizado em outras páginas mantém a apresentação anterior.
 
 Verificação: desktop 1440×1000 confirmou sticky, revelação sequencial (Saúde visível antes de Mente/Nutrição/Motivação) e reversão; mobile 375×812 confirmou sequência vertical, textos e links, sem overflow horizontal. Lint e build de produção incluem verificação TypeScript.
+
+## Devolutiva Técnica 02 — 04/11/2026
+
+Reduzido o percurso M.I.V.A. de 280 para 220svh, dentro da faixa originalmente solicitada. O título agora se revela pela entrada da seção na viewport, antes do progresso de construção dos pilares, evitando a tela inteiramente escura na entrada. Sticky desktop e sequência vertical mobile preservados. Verificado em Chrome com redução de movimento e sem overflow em 320/375/1440 px.

@@ -12,6 +12,8 @@ function vitta_ready(array $c): bool {
         && is_array($origin) && ($origin['scheme'] ?? '') === 'https' && !empty($origin['host'])
         && empty($origin['user']) && empty($origin['pass']) && empty($origin['query']) && empty($origin['fragment'])
         && empty($origin['path']) && strlen($c['rate_secret']) >= 32
+        && in_array($c['transport'] ?? 'mail', ['mail','resend'], true)
+        && (($c['transport'] ?? 'mail') !== 'resend' || (!empty($c['resend_api_key']) && function_exists('curl_init')))
         && vitta_email($c['sender']) && vitta_email($c['recipient']);
 }
 function vitta_email($value): bool {
@@ -53,9 +55,33 @@ function vitta_validate(array $input): array {
     if(($input['consent']??false)!==true)$errors['consent']='Confirme a leitura da política e a finalidade do contato.';
     $data['consent']=($input['consent']??false)===true;
     if($data['interest']!=='consultoria')$data['plan']='';
-    if(!in_array($data['plan'],['','Essencial','Performance & Nutri','Híbrido Start','Executive VIP'],true))$errors['plan']='Plano inválido.';
+    if(!in_array($data['plan'],['','Digital','Total','Híbrido Start','Executive VIP'],true))$errors['plan']='Plano inválido.';
     if(!preg_match('~^/(?:|vitta-hub/?|gestao-esportiva-condominios/?|hub-(?:fitness|aquatico|esportivo)/?|miva/?|consultoria-online/?|e-hub-nutrition/?|equipe/?|conteudos/?|contato/?)$~',$data['source']))$data['source']='/contato/';
     return [$data,$errors];
+}
+// Cross-origin access is restricted to the configured institutional origin.
+function vitta_cors(array $c): bool {
+    $origin = $_SERVER['HTTP_ORIGIN'] ?? '';
+    if ($origin !== '' && $origin !== $c['origin']) {
+        vitta_json(['error'=>'Origem da solicitação inválida.'],403); return false;
+    }
+    header('Vary: Origin');
+    if ($origin !== '') {
+        header('Access-Control-Allow-Origin: '.$c['origin']);
+        header('Access-Control-Allow-Credentials: true');
+    }
+    if (($_SERVER['REQUEST_METHOD'] ?? '') === 'OPTIONS') {
+        if ($origin === '') { vitta_json(['error'=>'Origem obrigatória.'],403); return false; }
+        header('Access-Control-Allow-Methods: GET, POST, OPTIONS');
+        header('Access-Control-Allow-Headers: Content-Type');
+        header('Access-Control-Max-Age: 600');
+        http_response_code(204); return false;
+    }
+    return true;
+}
+function vitta_transport_accepted(int $status, string $raw): bool {
+    $body=json_decode($raw,true);
+    return $status>=200 && $status<300 && is_array($body) && !empty($body['id']) && is_string($body['id']) && empty($body['error']);
 }
 function vitta_mail(array $data,array $c): bool {
     $nl=$c['platform']==='windows'?"\r\n":"\n";
@@ -66,6 +92,17 @@ function vitta_mail(array $data,array $c): bool {
     $lines=['Solicitação de contato — VITTA HUB'];foreach($labels as $key=>$label)$lines[]=$label.': '.$data[$key];
     $lines[]='Autorização para responder ao contato: confirmada';
     $message=implode($nl.$nl,$lines);
+    if (($c['transport'] ?? 'mail') === 'resend') {
+        if (!function_exists('curl_init')) return false;
+        $request=curl_init('https://api.resend.com/emails');
+        if ($request===false) return false;
+        $body=json_encode(['from'=>$c['sender'],'to'=>[$c['recipient']],'reply_to'=>$data['email'],'subject'=>'VITTA HUB — '.$data['interest'],'text'=>$message],JSON_UNESCAPED_UNICODE);
+        // Stable for retries of this token and payload; no personal data in the key.
+        $key=hash_hmac('sha256',$data['token'].'|'.$body,$c['rate_secret']);
+        curl_setopt_array($request,[CURLOPT_POST=>true,CURLOPT_RETURNTRANSFER=>true,CURLOPT_CONNECTTIMEOUT=>3,CURLOPT_TIMEOUT=>10,CURLOPT_HTTPHEADER=>['Authorization: Bearer '.$c['resend_api_key'],'Content-Type: application/json','Idempotency-Key: '.$key],CURLOPT_POSTFIELDS=>$body]);
+        $response=curl_exec($request);$status=(int)curl_getinfo($request,CURLINFO_HTTP_CODE);curl_close($request);
+        return is_string($response) && vitta_transport_accepted($status,$response);
+    }
     // A documentação Locaweb exige remetente do domínio e -r no Linux/Postfix.
     if($c['platform']==='windows')return mail($c['recipient'],$subject,$message,$headers);
     return mail($c['recipient'],$subject,$message,$headers,'-r'.escapeshellarg($c['sender']));

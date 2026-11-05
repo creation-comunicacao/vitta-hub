@@ -1,8 +1,9 @@
 <?php
 declare(strict_types=1);
 require dirname(__DIR__,2).'/private/contact.php';
-if(($_SERVER['REQUEST_METHOD']??'')!=='GET'){vitta_json(['error'=>'Método não permitido.'],405);exit;}
 $c=vitta_config();
+if(!vitta_cors($c))exit;
+if(($_SERVER['REQUEST_METHOD']??'')!=='GET'){vitta_json(['error'=>'Método não permitido.'],405);exit;}
 if(!vitta_ready($c)){vitta_json(['available'=>false],503);exit;}
 vitta_session();
 // A aba reutiliza a sessão; uma solicitação já aceita não é reenviada.

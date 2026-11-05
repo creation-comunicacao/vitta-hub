@@ -52,3 +52,7 @@ Identidade oficial (logo, cores e fontes), fotografias autorizadas, domínio, Wh
 A implementação local inclui contato adaptativo com processamento PHP, índice editorial com busca/filtros, template de artigo e infraestrutura de SEO/tracking. O pacote estático com PHP é destinado à Locaweb, conforme pedido do usuário. Ver `VERIFICACAO-PARTE-3.md` e `LOCAWEB.md`.
 
 Os itens de aceite acima continuam para revisão do usuário. Envio real, links comerciais oficiais, política/termos, publicação de artigos, conexão GA4/GTM, mapa de redirects e medição em produção dependem dos dados e aprovações correspondentes. Nenhum envio ou publicação foi realizado. CMS tem contrato editorial preparado, sem painel de edição instalado.
+
+## Revisão de lançamento — 04/11/2026
+
+Devolutiva Técnica 02 e Plano Consolidado recebidos e aplicados. Acompanhamento item a item e testes: `docs/lancamento/DEVOLUTIVA-02.md`. Permanecem abertos os aceites que exigem recebimento real de e-mail, validação comercial/legal, GA4/Search Console e migração WBuy/DNS; não confundir build local aprovado com liberação de publicação.

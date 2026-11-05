@@ -152,7 +152,7 @@ body:has(.home-experience) .site-header .brand{padding:8px 12px;border-radius:3p
 
 /* M.I.V.A. is built by native scroll, without a video or a boxed diagram. */
 .home-experience .miva-story{padding:0;color:white;position:relative}
-.miva-story[data-enhanced=true]{min-height:280svh}
+.miva-story[data-enhanced=true]{min-height:220svh}
 .home-experience .miva-story .miva-pin{position:sticky;top:0;min-height:100svh;display:grid;grid-template-columns:.88fr 1.12fr;grid-template-rows:1fr auto 1fr;column-gap:5%;align-items:center;padding-block:130px 70px}
 .miva-copy{grid-column:1;grid-row:2;clip-path:inset(0 calc((1 - var(--reveal,1))*100%) 0 0);transform:translateX(calc((1 - var(--reveal,1))*-18px))}
 .home-experience .miva-copy h2{font-size:clamp(34px,3.3vw,51px);max-width:520px}

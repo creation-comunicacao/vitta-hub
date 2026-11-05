@@ -1,5 +1,5 @@
 import { isInterest } from '../config/contact';
-export type AnalyticsEvent = 'form_submit'|'whatsapp_click'|'presentation_request'|'consultoria_interest'|'nutrition_contact'|'store_click'|'cta_click';
+export type AnalyticsEvent = 'generate_lead'|'click_whatsapp'|'click_email'|'presentation_request'|'consultoria_interest'|'nutrition_contact'|'store_click'|'cta_click';
 export type AnalyticsPayload = {event:AnalyticsEvent;page_location:string;page_title:string;cta_name:string;cta_position:string;interest_type:string};
 type Sink = (payload:AnalyticsPayload)=>void;
 let sink:Sink|undefined;let consent=false;

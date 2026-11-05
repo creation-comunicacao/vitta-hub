@@ -56,7 +56,7 @@ export const managementFAQ = [
 export const nutritionFAQ = [
   { question: 'É preciso comprar suplementos para conhecer o atendimento?', answer: 'O ponto de partida do E-Hub Nutrition é a pessoa: avaliação, atendimento, orientação individualizada e acompanhamento. Suplementação e loja são extensões dessa experiência.' },
   { question: 'Quem é a liderança de nutrição?', answer: 'Douglas Silva é o Head de Nutrição Esportiva & Suporte Visual, responsável por consultas, orientação, acompanhamento e curadoria nutricional.' },
-  { question: 'Como nutrição e treinamento se conectam?', answer: 'A nutrição integra a metodologia M.I.V.A. e pode compor o acompanhamento do treinamento. As ofertas Performance & Nutri e Executive VIP incluem nutrição, conforme a descrição de cada plano.' },
+  { question: 'Como nutrição e treinamento se conectam?', answer: 'A nutrição integra a metodologia M.I.V.A. e pode compor o acompanhamento do treinamento. As ofertas Total e Executive VIP incluem nutrição, conforme a descrição de cada plano.' },
   { question: 'Onde consultar valores e disponibilidade?', answer: 'Valores e disponibilidade devem ser confirmados com o atendimento. Nenhum preço ou agenda é presumido nesta apresentação.' },
 ];
 export const hubDetails = {
