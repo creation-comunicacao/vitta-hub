@@ -170,3 +170,6 @@ Referência visual enviada em Captura de Tela 2026-11-20 às 09.54.35.png: hero 
 
 ## Arraste dos produtos na hero — 20/11/2026
 A pedido do usuário, os três potes trocam ciclicamente as posições esquerda/direita/centro por arraste horizontal. Pointer Events com captura, limiar de 45 px, distinção de eixo e cancelamento; touch-action pan-y pinch-zoom preserva scroll vertical e zoom. Setas clicáveis e teclado oferecem alternativa acessível com anúncio do produto central. Parallax não disputa o gesto, flutuação pausa durante o arraste e redução de movimento troca posições sem transições. Embalagens, textos comerciais e links preservados.
+
+## Identidade laranja do E-Hub Nutrition
+Referência enviada pelo cliente em Photo 1.jpg: grafite/preto, laranja e tipografia clara, com embalagens azuis. Pedido atual substitui a direção anterior azul-céu/branco da interface. Paleta aplicada somente à LP E-Hub: hero, iluminação, órbitas, textos destacados, botões, controles, sequência de scroll e cards. Textos, arquivos dos produtos, rotas e comportamento de arraste preservados. Imagem usada como referência de identidade, sem incorporar suas afirmações comerciais ou substituir embalagens.
