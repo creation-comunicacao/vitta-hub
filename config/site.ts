@@ -1,11 +1,10 @@
 const officialUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://fitnesspersonal.com.br';
 if (officialUrl && (!/^https:\/\/[^/]+$/.test(officialUrl) || new URL(officialUrl).username || new URL(officialUrl).password)) throw new Error('NEXT_PUBLIC_SITE_URL deve ser uma origem HTTPS oficial, sem barra final.');
-export const approvedStoreUrl = 'https://loja.fitnesspersonal.com.br';
-export const storeValidated = process.env.NEXT_PUBLIC_STORE_VALIDATED === 'true';
+export const approvedStoreUrl = 'https://www.fitnesspersonal.com.br/';
 export const siteConfig = {
   name: 'FITNESS PERSONAL • VITTA HUB • ASSESSORIA ESPORTIVA',
   url: officialUrl,
-  whatsapp: process.env.NEXT_PUBLIC_WHATSAPP || '551141465843', email: process.env.NEXT_PUBLIC_CONTACT_EMAIL || 'vittahub@fitnesspersonal.com.br', instagram: process.env.NEXT_PUBLIC_INSTAGRAM || '', storeUrl: storeValidated ? approvedStoreUrl : '',
+  whatsapp: process.env.NEXT_PUBLIC_WHATSAPP || '551141465843', email: process.env.NEXT_PUBLIC_CONTACT_EMAIL || 'vittahub@fitnesspersonal.com.br', instagram: process.env.NEXT_PUBLIC_INSTAGRAM || '', storeUrl: approvedStoreUrl,
   indexable: process.env.SITE_INDEXABLE === 'true' && process.env.VERCEL_ENV !== 'preview' && process.env.VERCEL_ENV !== 'development',
 };
 export const navigation = [
