@@ -159,3 +159,50 @@ body:has(.nutrition-lp) .header-inner{width:calc(100% - 40px);min-height:88px;bo
 @media(max-width:380px){.nutrition-draggable .nutrition-actor[data-position=left]{top:190px}.nutrition-draggable .nutrition-actor[data-position=right]{top:140px}}
 @media(max-height:650px) and (min-width:901px){.nutrition-draggable .nutrition-actor[data-position=center]{width:48%;left:26%;top:-30%}}
 @media(prefers-reduced-motion:reduce){.nutrition-draggable .nutrition-parallax{translate:none!important}}
+
+/* Client identity: orange accents on graphite; original blue packaging stays intact. */
+.nutrition-lp{--nutrition-accent:#ff7900;--nutrition-ink:#f6f3ef;color:var(--nutrition-ink);background:#111416}
+.nutrition-intro{background:radial-gradient(ellipse at 76% 20%,#643316 0,#252728 38%,#090e12 85%)}
+.nutrition-intro:before{background:radial-gradient(ellipse at 75% 22%,#ff790033,transparent 58%)}
+.nutrition-intro:after{background:linear-gradient(180deg,#080c1012 0%,#080c1000 30%,#080c104d 48%,#080c10e0 76%,#080c10fa 100%)}
+.nutrition-intro .breadcrumb{color:#e8ddd3}
+.nutrition-copy .eyebrow{border-color:#ff963f80;background:#151719b8;color:#ffb16a}
+.nutrition-copy .eyebrow:before{background:var(--nutrition-accent)}
+.nutrition-copy h1{color:#ff9b43}
+.nutrition-copy h2{text-shadow:0 2px 20px #0008}
+.nutrition-copy h2 span{color:#ff922f}
+.nutrition-showcase:before{background:radial-gradient(ellipse at 65% 25%,#ff9a3821,transparent 60%)}
+.nutrition-orbit{border-color:var(--nutrition-accent);border-width:3px;opacity:.65}
+.nutrition-orbit.orbit-two{border-color:#ffae61;opacity:.22;border-width:1px}
+.nutrition-stage-shadow{background:#0008}
+.nutrition-actor img{filter:drop-shadow(18px 35px 30px #0007)}
+.nutrition-lp .button,.nutrition-copy .button{background:var(--nutrition-accent);border-color:var(--nutrition-accent);color:#16110c}
+.nutrition-lp a.button:hover,.nutrition-copy a.button:hover{background:#ff9c40;border-color:#ff9c40;color:#16110c;box-shadow:0 10px 25px #ff79001c}
+.nutrition-lp .button.secondary{background:transparent;color:#f7eee5;border-color:#ad784e}
+.nutrition-lp .button.secondary:hover{background:#ff790017;color:#fff;border-color:#ff9c40}
+.nutrition-copy .nutrition-text-link{background:#f9f5f0;color:#251b13}
+.nutrition-copy .nutrition-text-link:hover{background:#ffe5cc;color:#251b13}
+.nutrition-scroll-cue{color:#f1c39a}
+.nutrition-stage-controls button{background:#17130fd9;color:#ffac63;border-color:#ff963f91}
+.nutrition-stage-controls button:hover{background:var(--nutrition-accent);color:#16110c}
+.nutrition-drag-hint{text-shadow:0 1px 8px #000}
+.nutrition-draggable:focus-visible,.nutrition-lp :focus-visible{outline-color:#ffae61}
+.nutrition-story{background:radial-gradient(ellipse at 75% 48%,#3b2c21,#171a1c 65%);border-color:#ff79002b}
+.nutrition-story-heading .eyebrow,.nutrition-catalog-heading .eyebrow{color:#ff9b43}
+.nutrition-story-progress{background:#5c412c}
+.nutrition-story-progress span{background:var(--nutrition-accent)}
+.nutrition-story-art img{filter:drop-shadow(10px 20px 22px #0006)}
+.nutrition-story-number{color:#ff79001a}
+.nutrition-story-label>span{color:#eab88c}
+.nutrition-catalog-heading .page-lead{color:#d0c8c0}
+.nutrition-product-card{border-color:#49372a;background:#1e2224;box-shadow:0 12px 30px #0002}
+.nutrition-card-art{background:radial-gradient(ellipse at 50% 45%,#443023,#252626 70%)}
+.nutrition-card-art img{filter:drop-shadow(8px 15px 12px #0005)}
+.nutrition-card-index{color:#efb07a}
+.nutrition-card-copy a{border-color:#6b4b33;color:#ffab61}
+.nutrition-product-card:focus-within{border-color:var(--nutrition-accent)}
+.nutrition-conversion{border-color:#60422c}
+.nutrition-lp .store-launch-pending p{color:#d0c8c0}
+.nutrition-lp .store-launch-pending button:disabled{background:#38322c;color:#d4b99f;border-color:#635040}
+@media(hover:hover){.nutrition-product-card:hover{border-color:#ff963f;box-shadow:0 20px 40px #ff79000c}}
+@media(max-width:760px){.nutrition-intro:after{background:linear-gradient(180deg,#080c1012,#080c1000 28%,#080c1066 45%,#080c10ed 67%,#080c10 100%)}}

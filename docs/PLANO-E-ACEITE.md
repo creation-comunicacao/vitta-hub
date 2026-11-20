@@ -73,3 +73,6 @@ Build Next/TypeScript e lint aprovados. Validação Chrome em 320, 375, 768, 102
 
 ## Hero com troca de posições — 20/11/2026
 Lint e build/TypeScript aprovados. Chrome: arraste mouse nos dois sentidos, botões, ciclo completo por teclado, modo de movimento reduzido, swipe por eventos touch nativos em 375px e scroll vertical independente; sem erros JS ou overflow. Sem commit/push nesta etapa.
+
+## Revisão cromática E-Hub — laranja e grafite
+Build Next/TypeScript aprovado. Chrome em 375/768/1440 px sem overflow ou erros JavaScript; CTA principal confirmado em rgb(255,121,0); troca de produto central funcionando. Hero e catálogo revisados visualmente. Sem commit/push nesta etapa.
