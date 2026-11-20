@@ -59,3 +59,17 @@ Devolutiva Técnica 02 e Plano Consolidado recebidos e aplicados. Acompanhamento
 
 ## Versão 1.0 — Devolutiva 07
 Os critérios anteriores de quatro ofertas, equipe, conteúdos e nutrição clínica não se aplicam à versão enxuta solicitada. Checklist vigente: `docs/lancamento/DEVOLUTIVA-07.md`. A versão completa continua recuperável por branch e backup independente. Publicação depende da operação da loja no subdomínio aprovado e do e-mail preservado.
+
+## Landing page E-Hub — 20/11/2026
+Build Next/TypeScript e lint aprovados. Validação Chrome em 320, 375, 768, 1024 e 1440 px: um H1, sem overflow horizontal ou imagens quebradas; CTA Contato navega corretamente; preferência de movimento reduzido respeitada. Textos comerciais existentes preservados. Alterações locais para revisão, sem commit/push.
+
+## Validação E-Hub interativo — 20/11/2026
+- Chrome em 320/375/430/768/1024/1440 px: um H1, imagens carregadas, sem overflow ou erros JavaScript.
+- Parallax reage ao mouse e retorna ao centro; sequência de scroll percorre estados 0, 1 e 2; âncora Explorar suplementos e contato dos cards testados.
+- Preferência de movimento reduzido desliga animações/sticky; sem JavaScript os três destaques continuam visíveis em fluxo normal.
+- Fontes dos produtos preservadas; script do recorte valida zero diferenças RGB nos pixels opacos.
+- Build/TypeScript, lint e testes do projeto executados; Core Web Vitals reais ainda dependem de medição em produção.
+- Mudanças locais para revisão. Sem commit/push ou publicação desta etapa.
+
+## Hero com troca de posições — 20/11/2026
+Lint e build/TypeScript aprovados. Chrome: arraste mouse nos dois sentidos, botões, ciclo completo por teclado, modo de movimento reduzido, swipe por eventos touch nativos em 375px e scroll vertical independente; sem erros JS ou overflow. Sem commit/push nesta etapa.

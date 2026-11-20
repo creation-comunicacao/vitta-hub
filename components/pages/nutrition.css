@@ -1,0 +1,161 @@
+/* E-Hub: one native-scroll experience; all styles are page-scoped. */
+.nutrition-lp{--nutrition-blue:#087ec9;--nutrition-ink:#0c304b;--pointer-x:0;--pointer-y:0;--hero-progress:0;color:var(--nutrition-ink);background:#f6fbff}
+.nutrition-lp section{scroll-margin-top:115px}
+.nutrition-intro{position:relative;isolation:isolate;overflow:clip;background:linear-gradient(120deg,#f9fdff 3%,#e5f5ff 52%,#b4e5ff)}
+.nutrition-intro:before{content:"";position:absolute;z-index:-1;inset:-10%;background:radial-gradient(ellipse at 75% 48%,#ffffffed 0,#6ec9ff45 30%,transparent 60%);transform:translate(calc(var(--pointer-x)*25px),calc(var(--pointer-y)*20px));pointer-events:none}
+.nutrition-intro:after{content:"";position:absolute;z-index:-1;inset:0;background-image:linear-gradient(#4788b30a 1px,transparent 1px),linear-gradient(90deg,#4788b30a 1px,transparent 1px);background-size:72px 72px;mask-image:linear-gradient(90deg,transparent,#000);pointer-events:none}
+.nutrition-lp .breadcrumb{color:#526d80;padding-block:22px;margin:0;font-size:12px}
+.nutrition-hero{min-height:calc(94svh - 175px);display:grid;grid-template-columns:1fr 1.05fr;align-items:center;gap:18px;padding-block:25px 40px}
+.nutrition-copy{position:relative;z-index:3;max-width:650px;padding-block:25px}
+.nutrition-copy .eyebrow{display:inline-flex;align-items:center;gap:9px;font-size:10px;letter-spacing:.1em;border:1px solid #9bcced;border-radius:40px;padding:10px 14px;background:#ffffff7a;color:#235c7a;margin-bottom:28px}
+.nutrition-copy .eyebrow:before{content:"";width:6px;height:6px;border-radius:50%;background:#0786d3;flex-shrink:0}
+.nutrition-copy h1{font-size:18px;letter-spacing:-.025em;font-weight:600;color:#33728e;margin:0 0 18px}
+.nutrition-copy h2{font-size:clamp(44px,4.75vw,76px);font-weight:500;letter-spacing:-.055em;line-height:1.04;text-wrap:balance}
+.nutrition-copy h2 span{color:var(--nutrition-blue)}
+.nutrition-copy .actions{margin-top:32px;gap:22px;align-items:center;flex-wrap:wrap}
+.nutrition-lp .button{display:inline-flex;gap:14px;border-radius:40px;padding:17px 24px;background:#087ec9;border:1px solid #087ec9;color:#fff;min-height:54px;transition:transform .25s,background .25s,box-shadow .25s}
+.nutrition-lp a.button:hover{background:#0767a5;transform:translateY(-3px);box-shadow:0 10px 25px #087ec922}
+.nutrition-lp .button.secondary{background:transparent;color:var(--nutrition-ink);border-color:#9ec7df}
+.nutrition-lp .button.secondary:hover{background:#e0f3ff}
+.nutrition-text-link{display:inline-flex;align-items:center;gap:10px;font-size:13px;font-weight:600;min-height:44px}
+.nutrition-text-link:hover{color:#087ec9}
+.nutrition-showcase{position:relative;isolation:isolate;min-width:0;width:100%;aspect-ratio:1.02;max-height:690px;perspective:1000px;transform:translateY(calc(var(--hero-progress)*-24px))}
+.nutrition-showcase:before{content:"";position:absolute;inset:7% -7%;border-radius:50%;background:radial-gradient(ellipse,#fff9,transparent 67%);pointer-events:none}
+.nutrition-orbit{position:absolute;inset:6% -4%;border-radius:50%;border:1px solid #ffffffbf;transform:rotate(-28deg) scaleY(.63);pointer-events:none}
+.nutrition-orbit.orbit-two{inset:15% -6%;transform:rotate(33deg) scaleY(.8);border-color:#389ed72b}
+.nutrition-stage-shadow{position:absolute;bottom:1%;left:22%;width:60%;height:7%;border-radius:50%;background:#176c9b27;filter:blur(20px);transform:scale(calc(1 + var(--hero-progress)*.2))}
+.nutrition-actor{position:absolute;--depth:18px;--tilt:-9deg;transition:opacity .3s}
+.nutrition-actor img{display:block;width:100%;height:auto;filter:drop-shadow(7px 22px 16px #13558024)}
+.actor-whey{width:51%;top:2%;left:-2%;z-index:1;--depth:18px;--tilt:-12deg}
+.actor-epic{width:47%;top:0;right:-1%;z-index:2;--depth:28px;--tilt:11deg}
+.actor-creatina{width:50%;top:36%;left:26%;z-index:3;--depth:44px;--tilt:-4deg}
+.nutrition-parallax{transform:translate3d(calc(var(--pointer-x)*var(--depth)),calc(var(--pointer-y)*var(--depth)),0) rotate(var(--tilt))}
+.nutrition-float{animation:nutrition-float 7s ease-in-out infinite;animation-play-state:paused}
+.actor-epic .nutrition-float{animation-delay:-2.5s;animation-duration:8s}
+.actor-creatina .nutrition-float{animation-delay:-4s;animation-duration:6.5s}
+[data-visible=true] .nutrition-float{animation-play-state:running}
+.nutrition-scroll-cue{display:flex;align-items:center;gap:15px;padding:15px 0 25px;font-size:11px;letter-spacing:.08em;text-transform:uppercase;min-height:48px}
+.nutrition-scroll-cue>span:first-child,.nutrition-scroll-cue>svg{flex-shrink:0}
+.nutrition-cue-line{height:1px;background:#79aed044;width:100%;margin-left:20px}
+@keyframes nutrition-float{0%,100%{transform:translateY(0)}50%{transform:translateY(-12px)}}
+@keyframes nutrition-enter{from{opacity:0;filter:blur(6px);transform:translateY(20px)}to{opacity:1;filter:blur(0);transform:translateY(0)}}
+[data-motion=ready] .nutrition-enter{animation:nutrition-enter .7s cubic-bezier(.2,.65,.3,1) both}
+[data-motion=ready] .nutrition-enter:nth-child(2){animation-delay:.1s}
+[data-motion=ready] .nutrition-enter:nth-child(3){animation-delay:.18s}
+[data-motion=ready] .nutrition-enter:nth-child(4){animation-delay:.3s}
+/* Scroll story defaults to ordinary, readable document flow. */
+.nutrition-story{--story-progress:0;position:relative;background:radial-gradient(ellipse at 70% 50%,#c9ebff,#edf8ff 65%);border-top:1px solid #d7edfb;border-bottom:1px solid #d7edfb}
+.nutrition-story-inner{padding-block:80px}
+.nutrition-story-heading h2{font-size:clamp(38px,4vw,58px);font-weight:500;max-width:420px;letter-spacing:-.045em}
+.nutrition-story-heading .eyebrow{color:#32728e}
+.nutrition-story-progress{margin-top:35px;height:2px;width:160px;background:#bfdced;overflow:hidden}
+.nutrition-story-progress span{display:block;width:100%;height:100%;background:#0786d3;transform-origin:left;transform:scaleX(calc(.06 + var(--story-progress)*.94))}
+.nutrition-story-scenes{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:30px}
+.nutrition-story-scene{min-width:0}
+.nutrition-story-art{position:relative;isolation:isolate}
+.nutrition-story-art img{position:relative;display:block;width:100%;height:auto;filter:drop-shadow(10px 20px 22px #116f9929)}
+.nutrition-story-number{position:absolute;top:0;left:2%;font-size:clamp(100px,15vw,230px);line-height:1;font-weight:500;letter-spacing:-.1em;color:#69b6e11c;z-index:-1}
+.nutrition-story-label{display:flex;align-items:center;gap:18px;padding-top:20px}
+.nutrition-story-label>span{font-size:11px;font-weight:600;letter-spacing:.1em;color:#437089;white-space:nowrap}
+.nutrition-story-label h3{font-size:clamp(26px,3vw,42px);font-weight:500;letter-spacing:-.04em}
+@media(min-width:901px) and (min-height:650px) and (prefers-reduced-motion:no-preference){
+ .nutrition-lp[data-motion=ready] .nutrition-story{height:250svh}
+ [data-motion=ready] .nutrition-story-sticky{position:sticky;top:100px;height:calc(100svh - 100px);min-height:550px;overflow:clip}
+ [data-motion=ready] .nutrition-story-inner{height:100%;display:grid;grid-template-columns:.7fr 1.3fr;align-items:center;gap:65px;padding-block:35px}
+ [data-motion=ready] .nutrition-story-scenes{position:relative;display:block;height:100%;min-height:480px}
+ [data-motion=ready] .nutrition-story-scene{position:absolute;inset:0;display:flex;flex-direction:column;justify-content:center;align-items:center;opacity:0;visibility:hidden;transform:translateY(45px) scale(.9);transition:opacity .5s,transform .7s cubic-bezier(.2,.7,.3,1),visibility .5s}
+ [data-active="0"] [data-product-index="0"],[data-active="1"] [data-product-index="1"],[data-active="2"] [data-product-index="2"]{opacity:1!important;visibility:visible!important;transform:translateY(0) scale(1)!important}
+ [data-motion=ready] .nutrition-story-art{width:min(100%,60svh);transform:translateY(calc(var(--story-progress)*-16px)) rotate(calc(-4deg + var(--story-progress)*8deg))}
+ [data-motion=ready] .nutrition-story-art img{width:100%;max-height:58svh;object-fit:contain}
+ [data-motion=ready] .nutrition-story-number{font-size:clamp(180px,20vw,320px)}
+}
+.nutrition-catalog{padding-block:100px 80px}
+.nutrition-catalog-heading{max-width:760px;margin-bottom:45px}
+.nutrition-catalog-heading .eyebrow{color:#32728e}
+.nutrition-catalog-heading h2{font-size:clamp(38px,4vw,58px);font-weight:500}
+.nutrition-catalog-heading .page-lead{font-size:19px;line-height:1.7;max-width:690px;margin-top:25px;color:#446276}
+.nutrition-product-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px}
+.nutrition-product-card{min-width:0;border:1px solid #cde5f3;border-radius:22px;overflow:hidden;background:#fff;box-shadow:0 12px 30px #0b518006;transition:transform .35s,box-shadow .35s,border-color .35s}
+.nutrition-card-art{position:relative;aspect-ratio:1.1;background:radial-gradient(ellipse at 50% 45%,#e1f4ff,#f5fbff 70%);display:grid;place-items:center;overflow:hidden}
+.nutrition-card-art img{display:block;width:80%;height:100%;object-fit:contain;padding:15px;filter:drop-shadow(8px 15px 12px #15658b18);transition:transform .6s cubic-bezier(.2,.7,.3,1)}
+.nutrition-card-index{position:absolute;top:20px;left:22px;font-size:11px;color:#4e7185;letter-spacing:.1em}
+.nutrition-card-copy{padding:28px}
+.nutrition-card-copy h3{font-size:26px;letter-spacing:-.035em;margin-bottom:24px}
+.nutrition-card-copy a{display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:44px;border-top:1px solid #d9e9f3;padding-top:15px;color:#056fad;font-size:13px;font-weight:600}
+.nutrition-product-card:focus-within{border-color:#0786d3}
+@media(hover:hover){.nutrition-product-card:hover{transform:translateY(-6px);box-shadow:0 20px 40px #15658b13;border-color:#9dcae7}.nutrition-product-card:hover img{transform:scale(1.06) rotate(-2deg)}}
+.nutrition-conversion{display:flex;align-items:center;justify-content:space-between;gap:30px;margin-top:55px;border-top:1px solid #cce4f3;padding-top:35px}
+.nutrition-conversion-brand{font-size:clamp(24px,3vw,36px);letter-spacing:-.05em;font-weight:500}
+.nutrition-conversion .actions{margin:0;align-items:flex-start;gap:15px;flex-wrap:wrap}
+.nutrition-lp .store-launch-pending{max-width:260px}
+.nutrition-lp .store-launch-pending p{color:#506d80;font-size:11px;line-height:1.6;margin:12px 8px 0}
+.nutrition-lp .store-launch-pending button:disabled{opacity:1;background:#deedf6;color:#486a7e;border-color:#deedf6}
+[data-nutrition-reveal].is-revealed{animation:nutrition-enter .65s ease-out both}
+@media(max-width:1100px){.nutrition-copy h2{font-size:54px}.nutrition-copy .actions{gap:14px}.nutrition-lp .button{padding:16px 20px}.nutrition-card-copy{padding:23px}.nutrition-card-copy h3{font-size:23px}}
+@media(max-width:900px),(max-height:649px){.nutrition-story-progress{display:none}.nutrition-story-heading{margin-bottom:35px}.nutrition-story-inner{padding-block:65px}.nutrition-story-scenes{gap:20px}.nutrition-story-label{display:block}.nutrition-story-label h3{margin-top:10px;font-size:26px}}
+@media(max-width:760px){
+ .nutrition-hero{grid-template-columns:1fr;min-height:0;padding:15px 0 0;gap:0}.nutrition-copy{padding-block:15px 10px}.nutrition-copy h2{font-size:clamp(40px,8.8vw,58px);max-width:560px}.nutrition-copy h1{font-size:16px}.nutrition-copy .eyebrow{font-size:9px;margin-bottom:22px;letter-spacing:.07em}.nutrition-copy .actions{margin-top:25px;gap:18px}.nutrition-copy .button{font-size:12px;min-height:50px}.nutrition-text-link{font-size:12px}
+ .nutrition-showcase{max-width:530px;margin-inline:auto;aspect-ratio:1.12}.actor-whey{top:3%;left:0;width:49%}.actor-epic{top:3%;right:0;width:46%}.actor-creatina{top:35%;width:49%;left:27%}.nutrition-orbit{inset:10% 0}.nutrition-orbit.orbit-two{inset:18% 0}.nutrition-scroll-cue{padding-bottom:25px;font-size:10px}
+ .nutrition-story-scenes{grid-template-columns:1fr;gap:45px}.nutrition-story-scene{display:grid;grid-template-columns:1fr .8fr;gap:12px;align-items:center}.nutrition-story-scene:nth-child(2) .nutrition-story-art{order:2}.nutrition-story-scene:nth-child(2) .nutrition-story-label{order:1}.nutrition-story-label{padding:0}.nutrition-story-label h3{font-size:clamp(23px,4vw,30px)}.nutrition-story-number{font-size:140px}.nutrition-story-art img{width:100%}.nutrition-story-inner{padding-block:60px}.nutrition-story-heading h2{font-size:38px}
+ .nutrition-catalog{padding-block:65px 55px}.nutrition-catalog-heading{margin-bottom:30px}.nutrition-catalog-heading .page-lead{font-size:17px}.nutrition-product-grid{grid-template-columns:1fr;gap:22px;max-width:520px;margin-inline:auto}.nutrition-card-art{aspect-ratio:1.35}.nutrition-card-art img{width:70%;max-height:340px}.nutrition-card-copy{padding:25px}.nutrition-card-copy h3{font-size:28px}.nutrition-conversion{flex-direction:column;align-items:flex-start;margin-top:40px;gap:25px}.nutrition-conversion .actions{width:100%}.nutrition-conversion .actions>a,.nutrition-lp .store-launch-pending,.nutrition-lp .store-launch-pending .button{width:100%;max-width:none}.nutrition-lp .store-launch-pending p{margin-inline:0}
+}
+@media(prefers-reduced-motion:reduce){.nutrition-lp *{animation:none!important;transition:none!important;scroll-behavior:auto!important}.nutrition-parallax,.nutrition-showcase,.nutrition-story-art{transform:none!important}.nutrition-lp .nutrition-story-progress{display:none}}
+
+/* Hero direction: full-bleed product composition, inspired by the supplied reference. */
+body:has(.nutrition-lp) .site-header{position:fixed;inset:16px 18px auto;background:#fff;border-radius:18px;box-shadow:0 8px 35px #082c431a;color:var(--ink)}
+body:has(.nutrition-lp) .header-inner{width:calc(100% - 40px);min-height:88px;border-bottom:0}
+.nutrition-intro{background:radial-gradient(ellipse at 50% 26%,#6ecbfa 0,#239bd7 40%,#07557e 100%);color:#fff}
+.nutrition-intro:before{background:radial-gradient(ellipse at 48% 22%,#b7e7ff8c,transparent 55%);z-index:0}
+.nutrition-intro:after{z-index:1;inset:0;background:linear-gradient(180deg,#032b4212 0%,#032b4200 30%,#032b424d 48%,#032b42d9 76%,#032b42f2 100%);mask-image:none}
+.nutrition-intro>.container{position:relative;min-height:100svh;width:100%;max-width:none;padding:124px var(--space) 0;display:flex;flex-direction:column}
+.nutrition-intro .breadcrumb{position:relative;z-index:3;color:#e4f4ff;font-size:11px;padding:5px 0;max-width:1280px;width:100%;margin-inline:auto}
+.nutrition-hero{display:flex;align-items:flex-end;justify-content:center;flex:1;min-height:0;padding:0;gap:0}
+.nutrition-copy{width:100%;max-width:1020px;text-align:center;margin-inline:auto;padding:clamp(300px,38svh,490px) 0 14px}
+.nutrition-copy .eyebrow{border-color:#ffffff52;background:#073f624d;color:#e9f8ff;backdrop-filter:blur(8px);margin-bottom:15px}
+.nutrition-copy .eyebrow:before{background:#77d4ff}
+.nutrition-copy h1{color:#c6eaff;font-size:17px;margin-bottom:13px}
+.nutrition-copy h2{font-size:clamp(38px,4vw,62px);font-weight:500;line-height:1.08;max-width:1000px;margin-inline:auto;letter-spacing:-.04em;text-shadow:0 2px 20px #00243e40}
+.nutrition-copy h2 span{color:#fff}
+.nutrition-copy .actions{justify-content:center;margin-top:25px;gap:14px}
+.nutrition-copy .button{background:#4bc3f5;border-color:#4bc3f5;color:#07304a;min-width:215px}
+.nutrition-copy a.button:hover{background:#89ddff;color:#07304a}
+.nutrition-copy .nutrition-text-link{background:#fff;color:#104563;border-radius:40px;padding:15px 24px;min-height:54px;justify-content:center;min-width:190px;transition:background .25s,transform .25s}
+.nutrition-copy .nutrition-text-link:hover{background:#d9f2ff;transform:translateY(-3px)}
+.nutrition-showcase{position:absolute;inset:0;width:100%;height:100%;max-width:none;max-height:none;aspect-ratio:auto;margin:0;z-index:0;transform:translateY(calc(var(--hero-progress)*-40px)) scale(calc(1 + var(--hero-progress)*.05));pointer-events:none}
+.nutrition-showcase:before{inset:0;background:radial-gradient(ellipse at 50% 25%,#d0efff36,transparent 60%)}
+.nutrition-showcase .actor-whey{width:44%;left:-8%;top:22%;--tilt:-23deg;--depth:24px;z-index:1}
+.nutrition-showcase .actor-epic{width:41%;right:-6%;top:6%;--tilt:18deg;--depth:32px;z-index:2}
+.nutrition-showcase .actor-creatina{width:58%;left:21%;top:-8%;--tilt:-14deg;--depth:48px;z-index:3}
+.nutrition-actor img{filter:drop-shadow(18px 35px 30px #002e4b52)}
+.nutrition-orbit{inset:8% 15%;opacity:.18}.nutrition-orbit.orbit-two{inset:17% 5%;opacity:.12}
+.nutrition-stage-shadow{bottom:10%;left:12%;width:76%;background:#03324b66}
+.nutrition-scroll-cue{position:relative;z-index:3;justify-content:center;color:#bce6fc;width:100%;padding:15px 0 22px;font-size:10px}
+.nutrition-cue-line{display:none}
+@media(min-width:1600px){.nutrition-showcase .actor-creatina{width:51%;left:24%;top:-18%}.nutrition-showcase .actor-whey{width:40%;left:-6%;top:17%}.nutrition-showcase .actor-epic{width:38%;top:0;right:-4%}}
+@media(max-width:900px){body:has(.nutrition-lp) .site-header{inset:10px 10px auto;border-radius:14px}body:has(.nutrition-lp) .header-inner{width:calc(100% - 28px);min-height:75px}.nutrition-intro>.container{padding-top:102px}.nutrition-copy{padding-top:clamp(290px,38svh,430px)}.nutrition-showcase .actor-creatina{width:76%;left:12%;top:2%}.nutrition-showcase .actor-whey{width:53%;left:-17%;top:27%}.nutrition-showcase .actor-epic{width:52%;right:-14%;top:15%}}
+@media(max-width:760px){.nutrition-intro>.container{min-height:100svh}.nutrition-copy{padding-top:310px;padding-bottom:12px}.nutrition-copy h2{font-size:clamp(34px,7.5vw,48px);max-width:590px}.nutrition-copy h1{font-size:15px}.nutrition-copy .eyebrow{font-size:8px;letter-spacing:.06em;padding:9px 11px;margin-bottom:12px}.nutrition-copy .actions{gap:10px;margin-top:22px}.nutrition-copy .button,.nutrition-copy .nutrition-text-link{min-width:0;width:auto;min-height:48px;padding:14px 18px;font-size:12px}.nutrition-showcase .actor-creatina{width:92%;left:4%;top:65px}.nutrition-showcase .actor-whey{width:63%;left:-20%;top:220px}.nutrition-showcase .actor-epic{width:63%;right:-18%;top:165px}.nutrition-intro:after{background:linear-gradient(180deg,#032b4212,#032b4200 28%,#032b4266 45%,#032b42e8 67%,#032b42 100%)}.nutrition-scroll-cue{padding-bottom:25px}.nutrition-orbit{inset:10% 4%}}
+@media(max-width:380px){.nutrition-copy .actions{flex-direction:column}.nutrition-copy .button,.nutrition-copy .nutrition-text-link{width:100%}.nutrition-copy{padding-top:270px}.nutrition-showcase .actor-whey{top:190px}.nutrition-showcase .actor-epic{top:140px}}
+@media(max-height:650px) and (min-width:901px){.nutrition-copy{padding-top:220px}.nutrition-showcase .actor-creatina{width:48%;left:26%;top:-30%}.nutrition-copy h2{font-size:43px}}
+
+/* Drag exchanges the three positions, without intercepting vertical touch scroll. */
+.nutrition-showcase.nutrition-draggable{pointer-events:auto;touch-action:pan-y pinch-zoom;cursor:grab;user-select:none;--drag-x:0px}
+.nutrition-draggable[data-dragging=true]{cursor:grabbing}
+.nutrition-copy{pointer-events:none}.nutrition-copy>*{pointer-events:auto}
+.nutrition-draggable .nutrition-actor{right:auto;transition:left .7s cubic-bezier(.2,.7,.25,1),top .7s cubic-bezier(.2,.7,.25,1),width .7s cubic-bezier(.2,.7,.25,1)}
+.nutrition-draggable .nutrition-parallax{translate:var(--drag-x) 0;transition:translate .35s,transform .7s cubic-bezier(.2,.7,.25,1)}
+.nutrition-draggable[data-dragging=true] .nutrition-parallax{transition:none}
+.nutrition-draggable[data-dragging=true] .nutrition-float{animation-play-state:paused}
+.nutrition-draggable .nutrition-actor[data-position=left]{width:44%;left:-8%;top:22%;--tilt:-23deg;--depth:24px;z-index:1}
+.nutrition-draggable .nutrition-actor[data-position=right]{width:41%;left:65%;top:6%;--tilt:18deg;--depth:32px;z-index:2}
+.nutrition-draggable .nutrition-actor[data-position=center]{width:58%;left:21%;top:-8%;--tilt:-14deg;--depth:48px;z-index:3}
+.nutrition-stage-controls{position:absolute;top:158px;right:var(--space);z-index:5;display:flex;align-items:center;gap:7px;color:#fff}
+.nutrition-stage-controls button{display:grid;place-items:center;width:44px;height:44px;border-radius:50%;background:#073b60b8;color:#fff;border:1px solid #ffffff70;backdrop-filter:blur(10px)}
+.nutrition-stage-controls button:hover{background:#fff;color:#073b60}
+.nutrition-drag-hint{display:flex;gap:8px;align-items:center;font-size:11px;letter-spacing:.02em;margin-right:8px;text-shadow:0 1px 8px #00344b}
+.nutrition-draggable:focus-visible{outline:2px solid #b7eaff;outline-offset:-6px}
+@media(min-width:1600px){.nutrition-draggable .nutrition-actor[data-position=center]{width:51%;left:24%;top:-18%}.nutrition-draggable .nutrition-actor[data-position=left]{width:40%;left:-6%;top:17%}.nutrition-draggable .nutrition-actor[data-position=right]{width:38%;left:66%;top:0}}
+@media(max-width:900px){.nutrition-draggable .nutrition-actor[data-position=center]{width:76%;left:12%;top:2%}.nutrition-draggable .nutrition-actor[data-position=left]{width:53%;left:-17%;top:27%}.nutrition-draggable .nutrition-actor[data-position=right]{width:52%;left:62%;top:15%}.nutrition-stage-controls{top:140px}}
+@media(max-width:760px){.nutrition-draggable .nutrition-actor[data-position=center]{width:92%;left:4%;top:65px}.nutrition-draggable .nutrition-actor[data-position=left]{width:63%;left:-20%;top:220px}.nutrition-draggable .nutrition-actor[data-position=right]{width:63%;left:55%;top:165px}.nutrition-drag-hint{display:none}.nutrition-stage-controls{top:105px;right:15px;gap:6px}.nutrition-stage-controls button{width:44px;height:44px}}
+@media(max-width:380px){.nutrition-draggable .nutrition-actor[data-position=left]{top:190px}.nutrition-draggable .nutrition-actor[data-position=right]{top:140px}}
+@media(max-height:650px) and (min-width:901px){.nutrition-draggable .nutrition-actor[data-position=center]{width:48%;left:26%;top:-30%}}
+@media(prefers-reduced-motion:reduce){.nutrition-draggable .nutrition-parallax{translate:none!important}}

@@ -145,3 +145,28 @@ Nova orientação editorial fornecida pelo cliente e solicitada pelo usuário pa
 - Contato sem formulário demonstrativo: WhatsApp contextual e e-mail oficial, preservando o acesso à política. Backend PHP e formulário completo preservados para evolução posterior.
 - O usuário indicou https://www.fitnesspersonal.com.br como loja atual e fonte das imagens. Nesta rede, retornou 403/bloqueio no navegador; subdomínio futuro falhou em TLS. Imagens oficiais de três produtos foram obtidas do catálogo público da fabricante para revisão, sem geração de embalagens, alegação de loja oficial ou estoque/preço. Correspondência com catálogo WBuy e autorização de publicação pendentes.
 - Detalhes e restauração: `docs/lancamento/DEVOLUTIVA-07.md`.
+
+## Avisos nas imagens — 20/11/2026
+Esclarecimento do usuário: manter todas as imagens existentes e remover somente os avisos de geração por IA. Imagens e layout anterior restaurados; legendas removidas da Home, Consultoria e M.I.V.A.; textos alternativos mantêm a descrição visual sem o aviso. A procedência dos arquivos permanece registrada na documentação histórica, sem alteração.
+
+## E-Hub Nutrition como landing page — 20/11/2026
+Referência solicitada: https://dribbble.com/shots/27336275-Supplement-Landing-Page-AI-Health-Website. Usuário escolheu azul-céu e branco, acompanhando as embalagens, em vez de verde. Implementação com headline ampla, vitrine de produtos sobre fundo branco e bloco dedicado de conversão. Copy existente, imagens e destinos preservados; sem novas promessas, preços ou depoimentos. CSS restrito à página E-Hub; Home e outras páginas não recebem esta estilização. Ativação da loja permanece condicionada à validação já registrada.
+
+## Experiência interativa E-Hub Nutrition — 20/11/2026
+Briefing anexado `2870a3d4-9ec4-4bf7-aee2-184838a73a85/Texto colado.txt`: refatoração completa da LP. Mantidos os textos anteriores, azul-céu/branco, três embalagens, rotas e condicionamento da loja. Acrescentados apenas nomes dos produtos e CTAs de descoberta solicitados, sem preço, estoque, avaliações ou benefícios novos.
+
+Hero assimétrica com entrada tipográfica, três planos de produtos, flutuação CSS, iluminação e parallax interpolado. Seção sticky nativa em desktop alto destaca Whey, Epic e Creatina em três etapas de scroll; mobile, janelas baixas, redução de movimento e ausência de JavaScript têm sequência em fluxo normal. Vitrine com três cards leva à loja geral apenas se já validada; enquanto pendente, o link explicitamente chamado Entre em contato leva a `/contato/?interesse=suplementacao`. Não há URLs individuais de produtos confirmadas.
+
+React e CSS existentes, IntersectionObserver e requestAnimationFrame sob demanda; sem GSAP/Motion adicional, canvas ou scroll hijacking. Flutuação pausa fora da viewport e quando a aba fica oculta. Recortes transparentes determinísticos autorizados pelo usuário, com RGB opaco idêntico às fontes; nenhuma embalagem gerada é utilizada. Sem alteração da Home ou do backend PHP nesta refatoração.
+
+## Link da loja liberado — 20/11/2026
+Usuário autorizou explicitamente habilitar o botão e apenas direcionar para https://www.fitnesspersonal.com.br/. Configuração central passa a usar esse endereço, sem NEXT_PUBLIC_STORE_VALIDATED. Botão, menu, rodapé e CTAs da vitrine usam a mesma URL; contato permanece disponível. Esta autorização substitui o bloqueio anterior do link, sem declarar checkout ou migração de domínio validados.
+
+## Acesso interno ao E-Hub — 20/11/2026
+A pedido do usuário, E-Hub Nutrition entra logo após Hub Esportivo no dropdown desktop e no menu mobile, apontando para `/e-hub-nutrition/`. Loja de Suplementos mantém o destino externo autorizado. Não altera a lista dos três Hubs operacionais usada nas demais seções.
+
+## Hero E-Hub em composição de fundo — 20/11/2026
+Referência visual enviada em Captura de Tela 2026-11-20 às 09.54.35.png: hero de produtos ampliados no fundo, texto inferior centralizado e header branco flutuante. Adaptada com as três embalagens e todos os textos atuais; nenhuma cápsula, promessa ou produto da referência foi acrescentado. Paleta azul preservada com degradê escuro para leitura. Header flutuante aplicado somente quando a página E-Hub está presente; storytelling e vitrine preservados. Build aprovado e cinco larguras verificadas (320, 375, 768, 1024, 1440 px).
+
+## Arraste dos produtos na hero — 20/11/2026
+A pedido do usuário, os três potes trocam ciclicamente as posições esquerda/direita/centro por arraste horizontal. Pointer Events com captura, limiar de 45 px, distinção de eixo e cancelamento; touch-action pan-y pinch-zoom preserva scroll vertical e zoom. Setas clicáveis e teclado oferecem alternativa acessível com anúncio do produto central. Parallax não disputa o gesto, flutuação pausa durante o arraste e redução de movimento troca posições sem transições. Embalagens, textos comerciais e links preservados.
