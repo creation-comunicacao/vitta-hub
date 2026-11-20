@@ -1,33 +1,8 @@
-import { HumanJourney } from '@/components/sections/ecosystem-visuals';
-import { PageHero, ContentSection, PageCTA, FAQSection } from './shared';
-import { Consultancy } from '@/components/sections/home';
-import { Table, TableHeader, TableBody, TableRow, TableHead, TableCell, TableCaption } from '@/components/ui/table';
-import { plans } from '@/content/home';
-const journey = [
-  ['Anamnese','Conhecer seu contexto e sua rotina.'],['Objetivos','Entender o que você busca neste momento.'],
-  ['Planejamento','Organizar o caminho de treinamento.'],['Prescrição','Construir o treino individualizado.'],
-  ['Execução','Treinar com orientações e aplicativo.'],['Acompanhamento','Manter o contato com a estrutura de suporte.'],
-  ['Ajustes','Revisar a proposta conforme a jornada.'],['Evolução','Acompanhar o desenvolvimento ao longo do processo.'],
-];
-const comparisons = [
-  ['Treino e aplicativo','Incluídos','Incluídos','Incluídos','Incluídos'],
-  ['Nutrição','Não descrita nesta oferta','Consulta + planejamento alimentar','Não descrita nesta oferta','Presencial'],
-  ['Sessões presenciais','Não descritas nesta oferta','Não descritas nesta oferta','1–2 na primeira semana, conforme disponibilidade','Primeira semana presencial'],
-  ['Avaliação e bioimpedância','Anamnese','Anamnese do Digital','Não descritas nesta oferta','Avaliação + bioimpedância'],
-  ['Suporte','Suporte e acompanhamento','Suporte e acompanhamento','Consultar composição','Prioritário'],
-  ['Investimento','Sob consulta','Sob consulta','Sob consulta','Sob consulta'],
-];
-export function ConsultancyPage(){return <>
-  <PageHero slug="consultoria-online" eyebrow="Consultoria Online / M.I.V.A." lead="Você não precisa de mais uma planilha." cta="Conhecer a Consultoria" href="#ofertas" visual={<HumanJourney/>}><p>Prescrição individualizada e acompanhamento para conectar o treinamento à sua rotina, aos seus objetivos e ao seu momento.</p></PageHero>
-  <ContentSection label="A jornada" title="Do primeiro contato ao próximo ajuste."><ol className="consultancy-journey">{journey.map(([title,text],i)=><li key={title}><span>0{i+1}</span><h3>{title}</h3><p>{text}</p></li>)}</ol></ContentSection>
-  <div id="ofertas"><Consultancy label="Quatro ofertas / Sob consulta" showJourney={false}/></div>
-  <ContentSection label="Compare as ofertas" title="Encontre a composição que faz sentido para você."><p>Todos os valores são sob consulta. Confirme disponibilidade e escopo com o atendimento.</p><div className="comparison-wrap" role="region" aria-label="Comparação dos quatro planos" tabIndex={0}><Table className="comparison-table"><TableCaption>Os itens não descritos em uma oferta devem ser confirmados com o atendimento.</TableCaption><TableHeader><TableRow><TableHead scope="col">O que acompanha você</TableHead>{plans.map(p=><TableHead key={p.name} scope="col">M.I.V.A.<br/>{p.name}</TableHead>)}</TableRow></TableHeader><TableBody>{comparisons.map(([label,...values])=><TableRow key={label}><TableHead scope="row">{label}</TableHead>{values.map((value,i)=><TableCell key={i}>{value}</TableCell>)}</TableRow>)}</TableBody></Table></div></ContentSection>
-  <ContentSection label="Físico + digital + humano" title="Tecnologia organiza. Pessoas acompanham." tone="soft-section"><div className="editorial-split"><p className="large-copy">O aplicativo apoia a organização do treino. A prescrição, a orientação e o acompanhamento mantêm as pessoas no centro da experiência.</p><div><h3>Diferentes momentos, diferentes necessidades.</h3><p>A consultoria pode conversar com quem está começando, retomando a rotina ou buscando evolução, composição corporal, autonomia ou objetivos esportivos.</p><p>A M.I.V.A. conecta essa visão ao movimento. A nutrição compõe as ofertas Total e Executive VIP.</p><div className="actions"><a className="text-link" href="/miva/">Entender a M.I.V.A.</a><a className="text-link" href="/e-hub-nutrition/">Conhecer o atendimento nutricional</a></div></div></div></ContentSection>
-  <FAQSection items={[
-    {question:'Quanto custa cada plano?',answer:'Todos os valores são sob consulta. O atendimento deve confirmar o escopo comercial e a disponibilidade antes da contratação.'},
-    {question:'O Híbrido Start inclui sessões presenciais?',answer:'A proposta inclui treino, aplicativo e 1–2 sessões presenciais na primeira semana, conforme disponibilidade.'},
-    {question:'Quais ofertas incluem nutrição?',answer:'Total reúne o Digital, consulta nutricional e planejamento alimentar individualizado com Douglas Silva. Executive VIP também inclui nutrição em sua composição.'},
-    {question:'M.I.V.A. é o nome de um aplicativo?',answer:'Não. M.I.V.A. é a metodologia Movimento Inteligente para uma Vida Ativa. O aplicativo é uma ferramenta de organização do treinamento dentro da experiência.'},
-  ]}/>
-  <PageCTA title="Vamos conhecer sua rotina?" text="Converse sobre a consultoria e a composição mais adequada ao seu momento." label="Conhecer a Consultoria" href="/contato/?interesse=consultoria"/>
-</>}
+import {Breadcrumb} from './shared';
+import {MovementImage} from '@/components/launch/visuals';
+import {whatsappHref} from '@/config/site';
+export function ConsultancyPage(){return <div className="launch-consultancy">
+ <section className="launch-photo-hero"><MovementImage priority/><div className="launch-photo-shade" aria-hidden="true"/><div className="container launch-photo-copy"><Breadcrumb slug="consultoria-online"/><span className="eyebrow">Consultoria Online</span><h1>Seu treino evolui com você.</h1><p className="page-lead">Orientação profissional, planejamento individualizado e acompanhamento para uma vida mais ativa.</p><p>A Consultoria Online FITNESS PERSONAL • VITTA HUB conecta a metodologia M.I.V.A. à praticidade do acompanhamento digital. Com uma proposta personalizada, buscamos adaptar o treinamento aos seus objetivos, à sua rotina e ao seu momento de vida.</p><a className="button" href={whatsappHref('consultoria')} data-interest="consultoria">Quero conhecer a Consultoria</a></div></section>
+ <section className="section container launch-editorial"><div><span className="eyebrow">Consultoria Online / M.I.V.A.</span><h2>Treinamento com direção e propósito</h2></div><p>Nossa abordagem valoriza a avaliação das necessidades individuais, a evolução progressiva e a autonomia na prática de exercícios. O acompanhamento digital facilita o acesso às orientações e à organização da rotina de treinos, independentemente de onde você esteja.</p></section>
+ <section className="section page-cta"><div className="container"><h2>Vamos conversar sobre seus objetivos?</h2><p>Conheça nossa proposta de acompanhamento e descubra como podemos ajudar você a construir uma rotina de treinamento mais consistente.</p><div className="actions"><a className="button" href={whatsappHref('consultoria')} data-interest="consultoria">Quero conhecer a Consultoria</a></div></div></section>
+ </div>}

@@ -2,7 +2,7 @@
 
 import { useEffect, useRef } from 'react';
 import { Brain, Heart, Smile, UserRound, Utensils } from 'lucide-react';
-import { CTA, SectionHeader } from '@/components/sections/ui';
+import { SectionHeader } from '@/components/sections/ui';
 
 const pillars = [
   { Icon: Heart, name: 'Saúde' },
@@ -85,9 +85,8 @@ export function MivaExperience() {
         <div className="miva-person" data-miva-step=".07"><span className="eyebrow">A pessoa no centro</span><span className="miva-person-icon"><UserRound size={30} strokeWidth={1.3} aria-hidden="true"/></span></div>
         <div className="miva-core" data-miva-step=".17"><strong>M.I.V.A.</strong><p>Movimento Inteligente<br/>para uma Vida Ativa</p></div>
         <div className="miva-pillars">{pillars.map(({Icon,name},i)=><div key={name} className={`miva-pillar miva-pillar-${i} miva-color-${i}`} data-miva-step={.28+i*.12}><span className="miva-pillar-icon"><Icon size={34} strokeWidth={1.3} aria-hidden="true"/></span><span>{name}</span></div>)}</div>
-        <div className="miva-links" data-miva-step=".82"><span>Uma visão que atravessa</span><div><a href="/gestao-esportiva-condominios/">Hubs</a><a href="/consultoria-online/">Consultoria</a><a href="/e-hub-nutrition/">Nutrição</a></div></div>
+        <div className="miva-links" data-miva-step=".82"><span>Uma visão que atravessa</span><div><span>Hubs</span><span>Consultoria</span><span>Nutrição</span></div></div>
       </div>
-      <div className="miva-cta" data-miva-step=".9"><CTA secondary href="/miva/">Conhecer a M.I.V.A.</CTA></div>
     </div>
   </section>;
 }

@@ -56,3 +56,6 @@ Os itens de aceite acima continuam para revisão do usuário. Envio real, links 
 ## Revisão de lançamento — 04/11/2026
 
 Devolutiva Técnica 02 e Plano Consolidado recebidos e aplicados. Acompanhamento item a item e testes: `docs/lancamento/DEVOLUTIVA-02.md`. Permanecem abertos os aceites que exigem recebimento real de e-mail, validação comercial/legal, GA4/Search Console e migração WBuy/DNS; não confundir build local aprovado com liberação de publicação.
+
+## Versão 1.0 — Devolutiva 07
+Os critérios anteriores de quatro ofertas, equipe, conteúdos e nutrição clínica não se aplicam à versão enxuta solicitada. Checklist vigente: `docs/lancamento/DEVOLUTIVA-07.md`. A versão completa continua recuperável por branch e backup independente. Publicação depende da operação da loja no subdomínio aprovado e do e-mail preservado.

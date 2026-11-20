@@ -1,0 +1,82 @@
+DEVOLUTIVA TÉCNICA 07
+Ajustes de conteúdo e navegação • Versão 1.0 de lançamento
+Objetivo: publicar imediatamente uma versão institucional objetiva, comercialmente fiel ao estágio atual da operação, preservando integralmente a versão mais completa para evolução posterior.
+Diretriz de execução
+ANTES de editar: criar cópia independente, recuperável e identificada da versão atual, com código, páginas, textos, mídias e configurações pertinentes; informar branch/projeto/backup e procedimento de restauração.
+Trabalhar em versão de lançamento separada; não apagar conteúdos da cópia preservada.
+Manter o visual e a arquitetura já desenvolvidos; evitar redesenho integral ou inclusão de novas funcionalidades não solicitadas.
+Publicar somente após testes dos links, contatos e continuidade operacional da loja WBuy e do e-mail corporativo.
+1. Navegação global e páginas ocultas
+Menu: Loja de Suplementos
+Substituir “E-Hub Nutrition” no menu; abrir diretamente https://loja.fitnesspersonal.com.br (após validação de funcionamento).
+Menu: Contato
+Adicionar CONTATO como último link comum da navegação, mesmo estilo dos demais; destino /contato/. Não destacar como botão.
+CTA Solicitar Apresentação
+Manter o botão atual em destaque e sua função comercial, testando o destino.
+Conteúdos e Equipe
+Não publicar na versão 1.0. Remover links de menu, rodapé e CTAs; retirar do sitemap público e impedir indexação se as rotas ainda existirem. Preservar na cópia completa.
+Mobile
+Repetir lógica de navegação e testar visibilidade dos links e CTA.
+2. Home — alterações por bloco
+Bloco 4 — M.I.V.A.
+Preservar apresentação principal, mas retirar os links “Hubs”, “Consultoria”, “Nutrição” e “Conhecer a M.I.V.A.” indicados na revisão.
+Bloco 5 — Jornada da Evolução
+Excluir integralmente da Home 1.0.
+Bloco 6 — Consultoria Online
+Remover cards de modalidades/planos; usar imagem ilustrativa de destaque, texto breve e CTA para /consultoria-online/.
+Bloco 7 — E-Hub Nutrition
+Converter para card visual com imagem, no padrão dos cards dos Hubs; CTA para /e-hub-nutrition/.
+Blocos 9 e 10
+Excluir integralmente da Home 1.0.
+Demais áreas
+Manter sem alterações, salvo referências ou links para áreas ocultadas; preservar chamada final de condomínios se funcional.
+Texto aprovado — Home, bloco 6
+CONSULTORIA ONLINESeu treino. Sua rotina. Seu acompanhamento.Treinamento individualizado com orientação profissional, acompanhamento e tecnologia para ajudar você a manter uma vida ativa, onde estiver.Botão: Conhecer a Consultoria Online → /consultoria-online/
+Texto aprovado — Home, bloco 7
+E-HUB NUTRITIONSuplementação para uma vida em movimento.Conheça nossa loja virtual de suplementos e encontre produtos para complementar sua rotina de atividade física e bem-estar.Botão: Conhecer o E-Hub Nutrition → /e-hub-nutrition/
+3. Vitta Hub — Arquitetura do Ecossistema
+Alterar somente o texto da caixa E-Hub Nutrition. Manter B2B Condomínios, Consultoria Online e M.I.V.A. com sua hierarquia atual.
+E-HUB NUTRITIONLoja virtual de suplementos e produtos voltados à atividade física, ao desempenho e ao bem-estar, integrada ao ecossistema FITNESS PERSONAL • VITTA HUB.
+4. Gestão Esportiva para Condomínios
+APROVADA SEM ALTERAÇÕES de conteúdo nesta revisão.
+5. M.I.V.A. — página reduzida e visual
+Reduzir textos e ampliar o protagonismo das imagens. Excluir integralmente o bloco “O que M.I.V.A. não é”. Substituir “A Pessoa no Centro” por “O movimento começa em você”. Retirar o detalhamento extenso da Pirâmide da versão 1.0, preservando-o na cópia completa.
+Estrutura e textos para publicação
+1. M.I.V.A. — Movimento Inteligente para uma Vida AtivaUma filosofia que integra movimento, consciência corporal e hábitos saudáveis para promover autonomia, desempenho e qualidade de vida.
+2. O movimento começa em vocêCada pessoa possui objetivos, necessidades e possibilidades diferentes. Por isso, valorizamos um treinamento orientado, progressivo e adaptado a cada fase da vida.
+3. Os quatro pilares M.I.V.A.Saúde, mente, nutrição e felicidade: dimensões que se conectam para construir uma vida mais ativa e equilibrada.
+4. Dois caminhos, uma mesma filosofiaT.A.L. — Treinamento para Autonomia e Longevidade: movimento, segurança, mobilidade e independência.T.A.R. — Treinamento de Alto Rendimento: força, condicionamento e evolução da performance.
+Direção visual: quatro seções curtas, alternando fotos de movimento, orientação profissional e bem-estar. Manter os quatro símbolos dos pilares; usar a identidade visual atual. As imagens exibidas na conversa eram referências, não arquivos finais aprovados.
+6. Consultoria Online — retirar ofertas
+Excluir integralmente o bloco 4 “Ofertas” e o bloco “Compare os planos”.
+Não exibir nomes, tabelas, preços, pacotes, quantidades de sessões ou condições comerciais ainda não aprovados.
+Aplicar Hero com fotografia ampla de treino orientado/tecnologia e CTA destacado; aproveitar o layout existente.
+Texto para publicação
+CONSULTORIA ONLINESeu treino evolui com você.Orientação profissional, planejamento individualizado e acompanhamento para uma vida mais ativa.A Consultoria Online FITNESS PERSONAL • VITTA HUB conecta a metodologia M.I.V.A. à praticidade do acompanhamento digital. Com uma proposta personalizada, buscamos adaptar o treinamento aos seus objetivos, à sua rotina e ao seu momento de vida.Treinamento com direção e propósitoNossa abordagem valoriza a avaliação das necessidades individuais, a evolução progressiva e a autonomia na prática de exercícios. O acompanhamento digital facilita o acesso às orientações e à organização da rotina de treinos, independentemente de onde você esteja.Vamos conversar sobre seus objetivos?Conheça nossa proposta de acompanhamento e descubra como podemos ajudar você a construir uma rotina de treinamento mais consistente.Botão: QUERO CONHECER A CONSULTORIA → WhatsApp oficial.
+Mensagem WhatsApp: “Olá! Gostaria de conhecer a Consultoria Online da FITNESS PERSONAL • VITTA HUB e receber informações sobre o acompanhamento.”
+7. E-Hub Nutrition — foco loja Probiótica
+Manter o nome E-Hub Nutrition como unidade do ecossistema e título da página institucional; no menu usar “Loja de Suplementos” com acesso direto à WBuy.
+Reformular /e-hub-nutrition/ como landing page curta de produtos e direcionamento à loja, sem foco em consultas nutricionais ou planos alimentares.
+Hero visual com produtos da marca Probiótica comercializados pela loja: Whey Protein, Creatina, linha Epic, coqueteleiras e outros itens pertinentes.
+Usar preferencialmente imagens oficiais/autorizadas dos produtos, com embalagens e disponibilidade verificadas; não afirmar ser loja oficial da fabricante sem autorização.
+Texto para publicação
+E-HUB NUTRITION | LOJA DE SUPLEMENTOSSua evolução merece o melhor da suplementação.Conheça nossa seleção de produtos Probiótica: Whey Protein, Creatina, linha Epic, coqueteleiras e muito mais.CTA principal: ACESSAR LOJA DE SUPLEMENTOS → https://loja.fitnesspersonal.com.brCTA secundário: ENTRE EM CONTATO → /contato/
+8. Contato e captação — requisitos mínimos
+Manter o acesso à página /contato/ no menu e no E-Hub. Dados oficiais: WhatsApp +551141465843 e e-mail vittahub@fitnesspersonal.com.br.
+Todos os links de WhatsApp devem abrir o número oficial e, quando pertinente, mensagem contextualizada.
+Se houver formulário, testar envio real ao e-mail corporativo e confirmação após sucesso; se não estiver pronto, remover formulário demonstrativo e oferecer WhatsApp e e-mail funcionais.
+Preservar a Política de Privacidade e os registros de e-mail durante qualquer alteração de DNS.
+9. Publicação e validação
+O plano de migração técnica anterior continua válido: domínio principal fitnesspersonal.com.br (Locaweb), institucional na Vercel, loja WBuy no subdomínio loja.fitnesspersonal.com.br. Esta devolutiva trata dos ajustes editoriais e de navegação, sem substituir o plano técnico de migração.
+Checklist de aceite para retorno do dev
+Cópia da versão completa criada, identificada e recuperável.
+Home atualizada conforme blocos indicados; sem links órfãos.
+Vitta Hub ajustada; Gestão Esportiva mantida.
+M.I.V.A. resumida e visual, com TAL/TAR corretos.
+Consultoria Online sem ofertas/planos não aprovados.
+E-Hub com Hero de produtos, dois CTAs e navegação para loja.
+Menu final: Loja de Suplementos direta à WBuy; Contato último link comum; Solicitar Apresentação destacado.
+Conteúdos e Equipe ocultos na versão 1.0, sem links públicos.
+WhatsApp, e-mail, links, versão mobile e loja testados.
+Confirmar o que foi implementado, o que falta e o horário de publicação possível.
+Observação: o destino loja.fitnesspersonal.com.br foi aprovado como endereço da loja, mas sua ativação e testes operacionais precisam ser confirmados antes da publicação.

@@ -25,13 +25,13 @@ export const pageMeta = {
     label: 'M.I.V.A.',
   },
   'consultoria-online': {
-    title: 'Seu treino. Sua rotina. Seu acompanhamento.',
-    description: 'Consultoria Online M.I.V.A.: treinamento individualizado, acompanhamento e quatro ofertas para diferentes necessidades. Valores sob consulta.',
+    title: 'Seu treino evolui com você.',
+    description: 'Consultoria Online FITNESS PERSONAL • VITTA HUB: orientação profissional, planejamento individualizado e acompanhamento para uma vida mais ativa.',
     label: 'Consultoria Online',
   },
   'e-hub-nutrition': {
-    title: 'Nutrição que acompanha o seu movimento.',
-    description: 'E-Hub Nutrition: atendimento com Douglas Silva, avaliação, orientação e acompanhamento nutricional integrados ao treinamento.',
+    title: 'Sua evolução merece o melhor da suplementação.',
+    description: 'E-Hub Nutrition: seleção de suplementos Probiótica integrada ao ecossistema FITNESS PERSONAL • VITTA HUB. Conheça a loja de suplementos.',
     label: 'E-Hub Nutrition',
   },
   'vitta-hub': {
