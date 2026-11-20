@@ -1,14 +1,16 @@
 const officialUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://fitnesspersonal.com.br';
 if (officialUrl && (!/^https:\/\/[^/]+$/.test(officialUrl) || new URL(officialUrl).username || new URL(officialUrl).password)) throw new Error('NEXT_PUBLIC_SITE_URL deve ser uma origem HTTPS oficial, sem barra final.');
+export const approvedStoreUrl = 'https://loja.fitnesspersonal.com.br';
+export const storeValidated = process.env.NEXT_PUBLIC_STORE_VALIDATED === 'true';
 export const siteConfig = {
   name: 'FITNESS PERSONAL • VITTA HUB • ASSESSORIA ESPORTIVA',
   url: officialUrl,
-  whatsapp: process.env.NEXT_PUBLIC_WHATSAPP || '551141465843', email: process.env.NEXT_PUBLIC_CONTACT_EMAIL || 'vittahub@fitnesspersonal.com.br', instagram: process.env.NEXT_PUBLIC_INSTAGRAM || '', storeUrl: process.env.NEXT_PUBLIC_STORE_URL || '',
+  whatsapp: process.env.NEXT_PUBLIC_WHATSAPP || '551141465843', email: process.env.NEXT_PUBLIC_CONTACT_EMAIL || 'vittahub@fitnesspersonal.com.br', instagram: process.env.NEXT_PUBLIC_INSTAGRAM || '', storeUrl: storeValidated ? approvedStoreUrl : '',
   indexable: process.env.SITE_INDEXABLE === 'true' && process.env.VERCEL_ENV !== 'preview' && process.env.VERCEL_ENV !== 'development',
 };
 export const navigation = [
   ['VITTA HUB', '/vitta-hub/'], ['M.I.V.A.', '/miva/'], ['Consultoria', '/consultoria-online/'],
-  ['E-Hub', '/e-hub-nutrition/'], ['Conteúdos', '/conteudos/'], ['Equipe', '/equipe/'],
+  ['Loja de Suplementos', siteConfig.storeUrl || '/e-hub-nutrition/'], ['Contato', '/contato/'],
 ] as const;
 export const hubs = [
   { name: 'Hub Fitness', path: '/hub-fitness/', text: 'Treinamento, força, funcional, condicionamento e movimento.', space: 'Academia & áreas externas', icon: 'fitness' },
@@ -18,8 +20,8 @@ export const hubs = [
 export const presentationHref = '/contato/?interesse=gestao-esportiva';
 export const messages = {
   gestao: 'Olá! Gostaria de conhecer a proposta de gestão esportiva da FITNESS PERSONAL • VITTA HUB para o meu condomínio.',
-  consultoria: 'Olá! Gostaria de receber informações sobre os programas de Consultoria Online e a metodologia M.I.V.A.',
-  nutricao: 'Olá! Gostaria de saber mais sobre os serviços de nutrição e suplementação da VITTA HUB.',
+  consultoria: 'Olá! Gostaria de conhecer a Consultoria Online da FITNESS PERSONAL • VITTA HUB e receber informações sobre o acompanhamento.',
+  nutricao: 'Olá! Gostaria de saber mais sobre os suplementos da loja FITNESS PERSONAL • VITTA HUB.',
   geral: 'Olá! Gostaria de conhecer melhor os serviços da FITNESS PERSONAL • VITTA HUB.',
 };
 export function whatsappKind(path: string, interest?: string | null): keyof typeof messages {

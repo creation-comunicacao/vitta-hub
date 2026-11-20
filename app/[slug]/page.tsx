@@ -9,11 +9,11 @@ import { HubPage } from '@/components/pages/hub';
 import { MivaPage } from '@/components/pages/miva';
 import { ConsultancyPage } from '@/components/pages/consultancy';
 import { NutritionPage } from '@/components/pages/nutrition';
-import { InstitutionalPage, TeamPage } from '@/components/pages/institutional';
+import { InstitutionalPage } from '@/components/pages/institutional';
 const pending:Record<string,string>={};
-export function generateStaticParams(){return Object.keys(pageMeta).map(slug=>({slug}));}
+export function generateStaticParams(){return Object.keys(pageMeta).filter(slug=>slug!=='equipe').map(slug=>({slug}));}
 export const dynamicParams=false;
-function isReady(slug:string):slug is PageSlug {return Object.hasOwn(pageMeta,slug)}
+function isReady(slug:string):slug is PageSlug {return slug!=='equipe' && Object.hasOwn(pageMeta,slug)}
 export async function generateMetadata({params}:{params:Promise<{slug:string}>}):Promise<Metadata>{
  const {slug}=await params;
  if(!isReady(slug))return {title:`${pending[slug]||'Página não encontrada'} | VITTA HUB`,description:'Página em preparação para a próxima etapa do projeto.',robots:{index:false,follow:false},alternates:{canonical:null},openGraph:{title:pending[slug]||'Página não encontrada',description:'Página em preparação para a próxima etapa do projeto.'}};
@@ -34,7 +34,6 @@ export default async function Page({params}:{params:Promise<{slug:string}>}){
   case 'consultoria-online':content=<ConsultancyPage/>;break;
   case 'e-hub-nutrition':content=<NutritionPage/>;break;
   case 'vitta-hub':content=<InstitutionalPage/>;break;
-  case 'equipe':content=<TeamPage/>;break;
  }
  return <main id="principal">{content}<PageEnhancements/></main>;
 }

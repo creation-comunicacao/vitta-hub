@@ -132,3 +132,16 @@ Documento do cliente de 26/10/2026, fornecido pelo usuário para implementação
 - M.I.V.A. Home: título aparece antes da construção, percurso reduzido de 280 para 220svh. Sem remoção da narrativa ou vídeo.
 - Implementação dos 301 exatos preparada; mapa vazio até inventário WBuy. Não houve alteração de DNS, MX, loja ou publicação.
 - Checklist, dependências e evidências em `docs/lancamento/DEVOLUTIVA-02.md`. P0 não declarado concluído: faltam validações externas.
+
+## Devolutiva 07 — versão de lançamento 1.0
+
+Nova orientação editorial fornecida pelo cliente e solicitada pelo usuário para implementação. Prevalece sobre a Devolutiva 02 nos pontos de conteúdo/navegação; o plano técnico de migração permanece válido.
+
+- Backup independente verificado antes de editar: commit fee7c36dce1234764d28880f244b913691772bd0, branch `codex/full-version-before-devolutiva-07`, bundle externo ao projeto. Implementação isolada em `codex/launch-v1-devolutiva-07`.
+- Home sem Jornada, planos, Equipe e Conteúdos. Links do bloco M.I.V.A. removidos; Consultoria e E-Hub passam a blocos visuais com os textos aprovados.
+- M.I.V.A. reduzida a quatro seções; Consultoria sem ofertas/preços/sessões; E-Hub passa a suplementação Probiótica, substituindo o foco anterior em atendimento nutricional.
+- Menu Loja de Suplementos preparado para subdomínio aprovado, Contato último link comum, Solicitar Apresentação mantido. Loja só é ativada com `NEXT_PUBLIC_STORE_VALIDATED=true`; enquanto pendente, menu conduz à página institucional E-Hub e o botão externo permanece indisponível.
+- Equipe/Conteúdos retornam 404/noindex e não integram sitemap/navegação. Não apenas ocultos por CSS.
+- Contato sem formulário demonstrativo: WhatsApp contextual e e-mail oficial, preservando o acesso à política. Backend PHP e formulário completo preservados para evolução posterior.
+- O usuário indicou https://www.fitnesspersonal.com.br como loja atual e fonte das imagens. Nesta rede, retornou 403/bloqueio no navegador; subdomínio futuro falhou em TLS. Imagens oficiais de três produtos foram obtidas do catálogo público da fabricante para revisão, sem geração de embalagens, alegação de loja oficial ou estoque/preço. Correspondência com catálogo WBuy e autorização de publicação pendentes.
+- Detalhes e restauração: `docs/lancamento/DEVOLUTIVA-07.md`.

@@ -64,3 +64,14 @@ test('Eventos dependem de consentimento e excluem query, hash e referrer',()=>{
   assert.equal(received.length,1);assert.equal(JSON.stringify(received).includes('private'),false);assert.equal(JSON.stringify(received).includes('generate_lead'),true);
  }finally{configureAnalytics();globals.window=oldWindow;globals.document=oldDocument;}
 });
+
+import {navigation,approvedStoreUrl,storeValidated} from '../config/site';
+import sitemap from '../app/sitemap';
+test('Lançamento 1.0 oculta Equipe/Conteúdos, mantém Contato no fim e condiciona a loja validada',()=>{
+ assert.equal(navigation.at(-1)?.[0],'Contato');
+ assert.ok(navigation.every(([,href])=>!/^\/(equipe|conteudos)/.test(href)));
+ assert.ok(sitemap().every(item=>!/(equipe|conteudos)/.test(item.url)));
+ assert.equal(approvedStoreUrl,'https://loja.fitnesspersonal.com.br');
+ assert.equal(navigation.find(([label])=>label==='Loja de Suplementos')?.[1],storeValidated?approvedStoreUrl:'/e-hub-nutrition/');
+ assert.equal(messages.consultoria,'Olá! Gostaria de conhecer a Consultoria Online da FITNESS PERSONAL • VITTA HUB e receber informações sobre o acompanhamento.');
+});
