@@ -80,12 +80,11 @@ export function MivaExperience() {
           <path className="miva-root-line" data-miva-step=".16" data-miva-target=".miva-core" pathLength="1" d="M300 100 L300 250"/>
           {paths.map((d,i)=><path key={d} className={`miva-connection miva-color-${i}`} data-miva-step={.28+i*.12} data-miva-target={`.miva-pillar-${i}`} pathLength="1" d={d}/>)}
           <ellipse className="miva-orbit" data-miva-step=".72" data-miva-target=".miva-links" pathLength="1" cx="300" cy="275" rx="235" ry="168"/>
-          <path className="miva-operation-line" data-miva-step=".82" data-miva-target=".miva-links" pathLength="1" d="M300 315 L300 485 M300 465 Q300 485 280 485 L170 485 M300 465 Q300 485 320 485 L430 485"/>
         </svg>
-        <div className="miva-person" data-miva-step=".07"><span className="eyebrow">A pessoa no centro</span><span className="miva-person-icon"><UserRound size={30} strokeWidth={1.3} aria-hidden="true"/></span></div>
+        <div className="miva-person" data-miva-step=".07"><span className="miva-person-icon"><UserRound size={30} strokeWidth={1.3} aria-hidden="true"/></span></div>
         <div className="miva-core" data-miva-step=".17"><strong>M.I.V.A.</strong><p>Movimento Inteligente<br/>para uma Vida Ativa</p></div>
         <div className="miva-pillars">{pillars.map(({Icon,name},i)=><div key={name} className={`miva-pillar miva-pillar-${i} miva-color-${i}`} data-miva-step={.28+i*.12}><span className="miva-pillar-icon"><Icon size={34} strokeWidth={1.3} aria-hidden="true"/></span><span>{name}</span></div>)}</div>
-        <div className="miva-links" data-miva-step=".82"><span>Uma visão que atravessa</span><div><span>Hubs</span><span>Consultoria</span><span>Nutrição</span></div></div>
+        <div className="miva-links" data-miva-step=".82"><span>Uma visão que atravessa</span></div>
       </div>
     </div>
   </section>;

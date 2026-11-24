@@ -173,3 +173,10 @@ A pedido do usuário, os três potes trocam ciclicamente as posições esquerda/
 
 ## Identidade laranja do E-Hub Nutrition
 Referência enviada pelo cliente em Photo 1.jpg: grafite/preto, laranja e tipografia clara, com embalagens azuis. Pedido atual substitui a direção anterior azul-céu/branco da interface. Paleta aplicada somente à LP E-Hub: hero, iluminação, órbitas, textos destacados, botões, controles, sequência de scroll e cards. Textos, arquivos dos produtos, rotas e comportamento de arraste preservados. Imagem usada como referência de identidade, sem incorporar suas afirmações comerciais ou substituir embalagens.
+
+## Devolutiva 08 — 24/11/2026
+- Fonte: `docs/fontes/Devolutiva_08_Home_Imagens.txt`, extraída do DOCX enviado pelo cliente.
+- Confirmações do usuário: manter `https://www.fitnesspersonal.com.br/`; preservar os quatro pilares M.I.V.A.; os seis PNGs são os arquivos definitivos disponíveis, mantendo a estilização atual.
+- Home 04: removidos “A pessoa no centro” e os rótulos inferiores Hubs/Consultoria/Nutrição, preservando o pilar Nutrição e os demais textos.
+- Home 07 reutiliza a sequência de scroll “Conhecer produtos” do E-Hub, por componente compartilhado, mantendo o texto editorial e CTA interno.
+- Catálogo e hero utilizam os seis produtos fornecidos. Recortes técnicos, sem geração de embalagens; identidade laranja/grafite preservada.

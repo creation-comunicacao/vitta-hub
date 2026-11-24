@@ -1,0 +1,34 @@
+DEVOLUTIVA TÉCNICA 08
+FITNESS PERSONAL • VITTA HUB | Homologação final — Home e materiais de produtos
+Objetivo: implementar apenas os ajustes abaixo e retornar uma nova prévia para aprovação, sem reabrir páginas e conteúdos já homologados.
+1. HOME — Bloco 04 | Nossa metodologia transversal
+REMOVER exclusivamente os textos/elementos identificados por:
+“A pessoa no centro”
+“Hubs”
+“Consultoria”
+“Nutrição”
+Preservar os demais conteúdos e o layout do bloco. Reacomodar os espaços após as exclusões, evitando vazios ou desalinhamentos.
+2. HOME — Bloco 07 | Produtos / E-Hub Nutrition
+Reaproveitar a SEGUNDA animação, do tipo carrossel, já existente na página E-Hub Nutrition, seção “Conhecer Produtos”, incorporando-a ao bloco 07 da Home.
+Reutilizar o componente/animação existente, sem criar outra versão visual desnecessária.
+Ajustar tamanho, espaçamento e proporção à Home; garantir boa experiência em desktop e mobile.
+Manter os links comerciais aprovados: menu “Loja de Suplementos” → https://loja.fitnesspersonal.com.br; página institucional E-Hub com CTA da loja e CTA interno “Entre em contato” → /contato/.
+Não alterar os demais blocos da Home.
+3. Imagens Probiótica — material encaminhado
+Foram disponibilizadas seis fotografias originais de produtos. Utilizar como fonte fiel para os rótulos e a identidade das embalagens. A pasta anexa ao envio inclui também duas versões PNG efetivamente transparentes para avaliação visual; as demais versões editadas anteriores não foram tratadas como recortes finais, pois não foi possível confirmar transparência real.
+EPIC Pré-Treino Limão 300g — arquivo original: PROB---Atualizacao_Novas-Embalagens_Site---Epic---LIMAO---1.webp
+Creatina Monohidratada 300g — arquivo original: PROB-CREATINA-300g.jpg(1).webp
+100% Pure Whey Baunilha 900g — arquivo original: PROB---Atualizacao_Novas-Embalagens_Site---100--Whey-Baunilha---1.webp
+Creatina Creapure 150g — arquivo original: PROB---CREAPURE-FRENTE.webp
+Creatina Caps 180 cápsulas — arquivo original: PROB---Atualizacao_Novas-Embalagens_Site---Creatina-Caps---1.webp
+100% Pure Whey Chocolate Refil 900g — arquivo original: PROB-PURE-WHEY-REFIL-CHOCOLATE--2-.jpg.webp
+Orientação: usar imagens com rótulos autênticos e legíveis. Caso seja necessário remover o fundo das quatro imagens restantes, realizar recorte técnico das fotografias originais, sem redesenhar textos, pesos, selos ou alegações. Verificar a autorização de uso comercial das imagens e marcas.
+4. Critérios de aceite / retorno do desenvolvedor
+Bloco 04 sem os quatro textos indicados; composição equilibrada.
+Bloco 07 com o segundo carrossel de “Conhecer Produtos” integrado e funcional.
+Imagens sem halos, fundo falso em xadrez ou distorções de embalagens; validação em fundo claro e escuro.
+Carrossel e CTAs testados em desktop e mobile.
+Restante da Home e das páginas já aprovadas sem alterações não solicitadas.
+Enviar link da nova prévia e apontar objetivamente qualquer pendência antes de publicar.
+5. Escopo e publicação
+Esta devolutiva é complementar à Devolutiva 07 e ao plano técnico de lançamento. Não substitui decisões anteriores. Preservar a cópia integral da versão pré-simplificação. Não alterar DNS ou a operação da loja sem a validação técnica previamente combinada.

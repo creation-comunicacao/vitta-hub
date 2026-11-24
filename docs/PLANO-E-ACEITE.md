@@ -76,3 +76,11 @@ Lint e build/TypeScript aprovados. Chrome: arraste mouse nos dois sentidos, bot�
 
 ## Revisão cromática E-Hub — laranja e grafite
 Build Next/TypeScript aprovado. Chrome em 375/768/1440 px sem overflow ou erros JavaScript; CTA principal confirmado em rgb(255,121,0); troca de produto central funcionando. Hero e catálogo revisados visualmente. Sem commit/push nesta etapa.
+
+## Devolutiva 08 — 24/11/2026
+- Home 04: quatro pilares mantidos; removidos somente os rótulos solicitados e seus conectores decorativos.
+- Home 07 e E-Hub compartilham a sequência de seis produtos. Mobile e movimento reduzido apresentam os produtos em fluxo normal.
+- Seis PNGs enviados integrados com transparência real; inspeção visual em fundos claro/escuro. Originais preservados.
+- Lint e build Next/TypeScript aprovados. Chrome em 320/375/768/1440 px nas duas páginas: sem overflow horizontal, imagens quebradas ou erros JavaScript.
+- Conferidas as seis etapas de scroll, ciclo dos seis produtos da hero com três visíveis, CTA interno e endereço www da loja.
+- Prévia local para revisão; sem commit, push ou publicação nesta etapa.

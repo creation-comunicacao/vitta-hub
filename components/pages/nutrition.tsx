@@ -4,14 +4,12 @@ import {StoreCTA} from '@/components/launch/visuals';
 import {NutritionExperience} from '@/components/nutrition/experience';
 import {NutritionProductStage} from '@/components/nutrition/product-stage';
 import {siteConfig} from '@/config/site';
+import {NutritionProductStory} from '@/components/nutrition/product-story';
+import {nutritionProducts} from '@/content/nutrition-products';
 import './nutrition.css';
 
-const products = [
- {id:'whey',name:'Hiper 100% Whey',alt:'Embalagem original Hiper 100% Whey Probiótica'},
- {id:'epic',name:'Pre Workout Epic',alt:'Embalagem original Pre Workout Epic Probiótica'},
- {id:'creatina',name:'Creatina',alt:'Embalagem original Creatina Probiótica'},
-] as const;
-const productSource = (id:string) => `/products/probiotica-${id}-transparent.webp`;
+const products=nutritionProducts;
+const productSource=(id:string)=>nutritionProducts.find(product=>product.id===id)!.src;
 
 export function NutritionPage(){return <NutritionExperience>
  <section className="nutrition-intro" aria-labelledby="nutrition-title">
@@ -28,19 +26,7 @@ export function NutritionPage(){return <NutritionExperience>
    <a className="nutrition-scroll-cue" href="#nutrition-story"><span>Conhecer produtos</span><ArrowDown size={15}/><span className="nutrition-cue-line" aria-hidden="true"/></a>
   </div>
  </section>
- <section className="nutrition-story" id="nutrition-story" aria-label="Destaques dos suplementos">
-  <div className="nutrition-story-sticky">
-   <div className="container nutrition-story-inner">
-    <div className="nutrition-story-heading"><span className="eyebrow">E-Hub Nutrition</span><h2>Conhecer produtos</h2><div className="nutrition-story-progress" aria-hidden="true"><span/></div></div>
-    <div className="nutrition-story-scenes">
-     {products.map((product,index)=><article key={product.id} className="nutrition-story-scene" data-product-index={index}>
-      <div className="nutrition-story-art"><span className="nutrition-story-number" aria-hidden="true">0{index+1}</span><img src={productSource(product.id)} alt={product.alt} width="600" height="600" loading="lazy"/></div>
-      <div className="nutrition-story-label"><span aria-hidden="true">0{index+1} / 03</span><h3>{product.name}</h3></div>
-     </article>)}
-    </div>
-   </div>
-  </div>
- </section>
+ <NutritionProductStory products={nutritionProducts}/>
  <section className="nutrition-catalog container" id="suplementos" aria-labelledby="nutrition-catalog-title">
   <div className="nutrition-catalog-heading" data-nutrition-reveal><span className="eyebrow">Loja de Suplementos</span><h2 id="nutrition-catalog-title">Explorar suplementos</h2><p className="page-lead">Conheça nossa seleção de produtos Probiótica: Whey Protein, Creatina, linha Epic, coqueteleiras e muito mais.</p></div>
   <div className="nutrition-product-grid">{products.map((product,index)=><article key={product.id} className="nutrition-product-card" data-nutrition-reveal>

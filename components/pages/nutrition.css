@@ -206,3 +206,16 @@ body:has(.nutrition-lp) .header-inner{width:calc(100% - 40px);min-height:88px;bo
 .nutrition-lp .store-launch-pending button:disabled{background:#38322c;color:#d4b99f;border-color:#635040}
 @media(hover:hover){.nutrition-product-card:hover{border-color:#ff963f;box-shadow:0 20px 40px #ff79000c}}
 @media(max-width:760px){.nutrition-intro:after{background:linear-gradient(180deg,#080c1012,#080c1000 28%,#080c1066 45%,#080c10ed 67%,#080c10 100%)}}
+
+/* Shared scroll sequence: Home and E-Hub use the same markup and motion. */
+.nutrition-story{color:#f6f3ef;scroll-margin-top:115px}
+@media(min-width:901px) and (min-height:650px) and (prefers-reduced-motion:no-preference){.nutrition-story[data-motion=ready]{height:250svh}.home-nutrition-story[data-motion=ready]{height:220svh}}
+.home-nutrition-story .nutrition-story-heading p{color:#d0c8c0;font-size:17px;line-height:1.75;margin-top:25px}
+.home-nutrition-story .nutrition-story-heading .button{display:inline-flex;align-items:center;gap:12px;margin-top:25px;background:#ff7900;border-color:#ff7900;color:#16110c}
+.home-nutrition-story .nutrition-story-heading .button:hover{background:#ff9c40;border-color:#ff9c40}
+.home-nutrition-story .nutrition-story-heading h2{font-size:clamp(34px,3.3vw,50px);max-width:520px}
+.home-nutrition-story .nutrition-story-label h3{color:#f6f3ef}
+@media(max-width:760px){.home-nutrition-story .nutrition-story-heading p{font-size:16px}.home-nutrition-story .nutrition-story-heading .button{width:100%}}
+
+.nutrition-actor[hidden]{display:none}
+@media(min-width:901px) and (min-height:650px) and (prefers-reduced-motion:no-preference){.nutrition-story[data-motion=ready] .nutrition-story-scene[data-current=true]{opacity:1;visibility:visible;transform:translateY(0) scale(1)}}
