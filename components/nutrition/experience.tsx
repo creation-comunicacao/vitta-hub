@@ -9,11 +9,9 @@ export function NutritionExperience({children}:{children:ReactNode}){
   const host=root.current;
   if(!host)return;
   const hero=host.querySelector<HTMLElement>('.nutrition-intro')!;
-  const story=host.querySelector<HTMLElement>('.nutrition-story')!;
   const reduced=matchMedia('(prefers-reduced-motion: reduce)');
   const pointer=matchMedia('(hover: hover) and (pointer: fine)');
-  const wide=matchMedia('(min-width: 901px) and (min-height: 650px)');
-  let frame=0,targetX=0,targetY=0,x=0,y=0,heroVisible=true,storyVisible=false;
+  let frame=0,targetX=0,targetY=0,x=0,y=0,heroVisible=true;
   const reset=()=>{targetX=0;targetY=0;schedule();};
   function update(){
    frame=0;
@@ -23,12 +21,6 @@ export function NutritionExperience({children}:{children:ReactNode}){
    if(Math.abs(targetY-y)<.001)y=targetY;
    hero.style.setProperty('--pointer-x',x.toFixed(4));hero.style.setProperty('--pointer-y',y.toFixed(4));
    if(heroVisible){const box=hero.getBoundingClientRect();hero.style.setProperty('--hero-progress',Math.max(0,Math.min(1,-box.top/box.height)).toFixed(4));}
-   if(storyVisible&&wide.matches){
-    const box=story.getBoundingClientRect();
-    const progress=Math.max(0,Math.min(1,(100-box.top)/Math.max(1,box.height-(innerHeight-100))));
-    story.style.setProperty('--story-progress',progress.toFixed(4));
-    story.dataset.active=String(Math.min(2,Math.floor(progress*3)));
-   }
    if(heroVisible&&(x!==targetX||y!==targetY))frame=requestAnimationFrame(update);
   }
   function schedule(){if(!frame&&!reduced.matches&&!document.hidden)frame=requestAnimationFrame(update);}
@@ -42,20 +34,19 @@ export function NutritionExperience({children}:{children:ReactNode}){
   const observer=new IntersectionObserver(entries=>{
    for(const entry of entries){
     if(entry.target===hero){heroVisible=entry.isIntersecting;hero.dataset.visible=String(heroVisible);if(!heroVisible){targetX=0;targetY=0;}}
-    else if(entry.target===story)storyVisible=entry.isIntersecting;
     else if(entry.isIntersecting){entry.target.classList.add('is-revealed');observer.unobserve(entry.target);}
    }
    schedule();
   },{threshold:0,rootMargin:'40px'});
-  observer.observe(hero);observer.observe(story);
+  observer.observe(hero);
   host.querySelectorAll('[data-nutrition-reveal]').forEach(element=>observer.observe(element));
-  story.dataset.active='0';preferences();
+  preferences();
   hero.addEventListener('pointermove',move,{passive:true});hero.addEventListener('pointerleave',reset);
   window.addEventListener('scroll',schedule,{passive:true});window.addEventListener('resize',schedule,{passive:true});
-  reduced.addEventListener('change',preferences);pointer.addEventListener('change',preferences);wide.addEventListener('change',preferences);
+  reduced.addEventListener('change',preferences);pointer.addEventListener('change',preferences);
   const visibility=()=>{hero.dataset.visible=String(!document.hidden&&heroVisible);if(document.hidden){cancelAnimationFrame(frame);frame=0;}else schedule();};
   document.addEventListener('visibilitychange',visibility);
-  return()=>{cancelAnimationFrame(frame);observer.disconnect();hero.removeEventListener('pointermove',move);hero.removeEventListener('pointerleave',reset);window.removeEventListener('scroll',schedule);window.removeEventListener('resize',schedule);reduced.removeEventListener('change',preferences);pointer.removeEventListener('change',preferences);wide.removeEventListener('change',preferences);document.removeEventListener('visibilitychange',visibility);delete host.dataset.motion;};
+  return()=>{cancelAnimationFrame(frame);observer.disconnect();hero.removeEventListener('pointermove',move);hero.removeEventListener('pointerleave',reset);window.removeEventListener('scroll',schedule);window.removeEventListener('resize',schedule);reduced.removeEventListener('change',preferences);pointer.removeEventListener('change',preferences);document.removeEventListener('visibilitychange',visibility);delete host.dataset.motion;};
  },[]);
  return <div className="nutrition-lp" ref={root}>{children}</div>;
 }

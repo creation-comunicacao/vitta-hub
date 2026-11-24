@@ -3,7 +3,7 @@
 import {useRef,useState,type PointerEvent,type KeyboardEvent} from 'react';
 import {ArrowLeft,ArrowRight,MoveHorizontal} from 'lucide-react';
 
-type Product={id:string;name:string;alt:string};
+type Product={id:string;name:string;alt:string;src:string};
 const positions=['left','right','center'] as const;
 export function NutritionProductStage({products}:{products:readonly Product[]}){
  const [rotation,setRotation]=useState(0);
@@ -13,7 +13,7 @@ export function NutritionProductStage({products}:{products:readonly Product[]}){
  const rotate=(direction:number)=>{
   const next=(rotation+direction+products.length)%products.length;
   setRotation(next);
-  const featured=products.find((_,index)=>positions[(index+next)%positions.length]==='center');
+  const featured=products.find((_,index)=>positions[(index+next)%products.length]==='center');
   setAnnouncement(`Produto em destaque: ${featured?.name}.`);
  };
  const clear=()=>{
@@ -46,7 +46,7 @@ export function NutritionProductStage({products}:{products:readonly Product[]}){
  return <>
   <div ref={stage} className="nutrition-showcase nutrition-draggable" role="group" aria-roledescription="carrossel" aria-label="Produtos Probiótica. Arraste para os lados ou use as setas do teclado para trocar o produto em destaque." tabIndex={0} onPointerDown={down} onPointerMove={move} onPointerUp={up} onPointerCancel={clear} onLostPointerCapture={clear} onKeyDown={key}>
    <div className="nutrition-orbit orbit-one" aria-hidden="true"/><div className="nutrition-orbit orbit-two" aria-hidden="true"/><div className="nutrition-stage-shadow" aria-hidden="true"/>
-   {products.map((product,index)=><div key={product.id} className={`nutrition-actor actor-${product.id}`} data-position={positions[(index+rotation)%positions.length]}><div className="nutrition-parallax"><div className="nutrition-float"><img src={`/products/probiotica-${product.id}-transparent.webp`} width="600" height="600" alt={product.alt} draggable={false} loading="eager" fetchPriority={product.id==='creatina'?'high':undefined} decoding="async"/></div></div></div>)}
+   {products.map((product,index)=><div key={product.id} className={`nutrition-actor actor-${product.id}`} hidden={(index+rotation)%products.length>=positions.length} data-position={positions[(index+rotation)%products.length]||'hidden'}><div className="nutrition-parallax"><div className="nutrition-float"><img src={product.src} width="600" height="600" alt={product.alt} draggable={false} loading="eager" fetchPriority={product.id==='creatina'?'high':undefined} decoding="async"/></div></div></div>)}
   </div>
   <div className="nutrition-stage-controls" role="group" aria-label="Trocar produto em destaque"><span className="nutrition-drag-hint"><MoveHorizontal size={15}/>Arraste para trocar</span><button type="button" aria-label="Produto anterior" onClick={()=>rotate(-1)}><ArrowLeft size={18}/></button><button type="button" aria-label="Próximo produto" onClick={()=>rotate(1)}><ArrowRight size={18}/></button></div>
   <span className="sr-only" role="status" aria-live="polite" aria-atomic="true">{announcement}</span>

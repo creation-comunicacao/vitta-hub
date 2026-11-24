@@ -211,3 +211,6 @@ body:has(.home-experience) .site-header .brand{padding:8px 12px;border-radius:3p
 .miva-story[data-active=true][data-complete=true] .miva-pillar-icon svg{animation:miva-icon-breathe 7s ease-in-out infinite}
 @keyframes miva-icon-breathe{50%{transform:scale(1.045)}}
 @media(prefers-reduced-motion:reduce){.miva-story .miva-pillar-icon svg{animation:none!important}}
+
+/* Devolutiva 08: preserve the four pillars; remove only the lower application labels. */
+@media(min-width:901px) and (min-height:651px){.miva-story .miva-person{top:5%}.miva-story .miva-links{top:84%}}
