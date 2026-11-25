@@ -93,3 +93,6 @@ body:has(.hub-experience) .site-header button:focus-visible{outline-color:var(--
 .hub-experience .page-cta{background:color-mix(in srgb,var(--scene-tint) 94%,var(--scene-dark));border-color:var(--line)}
 body:has(.hub-experience) .mobile-bottom{background:var(--scene-tint);color:var(--scene-dark);border-color:color-mix(in srgb,var(--scene-dark) 18%,transparent)}
 body:has(.hub-experience) .mobile-bottom a:last-child{background:var(--scene-dark)}
+
+/* Os headers dos Hubs mantêm fundo escuro também após o scroll. */
+body:has(.hub-experience) .site-header .brand img{content:url("/brand/fitness-personal-dark.svg")}

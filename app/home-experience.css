@@ -214,3 +214,6 @@ body:has(.home-experience) .site-header .brand{padding:8px 12px;border-radius:3p
 
 /* Devolutiva 08: preserve the four pillars; remove only the lower application labels. */
 @media(min-width:901px) and (min-height:651px){.miva-story .miva-person{top:5%}.miva-story .miva-links{top:84%}}
+
+/* Inscrição clara sobre a abertura escura; o logo original volta no header branco. */
+body:has(.home-experience) .site-header:not(.scrolled) .brand img{content:url("/brand/fitness-personal-dark.svg")}
