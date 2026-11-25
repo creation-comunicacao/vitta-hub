@@ -87,3 +87,6 @@ Build Next/TypeScript aprovado. Chrome em 375/768/1440 px sem overflow ou erros 
 
 ## Devolutiva 09 — validação local
 Lint e build Next/TypeScript aprovados. Chrome em 375 e 1440 px: Home, Consultoria e E-Hub sem overflow, imagens quebradas ou erros JavaScript. Conferidos endereço, target, rel e nome acessível dos links comerciais; dois CTAs WhatsApp do E-Hub contêm a mensagem contextual. Imagens e inscrição branca do rodapé revisadas visualmente. Prévia em http://localhost:3012/. HTTPS externo da loja pendente por certificado incompatível com o subdomínio. Sem commit/push nesta etapa.
+
+## Hero em vídeo — 25/11/2026
+Lint e build Next/TypeScript aprovados. Chrome em 375/768/1440 px: vídeo carregado, controles de pausa/reprodução e pausa fora da tela; sem overflow ou erros JS. Conferência adicional em 320 px e controle de pausa desobstruído no mobile. Movimento reduzido e economia de dados não solicitam MP4; falha simulada do vídeo mantém imagem fallback. Revisão visual desktop/mobile e seleção de quadros dos cinco originais. Versões finais: cerca de 15,3 s, 5,6 MB desktop e 2,8 MB mobile. Prévia http://localhost:3013/. Sem commit/push nesta etapa.
