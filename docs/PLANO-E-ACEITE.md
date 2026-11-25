@@ -84,3 +84,6 @@ Build Next/TypeScript aprovado. Chrome em 375/768/1440 px sem overflow ou erros 
 - Lint e build Next/TypeScript aprovados. Chrome em 320/375/768/1440 px nas duas páginas: sem overflow horizontal, imagens quebradas ou erros JavaScript.
 - Conferidas as seis etapas de scroll, ciclo dos seis produtos da hero com três visíveis, CTA interno e endereço www da loja.
 - Prévia local para revisão; sem commit, push ou publicação nesta etapa.
+
+## Devolutiva 09 — validação local
+Lint e build Next/TypeScript aprovados. Chrome em 375 e 1440 px: Home, Consultoria e E-Hub sem overflow, imagens quebradas ou erros JavaScript. Conferidos endereço, target, rel e nome acessível dos links comerciais; dois CTAs WhatsApp do E-Hub contêm a mensagem contextual. Imagens e inscrição branca do rodapé revisadas visualmente. Prévia em http://localhost:3012/. HTTPS externo da loja pendente por certificado incompatível com o subdomínio. Sem commit/push nesta etapa.

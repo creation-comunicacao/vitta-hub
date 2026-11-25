@@ -180,3 +180,12 @@ Referência enviada pelo cliente em Photo 1.jpg: grafite/preto, laranja e tipogr
 - Home 04: removidos “A pessoa no centro” e os rótulos inferiores Hubs/Consultoria/Nutrição, preservando o pilar Nutrição e os demais textos.
 - Home 07 reutiliza a sequência de scroll “Conhecer produtos” do E-Hub, por componente compartilhado, mantendo o texto editorial e CTA interno.
 - Catálogo e hero utilizam os seis produtos fornecidos. Recortes técnicos, sem geração de embalagens; identidade laranja/grafite preservada.
+
+## Devolutiva 09 — 24/11/2026
+- Fonte: `docs/fontes/Devolutiva_09_Ajustes_Finais.txt`.
+- Confirmação posterior do usuário: usar a mesma imagem anexada também na Hero da Consultoria; recolorir a inscrição do logo para branco em fundo escuro. Substitui a dependência de uma segunda imagem e de outro arquivo oficial.
+- Home 06 e Hero da Consultoria usam `public/media/home/consultoria-hibrida.webp`, otimização proporcional do PNG enviado. No mobile a imagem inteira antecede o texto para preservar os participantes e o tablet.
+- Logo do rodapé global usa variante SVG com apenas o preenchimento do path da inscrição inferior em branco; geometria e demais cores preservadas.
+- Novo endereço comercial solicitado: https://loja.fitnesspersonal.com.br. Links externos abrem nova aba com noopener/noreferrer e nome acessível; E-Hub interno permanece na mesma aba.
+- E-Hub: CTA principal ACESSAR LOJA VIRTUAL; secundário TIRAR DÚVIDAS PELO WHATSAPP, número 551141465843 e mensagem contextual com Produto de interesse aberto. Nenhuma mensagem é enviada automaticamente.
+- Impedimento externo: verificação HTTPS retornou certificado sem correspondência ao hostname loja.fitnesspersonal.com.br (curl erro 60). O carregamento seguro da loja não foi homologado; correção do certificado depende da operação do domínio.

@@ -3,7 +3,7 @@ import {Breadcrumb} from './shared';
 import {StoreCTA} from '@/components/launch/visuals';
 import {NutritionExperience} from '@/components/nutrition/experience';
 import {NutritionProductStage} from '@/components/nutrition/product-stage';
-import {siteConfig} from '@/config/site';
+import {siteConfig, whatsappHref} from '@/config/site';
 import {NutritionProductStory} from '@/components/nutrition/product-story';
 import {nutritionProducts} from '@/content/nutrition-products';
 import './nutrition.css';
@@ -19,7 +19,7 @@ export function NutritionPage(){return <NutritionExperience>
      <span className="eyebrow nutrition-enter">E-Hub Nutrition | Loja de Suplementos</span>
      <h1 className="nutrition-enter" id="nutrition-title">E-Hub Nutrition</h1>
      <h2 className="nutrition-enter">Sua evolução merece <span>o melhor da suplementação.</span></h2>
-     <div className="actions nutrition-enter"><a className="button" href="#suplementos">Explorar suplementos <ArrowDown size={17}/></a><a className="nutrition-text-link" href="/contato/">Entre em contato <ArrowUpRight size={17}/></a></div>
+     <div className="actions nutrition-enter"><StoreCTA/><a className="nutrition-text-link" href={whatsappHref('nutricao')} data-channel="whatsapp">TIRAR DÚVIDAS PELO WHATSAPP <ArrowUpRight size={17}/></a></div>
     </div>
     <NutritionProductStage products={products}/>
    </div>
@@ -31,8 +31,8 @@ export function NutritionPage(){return <NutritionExperience>
   <div className="nutrition-catalog-heading" data-nutrition-reveal><span className="eyebrow">Loja de Suplementos</span><h2 id="nutrition-catalog-title">Explorar suplementos</h2><p className="page-lead">Conheça nossa seleção de produtos Probiótica: Whey Protein, Creatina, linha Epic, coqueteleiras e muito mais.</p></div>
   <div className="nutrition-product-grid">{products.map((product,index)=><article key={product.id} className="nutrition-product-card" data-nutrition-reveal>
    <div className="nutrition-card-art"><span className="nutrition-card-index" aria-hidden="true">0{index+1}</span><img src={productSource(product.id)} alt={product.alt} width="600" height="600" loading="lazy" decoding="async"/></div>
-   <div className="nutrition-card-copy"><h3>{product.name}</h3><a href={siteConfig.storeUrl||'/contato/?interesse=suplementacao'} data-channel={siteConfig.storeUrl?'store':undefined} aria-label={`${siteConfig.storeUrl?'Acessar loja de suplementos':'Entre em contato'} — ${product.name}`}>{siteConfig.storeUrl?'Acessar loja de suplementos':'Entre em contato'}<ArrowUpRight size={20}/></a></div>
+   <div className="nutrition-card-copy"><h3>{product.name}</h3><a href={siteConfig.storeUrl||'/contato/?interesse=suplementacao'} target="_blank" rel="noopener noreferrer" data-channel={siteConfig.storeUrl?'store':undefined} aria-label={`${siteConfig.storeUrl?'Acessar loja de suplementos':'Entre em contato'} — ${product.name} (abre em nova aba)`}>{siteConfig.storeUrl?'Acessar loja de suplementos':'Entre em contato'}<ArrowUpRight size={20}/></a></div>
   </article>)}</div>
-  <div className="nutrition-conversion" data-nutrition-reveal><span className="nutrition-conversion-brand">E-Hub Nutrition</span><div className="actions"><StoreCTA/><a className="button secondary" href="/contato/">Entre em contato <ArrowUpRight size={18}/></a></div></div>
+  <div className="nutrition-conversion" data-nutrition-reveal><span className="nutrition-conversion-brand">E-Hub Nutrition</span><div className="actions"><StoreCTA/><a className="button secondary" href={whatsappHref('nutricao')} data-channel="whatsapp">TIRAR DÚVIDAS PELO WHATSAPP <ArrowUpRight size={18}/></a></div></div>
  </section>
  </NutritionExperience>;}

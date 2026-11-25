@@ -16,3 +16,21 @@
 .launch-home-nutrition .launch-products{box-shadow:none}
 .launch-consultancy .button,.launch-store-grid .button{text-transform:uppercase;font-size:12px;letter-spacing:.03em}
 @media(max-width:760px){.launch-products{border-radius:65px 4px 65px 4px;padding:25px 6px}}
+
+/* Devolutiva 09: preservar o ambiente e os dois participantes da imagem enviada. */
+.launch-home-consultancy .launch-feature-photo{object-position:65% center}
+.launch-home-consultancy .launch-feature-shade{background:linear-gradient(90deg,#192230db 0%,#19223099 38%,#19223014 72%)}
+@media(max-width:760px){
+ .launch-home-consultancy .launch-feature-photo{position:relative;display:block;height:auto;aspect-ratio:2043/770;object-fit:contain}
+ .launch-home-consultancy .launch-feature-shade{display:none}
+ .launch-home-consultancy .launch-feature-content{padding-block:38px 55px}
+}
+
+.launch-consultancy .launch-photo-hero>.launch-movement img{object-position:65% center}
+@media(max-width:760px){
+ .launch-consultancy .launch-photo-hero{display:flex;flex-direction:column;min-height:0}
+ .launch-consultancy .launch-photo-hero>.launch-movement{position:relative;inset:auto;height:auto;margin:0;aspect-ratio:2043/770}
+ .launch-consultancy .launch-photo-hero>.launch-movement img{object-fit:contain;width:100%;height:100%}
+ .launch-consultancy .launch-photo-shade{display:none}
+ .launch-consultancy .launch-photo-copy{padding-block:35px 55px}
+}
