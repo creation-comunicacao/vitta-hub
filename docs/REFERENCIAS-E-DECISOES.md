@@ -189,3 +189,6 @@ Referência enviada pelo cliente em Photo 1.jpg: grafite/preto, laranja e tipogr
 - Novo endereço comercial solicitado: https://loja.fitnesspersonal.com.br. Links externos abrem nova aba com noopener/noreferrer e nome acessível; E-Hub interno permanece na mesma aba.
 - E-Hub: CTA principal ACESSAR LOJA VIRTUAL; secundário TIRAR DÚVIDAS PELO WHATSAPP, número 551141465843 e mensagem contextual com Produto de interesse aberto. Nenhuma mensagem é enviada automaticamente.
 - Impedimento externo: verificação HTTPS retornou certificado sem correspondência ao hostname loja.fitnesspersonal.com.br (curl erro 60). O carregamento seguro da loja não foi homologado; correção do certificado depende da operação do domínio.
+
+## Hero cinematográfica — 25/11/2026
+Usuário forneceu cinco vídeos e autorizou nova apresentação da Hero. Montagem local com os cinco materiais, priorizando condomínio/pessoas; produto apenas no fechamento. Textos comerciais, CTAs e destinos preservados, com informações de apoio abaixo do primeiro quadro. Vídeo silencioso em loop, controle acessível de pausa, pausa fora da tela/aba oculta, fonte menor para celular. Imagem original preservada como fallback; movimento reduzido e economia de dados evitam o download automático. Não usa Topview/Canva nem novos créditos.
