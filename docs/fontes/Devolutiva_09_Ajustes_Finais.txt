@@ -1,0 +1,27 @@
+Devolutiva técnica 09
+Refinamento visual e funcional • 24/11/2026
+Objetivo: executar somente os ajustes abaixo, preservando as decisões anteriores e a estrutura aprovada. Prioridade: lançamento imediato.
+01 | Home — bloco 06, Consultoria Online
+Substituir a fotografia repetida do primeiro bloco pela nova imagem de consultoria híbrida, encaminhada separadamente pelo contratante. Manter título, texto, CTA e destino atuais. Preservar a luminosidade e o ambiente visível; aplicar gradiente apenas na intensidade necessária para leitura. Ajustar enquadramento responsivo sem cortar os elementos essenciais.
+02 | Consultoria Online — Hero
+Substituir a imagem do Hero principal por outra referência visual de acompanhamento digital e orientação profissional, preferencialmente distinta da Home. Manter textos, CTAs e estrutura. A seleção final da imagem será confirmada pelo contratante; não alterar a oferta comercial.
+03 | Rodapé — todas as páginas
+Utilizar a versão oficial do logo FITNESS PERSONAL com a inscrição VITTA HUB • Assessoria Esportiva em branco, adequada ao fundo escuro. Preservar as demais cores e proporções do logo. Aplicar no componente global, inclusive mobile. Usar o arquivo oficial fornecido pelo contratante, sem recriar a marca.
+04 | Links externos da loja
+Destino único: https://loja.fitnesspersonal.com.br. O item Loja de Suplementos do menu deve levar diretamente à loja, em nova aba. Aplicar a mesma regra a todos os links diretos à loja (rodapé, CTAs e carrosséis, quando existentes). Usar target="_blank" e rel="noopener noreferrer"; sinalizar abertura em nova aba de forma acessível. Links internos para E-Hub Nutrition permanecem na mesma aba.
+
+05 | E-Hub Nutrition — conversão comercial
+Oferecer duas ações claras, mantendo o conteúdo e as imagens aprovados. Substituir o CTA secundário de contato genérico nesta página pelo atendimento direto via WhatsApp. Preservar o item Contato no menu principal.
+CTA principal: ACESSAR LOJA VIRTUAL — https://loja.fitnesspersonal.com.br (nova aba).
+CTA secundário: TIRAR DÚVIDAS PELO WHATSAPP — +55 11 4146-5843.
+Mensagem pré-preenchida:
+Olá! Vim pelo site da FITNESS PERSONAL • VITTA HUB, na página E-Hub Nutrition, e gostaria de receber informações sobre os suplementos Probiótica.Produto de interesse:
+Implementação: https://wa.me/551141465843?text= + mensagem codificada com encodeURIComponent (sem espaço após o sinal de igual). Se houver CTA individual por produto, preencher o nome do produto selecionado após “Produto de interesse:”. Caso contrário, deixar o campo aberto para o visitante completar. O envio da mensagem deve depender da ação do visitante.
+06 | Critérios de aceite e retorno
+Home e Hero da Consultoria com imagens distintas, sem repetição do primeiro bloco; textos legíveis e enquadramento adequado em desktop e mobile.
+Logo correto em todos os rodapés, com inscrição branca legível.
+Todos os links diretos à loja abrem o endereço definitivo em nova aba; validar HTTPS e carregamento da loja.
+Os dois CTAs do E-Hub funcionam; WhatsApp abre o número oficial com a mensagem correta e a loja abre em nova aba.
+Preservar os demais conteúdos, navegação e decisões das devolutivas anteriores.
+Entregar link atualizado para homologação, confirmação dos ajustes e indicação de eventuais impedimentos.
+Dependências: imagens finais e arquivo oficial do logo serão encaminhados pelo contratante. A disponibilidade do subdomínio e o funcionamento real dos links deverão ser testados pelo desenvolvedor antes da publicação.

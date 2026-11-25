@@ -1,6 +1,6 @@
 const officialUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://fitnesspersonal.com.br';
 if (officialUrl && (!/^https:\/\/[^/]+$/.test(officialUrl) || new URL(officialUrl).username || new URL(officialUrl).password)) throw new Error('NEXT_PUBLIC_SITE_URL deve ser uma origem HTTPS oficial, sem barra final.');
-export const approvedStoreUrl = 'https://www.fitnesspersonal.com.br/';
+export const approvedStoreUrl = 'https://loja.fitnesspersonal.com.br';
 export const siteConfig = {
   name: 'FITNESS PERSONAL • VITTA HUB • ASSESSORIA ESPORTIVA',
   url: officialUrl,
@@ -20,7 +20,7 @@ export const presentationHref = '/contato/?interesse=gestao-esportiva';
 export const messages = {
   gestao: 'Olá! Gostaria de conhecer a proposta de gestão esportiva da FITNESS PERSONAL • VITTA HUB para o meu condomínio.',
   consultoria: 'Olá! Gostaria de conhecer a Consultoria Online da FITNESS PERSONAL • VITTA HUB e receber informações sobre o acompanhamento.',
-  nutricao: 'Olá! Gostaria de saber mais sobre os suplementos da loja FITNESS PERSONAL • VITTA HUB.',
+  nutricao: 'Olá! Vim pelo site da FITNESS PERSONAL • VITTA HUB, na página E-Hub Nutrition, e gostaria de receber informações sobre os suplementos Probiótica. Produto de interesse:',
   geral: 'Olá! Gostaria de conhecer melhor os serviços da FITNESS PERSONAL • VITTA HUB.',
 };
 export function whatsappKind(path: string, interest?: string | null): keyof typeof messages {
