@@ -30,6 +30,7 @@ export function whatsappKind(path: string, interest?: string | null): keyof type
   if (interest === 'gestao-esportiva' || interest?.startsWith('hub-') || path === '/' || /\/(?:gestao-esportiva-condominios|hub-fitness|hub-aquatico|hub-esportivo)\/?$/.test(path)) return 'gestao';
   return 'geral';
 }
-export function whatsappHref(kind: keyof typeof messages = 'geral') {
-  return siteConfig.whatsapp ? `https://wa.me/${siteConfig.whatsapp}?text=${encodeURIComponent(messages[kind])}` : `/contato/?canal=whatsapp&interesse=${kind==='gestao'?'gestao-esportiva':kind==='nutricao'?'nutricao':kind==='consultoria'?'consultoria':'outro'}`;
+export function whatsappHref(kind: keyof typeof messages = 'geral', productName?: string) {
+  const message = kind === 'nutricao' && productName ? `${messages[kind]} ${productName}` : messages[kind];
+  return siteConfig.whatsapp ? `https://wa.me/${siteConfig.whatsapp}?text=${encodeURIComponent(message)}` : `/contato/?canal=whatsapp&interesse=${kind==='gestao'?'gestao-esportiva':kind==='nutricao'?'nutricao':kind==='consultoria'?'consultoria':'outro'}`;
 }

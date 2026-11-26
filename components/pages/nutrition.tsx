@@ -1,4 +1,4 @@
-import {ArrowDown, ArrowUpRight} from 'lucide-react';
+import {ArrowDown, ArrowUpRight, MessageCircle} from 'lucide-react';
 import {Breadcrumb} from './shared';
 import {StoreCTA} from '@/components/launch/visuals';
 import {NutritionExperience} from '@/components/nutrition/experience';
@@ -31,7 +31,7 @@ export function NutritionPage(){return <NutritionExperience>
   <div className="nutrition-catalog-heading" data-nutrition-reveal><span className="eyebrow">Loja de Suplementos</span><h2 id="nutrition-catalog-title">Explorar suplementos</h2><p className="page-lead">Conheça nossa seleção de produtos Probiótica: Whey Protein, Creatina, linha Epic, coqueteleiras e muito mais.</p></div>
   <div className="nutrition-product-grid">{products.map((product,index)=><article key={product.id} className="nutrition-product-card" data-nutrition-reveal>
    <div className="nutrition-card-art"><span className="nutrition-card-index" aria-hidden="true">0{index+1}</span><img src={productSource(product.id)} alt={product.alt} width="600" height="600" loading="lazy" decoding="async"/></div>
-   <div className="nutrition-card-copy"><h3>{product.name}</h3><a href={siteConfig.storeUrl||'/contato/?interesse=suplementacao'} target="_blank" rel="noopener noreferrer" data-channel={siteConfig.storeUrl?'store':undefined} aria-label={`${siteConfig.storeUrl?'Acessar loja de suplementos':'Entre em contato'} — ${product.name} (abre em nova aba)`}>{siteConfig.storeUrl?'Acessar loja de suplementos':'Entre em contato'}<ArrowUpRight size={20}/></a></div>
+   <div className="nutrition-card-copy"><h3>{product.name}</h3><a href={siteConfig.storeUrl||'/contato/?interesse=suplementacao'} target="_blank" rel="noopener noreferrer" data-channel={siteConfig.storeUrl?'store':undefined} aria-label={`${siteConfig.storeUrl?'Acessar loja de suplementos':'Entre em contato'} — ${product.name} (abre em nova aba)`}>{siteConfig.storeUrl?'Acessar loja de suplementos':'Entre em contato'}<ArrowUpRight size={20}/></a><a className="nutrition-product-whatsapp" href={whatsappHref('nutricao',product.name)} data-channel="whatsapp" aria-label={`Comprar ou tirar dúvidas pelo WhatsApp — ${product.name}`}>Comprar pelo WhatsApp <MessageCircle size={20}/></a></div>
   </article>)}</div>
   <div className="nutrition-conversion" data-nutrition-reveal><span className="nutrition-conversion-brand">E-Hub Nutrition</span><div className="actions"><StoreCTA/><a className="button secondary" href={whatsappHref('nutricao')} data-channel="whatsapp">TIRAR DÚVIDAS PELO WHATSAPP <ArrowUpRight size={18}/></a></div></div>
  </section>

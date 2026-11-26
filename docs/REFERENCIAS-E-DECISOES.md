@@ -192,3 +192,6 @@ Referência enviada pelo cliente em Photo 1.jpg: grafite/preto, laranja e tipogr
 
 ## Hero cinematográfica — 25/11/2026
 Usuário forneceu cinco vídeos e autorizou nova apresentação da Hero. Montagem local com os cinco materiais, priorizando condomínio/pessoas; produto apenas no fechamento. Textos comerciais, CTAs e destinos preservados, com informações de apoio abaixo do primeiro quadro. Vídeo silencioso em loop, controle acessível de pausa, pausa fora da tela/aba oculta, fonte menor para celular. Imagem original preservada como fallback; movimento reduzido e economia de dados evitam o download automático. Não usa Topview/Canva nem novos créditos.
+
+## Ajustes pontuais — Consultoria mobile e WhatsApp por produto — 25/11/2026
+A pedido do usuário, imagens da Home 06 e da Hero da Consultoria passam a enquadramento 4:3 alinhado à direita até 900 px, mantendo aluna/profissional em destaque; desktop preservado. Seis cards do E-Hub recebem CTA adicional Comprar pelo WhatsApp, mantendo acesso à loja. Mensagem contextual aprovada recebe o nome do produto após Produto de interesse. Nenhum envio automático.
