@@ -219,3 +219,4 @@ body:has(.nutrition-lp) .header-inner{width:calc(100% - 40px);min-height:88px;bo
 
 .nutrition-actor[hidden]{display:none}
 @media(min-width:901px) and (min-height:650px) and (prefers-reduced-motion:no-preference){.nutrition-story[data-motion=ready] .nutrition-story-scene[data-current=true]{opacity:1;visibility:visible;transform:translateY(0) scale(1)}}
+.nutrition-card-copy .nutrition-product-whatsapp{margin-top:14px}
